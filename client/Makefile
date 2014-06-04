@@ -24,9 +24,10 @@ QTLDLIBS = -L$(QTDIR)/lib -lQtCore4 -lQtGui4
 MOC = $(QTDIR)/bin/moc
 LUAPLATFORM = mingw
 else ifeq ($(platform),Darwin)
-CXXFLAGS = -I/Library/Frameworks/QtGui.framework/Versions/Current/Headers -I/Library/Frameworks/QtCore.framework/Versions/Current/Headers
-QTLDLIBS = -framework QtGui -framework QtCore
-MOC = moc 
+CXXFLAGS = -I/opt/local/Library/Frameworks/QtGui.framework/Versions/Current/Headers -I/opt/local/Library/Frameworks/QtCore.framework/Versions/Current/Headers -I$(QTDIR)/include -I$(QTDIR)/include/QtCore -I$(QTDIR)/include/QtGui
+QTLDLIBS = -framework QtGui -F/opt/local/Library/Frameworks -framework QtCore -L$(QTDIR)/lib  
+#-lQtCore4 -lQtGui4 -L/opt/local/lib
+MOC = $(QTDIR)/bin/moc
 LUAPLATFORM = macosx
 else
 CXXFLAGS = $(shell pkg-config --cflags QtCore QtGui 2>/dev/null) -Wall -O4
