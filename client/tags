@@ -1,0 +1,915 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARITHMETIC_SHIFT	pm3_bitlib.c	/^#define ARITHMETIC_SHIFT(/;"	d	file:
+AddCrc	cmdhf15.c	/^#define AddCrc(/;"	d	file:
+AddLogCurrentDT	util.c	/^void AddLogCurrentDT(char *fileName) {$/;"	f
+AddLogHex	util.c	/^void AddLogHex(char *fileName, char *extData, const uint8_t * data, const size_t len){$/;"	f
+AddLogLine	util.c	/^void AddLogLine(char *fileName, char *extData, char *c) {$/;"	f
+AddLogUint64	util.c	/^void AddLogUint64(char *fileName, char *extData, const uint64_t data) {$/;"	f
+AppendGraph	graph.c	/^void AppendGraph(int redraw, int clock, int bit)$/;"	f
+BEBIT	nonce2key/crapto1.h	/^#define BEBIT(/;"	d
+BIG_ENDIAN	proxendian.h	/^#  define BIG_ENDIAN /;"	d
+BINS	Makefile	/^BINS = proxmark3 flasher #snooper cli$/;"	m
+BIT	nonce2key/crapto1.h	/^#define BIT(/;"	d
+BITLIB_FLOAT_BITS	pm3_bit_limits.h	/^#define BITLIB_FLOAT_BITS /;"	d
+BITLIB_FLOAT_MAX	pm3_bit_limits.h	/^#define BITLIB_FLOAT_MAX /;"	d
+BITLIB_FLOAT_MIN	pm3_bit_limits.h	/^#define BITLIB_FLOAT_MIN /;"	d
+BITLIB_FLOAT_UMAX	pm3_bit_limits.h	/^#define BITLIB_FLOAT_UMAX /;"	d
+BIT_BITS	pm3_bitlib.c	/^#define BIT_BITS /;"	d	file:
+BIT_MAX	pm3_bitlib.c	/^#define BIT_MAX /;"	d	file:
+BIT_MIN	pm3_bitlib.c	/^#define BIT_MIN /;"	d	file:
+BIT_TRUNCATE	pm3_bitlib.c	/^#define BIT_TRUNCATE(/;"	d	file:
+BIT_UMAX	pm3_bitlib.c	/^#define BIT_UMAX /;"	d	file:
+BLOCK_SIZE	flash.c	/^#define BLOCK_SIZE /;"	d	file:
+BOOTLOADER_END	flash.c	/^#define BOOTLOADER_END /;"	d	file:
+BOOTLOADER_SIZE	flash.c	/^#define BOOTLOADER_SIZE /;"	d	file:
+BYTE_ORDER	proxendian.h	/^#  define BYTE_ORDER /;"	d
+C1	nonce2key/crapto1.c	/^static const uint32_t C1[] = { 0x846B5, 0x4235A, 0x211AD};$/;"	v	file:
+C2	nonce2key/crapto1.c	/^static const uint32_t C2[] = { 0x1A822E0, 0x21A822E0, 0x21A822E0};$/;"	v	file:
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -std=c99 -I. -I..\/include -I..\/common -I\/opt\/local\/include -I..\/liblua -Wall $(COMMON_FLAGS) -g -O4 $/;"	m
+CLAIMED_SERIAL_PORT	uart.h	/^#define CLAIMED_SERIAL_PORT /;"	d
+CLEAN	Makefile	/^CLEAN = cli cli.exe flasher flasher.exe proxmark3 proxmark3.exe snooper snooper.exe $(CMDOBJS) $(OBJDIR)\/*.o *.o *.moc.cpp$/;"	m
+CMDDATA_H__	cmddata.h	/^#define CMDDATA_H__$/;"	d
+CMDHF14A_H__	cmdhf14a.h	/^#define CMDHF14A_H__$/;"	d
+CMDHF14B_H__	cmdhf14b.h	/^#define CMDHF14B_H__$/;"	d
+CMDHF15_H__	cmdhf15.h	/^#define CMDHF15_H__$/;"	d
+CMDHFEMV_H__	cmdhfemv.h	/^#define CMDHFEMV_H__$/;"	d
+CMDHFEPA_H__	cmdhfepa.h	/^#define CMDHFEPA_H__$/;"	d
+CMDHFICLASS_H__	cmdhficlass.h	/^#define CMDHFICLASS_H__$/;"	d
+CMDHFLEGIC_H__	cmdhflegic.h	/^#define CMDHFLEGIC_H__$/;"	d
+CMDHFMF_H__	cmdhfmf.h	/^#define CMDHFMF_H__$/;"	d
+CMDHF_H__	cmdhf.h	/^#define CMDHF_H__$/;"	d
+CMDHW_H__	cmdhw.h	/^#define CMDHW_H__$/;"	d
+CMDLFEM4X_H__	cmdlfem4x.h	/^#define CMDLFEM4X_H__$/;"	d
+CMDLFHID_H__	cmdlfhid.h	/^#define CMDLFHID_H__$/;"	d
+CMDLFHITAG_H__	cmdlfhitag.h	/^#define CMDLFHITAG_H__$/;"	d
+CMDLFIO_H__	cmdlfio.h	/^#define CMDLFIO_H__$/;"	d
+CMDLFPCF7931_H__	cmdlfpcf7931.h	/^#define CMDLFPCF7931_H__$/;"	d
+CMDLFT55XX_H__	cmdlft55xx.h	/^#define CMDLFT55XX_H__$/;"	d
+CMDLFTI_H__	cmdlfti.h	/^#define CMDLFTI_H__$/;"	d
+CMDLF_H__	cmdlf.h	/^#define CMDLF_H__$/;"	d
+CMDMAIN_H__	cmdmain.h	/^#define CMDMAIN_H__$/;"	d
+CMDOBJS	Makefile	/^CMDOBJS = $(CMDSRCS:%.c=$(OBJDIR)\/%.o)$/;"	m
+CMDPARSER_H__	cmdparser.h	/^#define CMDPARSER_H__ /;"	d
+CMDSCRIPT_H__	cmdscript.h	/^#define CMDSCRIPT_H__$/;"	d
+CMDSRCS	Makefile	/^CMDSRCS = 	nonce2key\/crapto1.c\\$/;"	m
+CMD_BUFFER_SIZE	cmdmain.c	/^#define CMD_BUFFER_SIZE /;"	d	file:
+COREOBJS	Makefile	/^COREOBJS = $(CORESRCS:%.c=$(OBJDIR)\/%.o)$/;"	m
+CORESRCS	Makefile	/^CORESRCS = 	uart.c \\$/;"	m
+CRAPTO1_INCLUDED	nonce2key/crapto1.h	/^#define CRAPTO1_INCLUDED$/;"	d
+CSETBLOCK_HALT	mifarehost.h	/^#define CSETBLOCK_HALT	/;"	d
+CSETBLOCK_INIT_FIELD	mifarehost.h	/^#define CSETBLOCK_INIT_FIELD	/;"	d
+CSETBLOCK_RESET_FIELD	mifarehost.h	/^#define CSETBLOCK_RESET_FIELD	/;"	d
+CSETBLOCK_SINGLE_OPER	mifarehost.h	/^#define CSETBLOCK_SINGLE_OPER	/;"	d
+CSETBLOCK_UID	mifarehost.h	/^#define CSETBLOCK_UID /;"	d
+CSETBLOCK_WUPC	mifarehost.h	/^#define CSETBLOCK_WUPC	/;"	d
+CXX	Makefile	/^CXX=g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = $(shell pkg-config --cflags QtCore QtGui 2>\/dev\/null) -Wall -O4$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -I$(QTDIR)\/include -I$(QTDIR)\/include\/QtCore -I$(QTDIR)\/include\/QtGui$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -I\/opt\/local\/Library\/Frameworks\/QtGui.framework\/Versions\/Current\/Headers -I\/opt\/local\/Library\/Frameworks\/QtCore.framework\/Versions\/Current\/Headers -I$(QTDIR)\/include -I$(QTDIR)\/include\/QtCore -I$(QTDIR)\/include\/QtGui$/;"	m
+ChkBitstream	cmdlf.c	/^static void ChkBitstream(const char *str)$/;"	f	file:
+ClearGraph	graph.c	/^int ClearGraph(int redraw)$/;"	f
+CloseProxmark	flasher.c	/^void CloseProxmark() {$/;"	f
+CmdAmp	cmddata.c	/^int CmdAmp(const char *Cmd)$/;"	f
+CmdAutoCorr	cmddata.c	/^int CmdAutoCorr(const char *Cmd)$/;"	f
+CmdBitsamples	cmddata.c	/^int CmdBitsamples(const char *Cmd)$/;"	f
+CmdBitstream	cmddata.c	/^int CmdBitstream(const char *Cmd)$/;"	f
+CmdBuffClear	cmddata.c	/^int CmdBuffClear(const char *Cmd)$/;"	f
+CmdData	cmddata.c	/^int CmdData(const char *Cmd)$/;"	f
+CmdDec	cmddata.c	/^int CmdDec(const char *Cmd)$/;"	f
+CmdDetectClockRate	cmddata.c	/^int CmdDetectClockRate(const char *Cmd)$/;"	f
+CmdDetectReader	cmdhw.c	/^int CmdDetectReader(const char *Cmd)$/;"	f
+CmdEM410xRead	cmdlfem4x.c	/^int CmdEM410xRead(const char *Cmd)$/;"	f
+CmdEM410xSim	cmdlfem4x.c	/^int CmdEM410xSim(const char *Cmd)$/;"	f
+CmdEM410xWatch	cmdlfem4x.c	/^int CmdEM410xWatch(const char *Cmd)$/;"	f
+CmdEM410xWrite	cmdlfem4x.c	/^int CmdEM410xWrite(const char *Cmd)$/;"	f
+CmdEM4x50Read	cmdlfem4x.c	/^int CmdEM4x50Read(const char *Cmd)$/;"	f
+CmdFPGAOff	cmdhw.c	/^int CmdFPGAOff(const char *Cmd)$/;"	f
+CmdFSKdemod	cmddata.c	/^int CmdFSKdemod(const char *Cmd)$/;"	f
+CmdFlexdemod	cmdlf.c	/^int CmdFlexdemod(const char *Cmd)$/;"	f
+CmdGrid	cmddata.c	/^int CmdGrid(const char *Cmd)$/;"	f
+CmdHF	cmdhf.c	/^int CmdHF(const char *Cmd)$/;"	f
+CmdHF14A	cmdhf14a.c	/^int CmdHF14A(const char *Cmd) {$/;"	f
+CmdHF14ACUIDs	cmdhf14a.c	/^int CmdHF14ACUIDs(const char *Cmd)$/;"	f
+CmdHF14ACmdRaw	cmdhf14a.c	/^int CmdHF14ACmdRaw(const char *cmd) {$/;"	f
+CmdHF14AEMVClone	cmdhfemv.c	/^int CmdHF14AEMVClone(const char *Cmd)$/;"	f
+CmdHF14AEMVReadRecord	cmdhfemv.c	/^int CmdHF14AEMVReadRecord(const char *Cmd)$/;"	f
+CmdHF14AEMVSim	cmdhfemv.c	/^int CmdHF14AEMVSim(const char *Cmd)$/;"	f
+CmdHF14AEMVTest	cmdhfemv.c	/^int CmdHF14AEMVTest(const char *Cmd)$/;"	f
+CmdHF14AEMVTransaction	cmdhfemv.c	/^int CmdHF14AEMVTransaction(const char *Cmd)$/;"	f
+CmdHF14AList	cmdhf14a.c	/^int CmdHF14AList(const char *Cmd)$/;"	f
+CmdHF14AMf1kSim	cmdhfmf.c	/^int CmdHF14AMf1kSim(const char *Cmd)$/;"	f
+CmdHF14AMfCGetBlk	cmdhfmf.c	/^int CmdHF14AMfCGetBlk(const char *Cmd) {$/;"	f
+CmdHF14AMfCGetSc	cmdhfmf.c	/^int CmdHF14AMfCGetSc(const char *Cmd) {$/;"	f
+CmdHF14AMfCLoad	cmdhfmf.c	/^int CmdHF14AMfCLoad(const char *Cmd)$/;"	f
+CmdHF14AMfCSave	cmdhfmf.c	/^int CmdHF14AMfCSave(const char *Cmd) {$/;"	f
+CmdHF14AMfCSetBlk	cmdhfmf.c	/^int CmdHF14AMfCSetBlk(const char *Cmd)$/;"	f
+CmdHF14AMfCSetUID	cmdhfmf.c	/^int CmdHF14AMfCSetUID(const char *Cmd)$/;"	f
+CmdHF14AMfChk	cmdhfmf.c	/^int CmdHF14AMfChk(const char *Cmd)$/;"	f
+CmdHF14AMfDbg	cmdhfmf.c	/^int CmdHF14AMfDbg(const char *Cmd)$/;"	f
+CmdHF14AMfDump	cmdhfmf.c	/^int CmdHF14AMfDump(const char *Cmd)$/;"	f
+CmdHF14AMfECFill	cmdhfmf.c	/^int CmdHF14AMfECFill(const char *Cmd)$/;"	f
+CmdHF14AMfEClear	cmdhfmf.c	/^int CmdHF14AMfEClear(const char *Cmd)$/;"	f
+CmdHF14AMfEGet	cmdhfmf.c	/^int CmdHF14AMfEGet(const char *Cmd)$/;"	f
+CmdHF14AMfEKeyPrn	cmdhfmf.c	/^int CmdHF14AMfEKeyPrn(const char *Cmd)$/;"	f
+CmdHF14AMfELoad	cmdhfmf.c	/^int CmdHF14AMfELoad(const char *Cmd)$/;"	f
+CmdHF14AMfESave	cmdhfmf.c	/^int CmdHF14AMfESave(const char *Cmd)$/;"	f
+CmdHF14AMfESet	cmdhfmf.c	/^int CmdHF14AMfESet(const char *Cmd)$/;"	f
+CmdHF14AMfNested	cmdhfmf.c	/^int CmdHF14AMfNested(const char *Cmd)$/;"	f
+CmdHF14AMfRdBl	cmdhfmf.c	/^int CmdHF14AMfRdBl(const char *Cmd)$/;"	f
+CmdHF14AMfRdSc	cmdhfmf.c	/^int CmdHF14AMfRdSc(const char *Cmd)$/;"	f
+CmdHF14AMfRestore	cmdhfmf.c	/^int CmdHF14AMfRestore(const char *Cmd)$/;"	f
+CmdHF14AMfSniff	cmdhfmf.c	/^int CmdHF14AMfSniff(const char *Cmd){$/;"	f
+CmdHF14AMfURdBl	cmdhfmf.c	/^int CmdHF14AMfURdBl(const char *Cmd)$/;"	f
+CmdHF14AMfURdCard	cmdhfmf.c	/^int CmdHF14AMfURdCard(const char *Cmd)$/;"	f
+CmdHF14AMfUWrBl	cmdhfmf.c	/^int CmdHF14AMfUWrBl(const char *Cmd)$/;"	f
+CmdHF14AMfWrBl	cmdhfmf.c	/^int CmdHF14AMfWrBl(const char *Cmd)$/;"	f
+CmdHF14AMifare	cmdhfmf.c	/^int CmdHF14AMifare(const char *Cmd)$/;"	f
+CmdHF14AReader	cmdhf14a.c	/^int CmdHF14AReader(const char *Cmd)$/;"	f
+CmdHF14ASetTimeout	cmdhf14a.c	/^int CmdHF14ASetTimeout(const char *cmd){$/;"	f
+CmdHF14ASim	cmdhf14a.c	/^int CmdHF14ASim(const char *Cmd)$/;"	f
+CmdHF14ASnoop	cmdhf14a.c	/^int CmdHF14ASnoop(const char *Cmd) {$/;"	f
+CmdHF14B	cmdhf14b.c	/^int CmdHF14B(const char *Cmd)$/;"	f
+CmdHF14BCmdRaw	cmdhf14b.c	/^int CmdHF14BCmdRaw (const char *cmd) {$/;"	f
+CmdHF14BDemod	cmdhf14b.c	/^int CmdHF14BDemod(const char *Cmd)$/;"	f
+CmdHF14BList	cmdhf14b.c	/^int CmdHF14BList(const char *Cmd)$/;"	f
+CmdHF14BRead	cmdhf14b.c	/^int CmdHF14BRead(const char *Cmd)$/;"	f
+CmdHF14BSnoop	cmdhf14b.c	/^int CmdHF14BSnoop(const char *Cmd)$/;"	f
+CmdHF14Sim	cmdhf14b.c	/^int CmdHF14Sim(const char *Cmd)$/;"	f
+CmdHF15	cmdhf15.c	/^int CmdHF15(const char *Cmd)$/;"	f
+CmdHF15Afi	cmdhf15.c	/^int CmdHF15Afi(const char *Cmd)$/;"	f
+CmdHF15Cmd	cmdhf15.c	/^int CmdHF15Cmd(const char *Cmd)$/;"	f
+CmdHF15CmdDebug	cmdhf15.c	/^int CmdHF15CmdDebug( const char *cmd) {$/;"	f
+CmdHF15CmdHelp	cmdhf15.c	/^int CmdHF15CmdHelp(const char *Cmd)$/;"	f
+CmdHF15CmdInquiry	cmdhf15.c	/^int CmdHF15CmdInquiry(const char *Cmd) $/;"	f
+CmdHF15CmdRaw	cmdhf15.c	/^int CmdHF15CmdRaw (const char *cmd) {$/;"	f
+CmdHF15CmdRead	cmdhf15.c	/^int CmdHF15CmdRead(const char *Cmd) {$/;"	f
+CmdHF15CmdReadmulti	cmdhf15.c	/^int CmdHF15CmdReadmulti(const char *Cmd) {$/;"	f
+CmdHF15CmdSysinfo	cmdhf15.c	/^int CmdHF15CmdSysinfo(const char *Cmd) {$/;"	f
+CmdHF15CmdWrite	cmdhf15.c	/^int CmdHF15CmdWrite(const char *Cmd) {$/;"	f
+CmdHF15Demod	cmdhf15.c	/^int CmdHF15Demod(const char *Cmd)$/;"	f
+CmdHF15DumpMem	cmdhf15.c	/^int CmdHF15DumpMem(const char*Cmd) {$/;"	f
+CmdHF15Help	cmdhf15.c	/^int CmdHF15Help(const char *Cmd)$/;"	f
+CmdHF15Read	cmdhf15.c	/^int CmdHF15Read(const char *Cmd)$/;"	f
+CmdHF15Reader	cmdhf15.c	/^int CmdHF15Reader(const char *Cmd)$/;"	f
+CmdHF15Record	cmdhf15.c	/^int CmdHF15Record(const char *Cmd)$/;"	f
+CmdHF15Sim	cmdhf15.c	/^int CmdHF15Sim(const char *Cmd)$/;"	f
+CmdHFEMV	cmdhfemv.c	/^int CmdHFEMV(const char *Cmd)$/;"	f
+CmdHFEPA	cmdhfepa.c	/^int CmdHFEPA(const char *Cmd)$/;"	f
+CmdHFEPACollectPACENonces	cmdhfepa.c	/^int CmdHFEPACollectPACENonces(const char *Cmd)$/;"	f
+CmdHFLegic	cmdhflegic.c	/^int CmdHFLegic(const char *Cmd)$/;"	f
+CmdHFMF	cmdhfmf.c	/^int CmdHFMF(const char *Cmd)$/;"	f
+CmdHFSimlisten	cmdhf14b.c	/^int CmdHFSimlisten(const char *Cmd)$/;"	f
+CmdHFTune	cmdhf.c	/^int CmdHFTune(const char *Cmd)$/;"	f
+CmdHFiClass	cmdhficlass.c	/^int CmdHFiClass(const char *Cmd)$/;"	f
+CmdHFiClassList	cmdhficlass.c	/^int CmdHFiClassList(const char *Cmd)$/;"	f
+CmdHFiClassReader	cmdhficlass.c	/^int CmdHFiClassReader(const char *Cmd)$/;"	f
+CmdHFiClassSim	cmdhficlass.c	/^int CmdHFiClassSim(const char *Cmd)$/;"	f
+CmdHFiClassSnoop	cmdhficlass.c	/^int CmdHFiClassSnoop(const char *Cmd)$/;"	f
+CmdHIDClone	cmdlfhid.c	/^int CmdHIDClone(const char *Cmd)$/;"	f
+CmdHIDDemod	cmdlfhid.c	/^int CmdHIDDemod(const char *Cmd)$/;"	f
+CmdHIDDemodFSK	cmdlfhid.c	/^int CmdHIDDemodFSK(const char *Cmd)$/;"	f
+CmdHIDSim	cmdlfhid.c	/^int CmdHIDSim(const char *Cmd)$/;"	f
+CmdHW	cmdhw.c	/^int CmdHW(const char *Cmd)$/;"	f
+CmdHelp	cmddata.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdhf.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdhf14a.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdhf14b.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdhfemv.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdhfepa.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdhficlass.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdhflegic.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdhfmf.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdhw.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdlf.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdlfem4x.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdlfhid.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdlfhitag.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdlfio.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdlfpcf7931.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdlft55xx.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdlfti.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdmain.c	/^int CmdHelp(const char *Cmd)$/;"	f
+CmdHelp	cmdscript.c	/^int CmdHelp(const char * Cmd)$/;"	f
+CmdHexsamples	cmddata.c	/^int CmdHexsamples(const char *Cmd)$/;"	f
+CmdHide	cmddata.c	/^int CmdHide(const char *Cmd)$/;"	f
+CmdHpf	cmddata.c	/^int CmdHpf(const char *Cmd)$/;"	f
+CmdIOClone	cmdlfio.c	/^int CmdIOClone(const char *Cmd)$/;"	f
+CmdIODemodFSK	cmdlfio.c	/^int CmdIODemodFSK(const char *Cmd)$/;"	f
+CmdIOProxDemod	cmdlfio.c	/^int CmdIOProxDemod(const char *Cmd){$/;"	f
+CmdIndalaClone	cmdlf.c	/^int CmdIndalaClone(const char *Cmd)$/;"	f
+CmdIndalaDemod	cmdlf.c	/^int CmdIndalaDemod(const char *Cmd)$/;"	f
+CmdLCD	cmdhw.c	/^int CmdLCD(const char *Cmd)$/;"	f
+CmdLCDReset	cmdhw.c	/^int CmdLCDReset(const char *Cmd)$/;"	f
+CmdLF	cmdlf.c	/^int CmdLF(const char *Cmd)$/;"	f
+CmdLFCommandRead	cmdlf.c	/^int CmdLFCommandRead(const char *Cmd)$/;"	f
+CmdLFEM4X	cmdlfem4x.c	/^int CmdLFEM4X(const char *Cmd)$/;"	f
+CmdLFHID	cmdlfhid.c	/^int CmdLFHID(const char *Cmd)$/;"	f
+CmdLFHitag	cmdlfhitag.c	/^int CmdLFHitag(const char *Cmd)$/;"	f
+CmdLFHitagList	cmdlfhitag.c	/^int CmdLFHitagList(const char *Cmd)$/;"	f
+CmdLFHitagReader	cmdlfhitag.c	/^int CmdLFHitagReader(const char *Cmd) {$/;"	f
+CmdLFHitagSim	cmdlfhitag.c	/^int CmdLFHitagSim(const char *Cmd) {$/;"	f
+CmdLFHitagSnoop	cmdlfhitag.c	/^int CmdLFHitagSnoop(const char *Cmd) {$/;"	f
+CmdLFIO	cmdlfio.c	/^int CmdLFIO(const char *Cmd)$/;"	f
+CmdLFPCF7931	cmdlfpcf7931.c	/^int CmdLFPCF7931(const char *Cmd)$/;"	f
+CmdLFPCF7931Read	cmdlfpcf7931.c	/^int CmdLFPCF7931Read(const char *Cmd)$/;"	f
+CmdLFRead	cmdlf.c	/^int CmdLFRead(const char *Cmd)$/;"	f
+CmdLFSim	cmdlf.c	/^int CmdLFSim(const char *Cmd)$/;"	f
+CmdLFSimBidir	cmdlf.c	/^int CmdLFSimBidir(const char *Cmd)$/;"	f
+CmdLFSimManchester	cmdlf.c	/^int CmdLFSimManchester(const char *Cmd)$/;"	f
+CmdLFT55XX	cmdlft55xx.c	/^int CmdLFT55XX(const char *Cmd)$/;"	f
+CmdLFTI	cmdlfti.c	/^int CmdLFTI(const char *Cmd)$/;"	f
+CmdLegicDecode	cmdhflegic.c	/^int CmdLegicDecode(const char *Cmd)$/;"	f
+CmdLegicLoad	cmdhflegic.c	/^int CmdLegicLoad(const char *Cmd)$/;"	f
+CmdLegicRFRead	cmdhflegic.c	/^int CmdLegicRFRead(const char *Cmd)$/;"	f
+CmdLegicRfFill	cmdhflegic.c	/^int CmdLegicRfFill(const char *Cmd)$/;"	f
+CmdLegicRfSim	cmdhflegic.c	/^int CmdLegicRfSim(const char *Cmd)$/;"	f
+CmdLegicRfWrite	cmdhflegic.c	/^int CmdLegicRfWrite(const char *Cmd)$/;"	f
+CmdLegicSave	cmdhflegic.c	/^int CmdLegicSave(const char *Cmd)$/;"	f
+CmdList	cmdscript.c	/^int CmdList(const char *Cmd)$/;"	f
+CmdLoad	cmddata.c	/^int CmdLoad(const char *Cmd)$/;"	f
+CmdLtrim	cmddata.c	/^int CmdLtrim(const char *Cmd)$/;"	f
+CmdManchesterDemod	cmddata.c	/^int CmdManchesterDemod(const char *Cmd)$/;"	f
+CmdManchesterMod	cmddata.c	/^int CmdManchesterMod(const char *Cmd)$/;"	f
+CmdNorm	cmddata.c	/^int CmdNorm(const char *Cmd)$/;"	f
+CmdPlot	cmddata.c	/^int CmdPlot(const char *Cmd)$/;"	f
+CmdQuit	cmdmain.c	/^int CmdQuit(const char *Cmd)$/;"	f
+CmdReadBlk	cmdlft55xx.c	/^int CmdReadBlk(const char *Cmd)$/;"	f
+CmdReadBlkPWD	cmdlft55xx.c	/^int CmdReadBlkPWD(const char *Cmd)$/;"	f
+CmdReadTrace	cmdlft55xx.c	/^int CmdReadTrace(const char *Cmd)$/;"	f
+CmdReadWord	cmdlfem4x.c	/^int CmdReadWord(const char *Cmd)$/;"	f
+CmdReadWordPWD	cmdlfem4x.c	/^int CmdReadWordPWD(const char *Cmd)$/;"	f
+CmdReadmem	cmdhw.c	/^int CmdReadmem(const char *Cmd)$/;"	f
+CmdReset	cmdhw.c	/^int CmdReset(const char *Cmd)$/;"	f
+CmdRun	cmdscript.c	/^int CmdRun(const char *Cmd)$/;"	f
+CmdSamples	cmddata.c	/^int CmdSamples(const char *Cmd)$/;"	f
+CmdSave	cmddata.c	/^int CmdSave(const char *Cmd)$/;"	f
+CmdScale	cmddata.c	/^int CmdScale(const char *Cmd)$/;"	f
+CmdScript	cmdscript.c	/^int CmdScript(const char *Cmd)$/;"	f
+CmdSetDivisor	cmdhw.c	/^int CmdSetDivisor(const char *Cmd)$/;"	f
+CmdSetMux	cmdhw.c	/^int CmdSetMux(const char *Cmd)$/;"	f
+CmdSri512Read	cmdhf14b.c	/^int CmdSri512Read(const char *Cmd)$/;"	f
+CmdSrix4kRead	cmdhf14b.c	/^int CmdSrix4kRead(const char *Cmd)$/;"	f
+CmdTIDemod	cmdlfti.c	/^int CmdTIDemod(const char *Cmd)$/;"	f
+CmdTIRead	cmdlfti.c	/^int CmdTIRead(const char *Cmd)$/;"	f
+CmdTIWrite	cmdlfti.c	/^int CmdTIWrite(const char *Cmd)$/;"	f
+CmdThreshold	cmddata.c	/^int CmdThreshold(const char *Cmd)$/;"	f
+CmdTune	cmdhw.c	/^int CmdTune(const char *Cmd)$/;"	f
+CmdVchDemod	cmdlf.c	/^int CmdVchDemod(const char *Cmd)$/;"	f
+CmdVersion	cmdhw.c	/^int CmdVersion(const char *Cmd)$/;"	f
+CmdWriteBlk	cmdlft55xx.c	/^int CmdWriteBlk(const char *Cmd)$/;"	f
+CmdWriteBlkPWD	cmdlft55xx.c	/^int CmdWriteBlkPWD(const char *Cmd)$/;"	f
+CmdWriteWord	cmdlfem4x.c	/^int CmdWriteWord(const char *Cmd)$/;"	f
+CmdWriteWordPWD	cmdlfem4x.c	/^int CmdWriteWordPWD(const char *Cmd)$/;"	f
+CmdZerocrossings	cmddata.c	/^int CmdZerocrossings(const char *Cmd)$/;"	f
+Cmdaskdemod	cmddata.c	/^int Cmdaskdemod(const char *Cmd)$/;"	f
+CmdsHelp	cmdparser.c	/^void CmdsHelp(const command_t Commands[])$/;"	f
+CmdsParse	cmdparser.c	/^void CmdsParse(const command_t Commands[], const char *Cmd)$/;"	f
+Command:__tostring	lualibs/commands.lua	/^function Command:__tostring()$/;"	f
+Command:getBytes	lualibs/commands.lua	/^function Command:getBytes()$/;"	f
+CommandReceived	cmdmain.c	/^void CommandReceived(char *Cmd) {$/;"	f
+CommandTable	cmddata.c	/^static command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdhf.c	/^static command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdhf14a.c	/^static command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdhf14b.c	/^static command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdhfemv.c	/^static command_t CommandTable[] =$/;"	v	file:
+CommandTable	cmdhfepa.c	/^static const command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdhficlass.c	/^static command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdhflegic.c	/^static command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdhfmf.c	/^static command_t CommandTable[] =$/;"	v	file:
+CommandTable	cmdhw.c	/^static command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdlf.c	/^static command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdlfem4x.c	/^static command_t CommandTable[] =$/;"	v	file:
+CommandTable	cmdlfhid.c	/^static command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdlfio.c	/^static command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdlfpcf7931.c	/^static command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdlft55xx.c	/^static command_t CommandTable[] =$/;"	v	file:
+CommandTable	cmdlfti.c	/^static command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdmain.c	/^static command_t CommandTable[] = $/;"	v	file:
+CommandTable	cmdscript.c	/^command_t CommandTable[] =$/;"	v
+CommandTable15	cmdhf15.c	/^static command_t CommandTable15[] = $/;"	v	file:
+CommandTable15Cmd	cmdhf15.c	/^static command_t CommandTable15Cmd[] =$/;"	v	file:
+CommandTableHitag	cmdlfhitag.c	/^static command_t CommandTableHitag[] = $/;"	v	file:
+Compare16Bits	mifarehost.c	/^int Compare16Bits(const void * a, const void * b) {$/;"	f
+Crc	cmdhf15.c	/^#define Crc(/;"	d	file:
+Crypto1State	nonce2key/crapto1.h	/^struct Crypto1State {uint32_t odd, even;};$/;"	s
+CursorAPos	proxguiqt.h	/^		int CursorAPos;$/;"	m	class:ProxWidget
+CursorBPos	proxguiqt.h	/^		int CursorBPos;$/;"	m	class:ProxWidget
+CursorScaleFactor	ui.c	/^double CursorScaleFactor;$/;"	v
+DATA_H__	data.h	/^#define DATA_H__$/;"	d
+DetectClock	graph.c	/^int DetectClock(int peak)$/;"	f
+EI_NIDENT	elf.h	/^#define EI_NIDENT /;"	d
+ELFCLASS32	elf.h	/^#define ELFCLASS32 /;"	d
+ELFCLASS64	elf.h	/^#define ELFCLASS64 /;"	d
+ELFDATA2LSB	elf.h	/^#define ELFDATA2LSB /;"	d
+ELFDATA2MSB	elf.h	/^#define ELFDATA2MSB /;"	d
+EML2MFD_TESTCASES	pm3_eml_mfd_test.py	/^    EML2MFD_TESTCASES = [$/;"	v	class:TestEmlMfd
+EM_ARM	elf.h	/^#define EM_ARM /;"	d
+ET_CORE	elf.h	/^#define ET_CORE /;"	d
+ET_DYN	elf.h	/^#define ET_DYN /;"	d
+ET_EXEC	elf.h	/^#define ET_EXEC /;"	d
+ET_NONE	elf.h	/^#define ET_NONE /;"	d
+ET_REL	elf.h	/^#define ET_REL /;"	d
+EV_CURRENT	elf.h	/^#define EV_CURRENT /;"	d
+Elf32_Ehdr	elf.h	/^} __attribute__((__packed__)) Elf32_Ehdr;$/;"	t	typeref:struct:__anon3
+Elf32_Phdr	elf.h	/^} __attribute__((__packed__)) Elf32_Phdr;$/;"	t	typeref:struct:__anon2
+ExitGraphics	guidummy.c	/^void ExitGraphics(void) {}$/;"	f
+ExitGraphics	proxgui.cpp	/^extern "C" void ExitGraphics(void)$/;"	f
+FLASH_END	flash.c	/^#define FLASH_END /;"	d	file:
+FLASH_SIZE	flash.c	/^#define FLASH_SIZE /;"	d	file:
+FLASH_START	flash.c	/^#define FLASH_START /;"	d	file:
+FOREACH_VALID_NONCE	nonce2key/crapto1.h	/^#define FOREACH_VALID_NONCE(/;"	d
+FillFileNameByUID	util.c	/^void FillFileNameByUID(char *fileName, uint8_t * uid, char *ext, int byteCount) {$/;"	f
+FrameEOF	cmdhf15.c	/^#define FrameEOF	/;"	d	file:
+FrameSOF	cmdhf15.c	/^#define FrameSOF /;"	d	file:
+GRAPH_H__	graph.h	/^#define GRAPH_H__$/;"	d
+GetClock	graph.c	/^int GetClock(const char *str, int peak, int verbose)$/;"	f
+GetFromBigBuf	data.c	/^void GetFromBigBuf(uint8_t *dest, int bytes, int start_index)$/;"	f
+GraphBuffer	graph.c	/^int GraphBuffer[MAX_GRAPH_TRACE_LEN];$/;"	v
+GraphPixelsPerPoint	proxguiqt.h	/^		double GraphPixelsPerPoint;$/;"	m	class:ProxWidget
+GraphStart	proxguiqt.h	/^		int GraphStart;$/;"	m	class:ProxWidget
+GraphTraceLen	graph.c	/^int GraphTraceLen;$/;"	v
+GridLocked	proxguiqt.cpp	/^bool GridLocked= 0;$/;"	v
+GridOffset	proxguiqt.cpp	/^int GridOffset= 0;$/;"	v
+HANDLE_ERROR	cli.c	/^#define HANDLE_ERROR /;"	d	file:
+HANDLE_ERROR	snooper.c	/^#define HANDLE_ERROR /;"	d	file:
+HEXDIGITS	pm3_binlib.c	/^#define HEXDIGITS(/;"	d	file:
+HOST_LITTLE_ENDIAN	proxendian.h	/^#  define HOST_LITTLE_ENDIAN$/;"	d
+HOST_LITTLE_ENDIAN	proxendian.h	/^# define HOST_LITTLE_ENDIAN$/;"	d
+Help	cmdparser.h	/^  const char * Help;$/;"	m	struct:command_s
+HideGraphWindow	guidummy.c	/^void HideGraphWindow(void) {}$/;"	f
+HideGraphWindow	proxgui.cpp	/^extern "C" void HideGraphWindow(void)$/;"	f
+HideGraphWindow	proxguiqt.cpp	/^void ProxGuiQT::HideGraphWindow(void)$/;"	f	class:ProxGuiQT
+HideGraphWindowSignal	proxguiqt.moc.cpp	/^void ProxGuiQT::HideGraphWindowSignal()$/;"	f	class:ProxGuiQT
+INVALID_SERIAL_PORT	uart.h	/^#define INVALID_SERIAL_PORT /;"	d
+InitGraphics	guidummy.c	/^void InitGraphics(int argc, char **argv) {}$/;"	f
+InitGraphics	proxgui.cpp	/^extern "C" void InitGraphics(int argc, char **argv)$/;"	f
+Key	mifarehost.h	/^	uint64_t Key[2];$/;"	m	struct:__anon9
+LDFLAGS	Makefile	/^LDFLAGS = $(COMMON_FLAGS)$/;"	m
+LDLIBS	Makefile	/^LDLIBS = -L\/opt\/local\/lib -L\/usr\/local\/lib -lreadline -lpthread ..\/liblua\/liblua.a$/;"	m
+LDLIBS	Makefile	/^all-static: LDLIBS:=-static $(LDLIBS)$/;"	m
+LF_POLY_EVEN	nonce2key/crapto1.h	/^#define LF_POLY_EVEN /;"	d
+LF_POLY_ODD	nonce2key/crapto1.h	/^#define LF_POLY_ODD /;"	d
+LINK.o	Makefile	/^LINK.o = $(LINK.cpp)$/;"	m
+LITTLE_ENDIAN	proxendian.h	/^#  define LITTLE_ENDIAN /;"	d
+LOGICAL_SHIFT	pm3_bitlib.c	/^#define LOGICAL_SHIFT(/;"	d	file:
+LONG_WAIT	cmdlf.c	/^#define LONG_WAIT /;"	d	file:
+LUAPLATFORM	Makefile	/^LUAPLATFORM = generic$/;"	m
+LUAPLATFORM	Makefile	/^LUAPLATFORM = linux$/;"	m
+LUAPLATFORM	Makefile	/^LUAPLATFORM = macosx$/;"	m
+LUAPLATFORM	Makefile	/^LUAPLATFORM = mingw$/;"	m
+LUA_INTEGER_MAX	pm3_bitlib.c	/^#define LUA_INTEGER_MAX /;"	d	file:
+LUA_INTEGER_MIN	pm3_bitlib.c	/^#define LUA_INTEGER_MIN /;"	d	file:
+LUA_UINTEGER_MAX	pm3_bitlib.c	/^#define LUA_UINTEGER_MAX /;"	d	file:
+Logic0	cmdhf15.c	/^#define Logic0	/;"	d	file:
+Logic1	cmdhf15.c	/^#define Logic1	/;"	d	file:
+MAX	util.h	/^# define MAX(/;"	d
+MAX_FILES	flasher.c	/^#define MAX_FILES /;"	d	file:
+MAX_GRAPH_TRACE_LEN	graph.h	/^#define MAX_GRAPH_TRACE_LEN /;"	d
+MAX_GRAPH_TRACE_LEN	proxgui.h	/^#define MAX_GRAPH_TRACE_LEN /;"	d
+MEM_CHUNK	mifarehost.h	/^#define MEM_CHUNK /;"	d
+MIN	util.h	/^# define MIN(/;"	d
+MOC	Makefile	/^MOC = $(QTDIR)\/bin\/moc$/;"	m
+MOC	Makefile	/^MOC = $(shell pkg-config --variable=moc_location QtCore)$/;"	m
+MONADIC	pm3_bitlib.c	/^#define MONADIC(/;"	d	file:
+MainGraphics	guidummy.c	/^void MainGraphics() {}$/;"	f
+MainGraphics	proxgui.cpp	/^extern "C" void MainGraphics(void)$/;"	f
+MainLoop	proxguiqt.cpp	/^void ProxGuiQT::MainLoop()$/;"	f	class:ProxGuiQT
+NESTED_SECTOR_RETRY	mifarehost.h	/^#define NESTED_SECTOR_RETRY /;"	d
+Name	cmdparser.h	/^  const char * Name;$/;"	m	struct:command_s
+OBJDIR	Makefile	/^OBJDIR = obj$/;"	m
+OP_BIGENDIAN	pm3_binlib.c	/^#define	OP_BIGENDIAN	/;"	d	file:
+OP_BSTRING	pm3_binlib.c	/^#define	OP_BSTRING	/;"	d	file:
+OP_BYTE	pm3_binlib.c	/^#define	OP_BYTE	/;"	d	file:
+OP_CHAR	pm3_binlib.c	/^#define	OP_CHAR	/;"	d	file:
+OP_DOUBLE	pm3_binlib.c	/^#define	OP_DOUBLE	/;"	d	file:
+OP_FLOAT	pm3_binlib.c	/^#define	OP_FLOAT	/;"	d	file:
+OP_HEX	pm3_binlib.c	/^#define OP_HEX /;"	d	file:
+OP_INT	pm3_binlib.c	/^#define	OP_INT	/;"	d	file:
+OP_LITTLEENDIAN	pm3_binlib.c	/^#define	OP_LITTLEENDIAN	/;"	d	file:
+OP_LONG	pm3_binlib.c	/^#define	OP_LONG	/;"	d	file:
+OP_NATIVE	pm3_binlib.c	/^#define	OP_NATIVE	/;"	d	file:
+OP_NUMBER	pm3_binlib.c	/^#define	OP_NUMBER	/;"	d	file:
+OP_SHORT	pm3_binlib.c	/^#define	OP_SHORT	/;"	d	file:
+OP_SSTRING	pm3_binlib.c	/^#define	OP_SSTRING	/;"	d	file:
+OP_STRING	pm3_binlib.c	/^#define	OP_STRING	/;"	d	file:
+OP_UINT	pm3_binlib.c	/^#define	OP_UINT	/;"	d	file:
+OP_ULONG	pm3_binlib.c	/^#define	OP_ULONG	/;"	d	file:
+OP_USHORT	pm3_binlib.c	/^#define	OP_USHORT	/;"	d	file:
+OP_WSTRING	pm3_binlib.c	/^#define	OP_WSTRING	/;"	d	file:
+OP_ZSTRING	pm3_binlib.c	/^#define	OP_ZSTRING	/;"	d	file:
+Offline	cmdparser.h	/^  int Offline;$/;"	m	struct:command_s
+OpenProxmark	flasher.c	/^int OpenProxmark(size_t i) {$/;"	f
+PACKNUMBER	pm3_binlib.c	/^#define PACKNUMBER(/;"	d	file:
+PACKSTRING	pm3_binlib.c	/^#define PACKSTRING(/;"	d	file:
+PF_R	elf.h	/^#define PF_R /;"	d
+PF_W	elf.h	/^#define PF_W /;"	d
+PF_X	elf.h	/^#define PF_X /;"	d
+PM3_BINLIB	pm3_binlib.h	/^#define PM3_BINLIB$/;"	d
+PM3_BITLIB	pm3_bitlib.h	/^#define PM3_BITLIB$/;"	d
+PROXENDIAN_H__	proxendian.h	/^#define PROXENDIAN_H__$/;"	d
+PROXMARK3_H__	proxmark3.h	/^#define PROXMARK3_H__$/;"	d
+PROXPROMPT	proxmark3.h	/^#define PROXPROMPT /;"	d
+PT_DYNAMIC	elf.h	/^#define PT_DYNAMIC /;"	d
+PT_INTERP	elf.h	/^#define PT_INTERP /;"	d
+PT_LOAD	elf.h	/^#define PT_LOAD /;"	d
+PT_NOTE	elf.h	/^#define PT_NOTE /;"	d
+PT_NULL	elf.h	/^#define PT_NULL /;"	d
+PT_PHDR	elf.h	/^#define PT_PHDR /;"	d
+PT_SHLIB	elf.h	/^#define PT_SHLIB /;"	d
+PageWidth	proxguiqt.cpp	/^int PageWidth;$/;"	v
+Parse	cmdparser.h	/^  int (*Parse)(const char *Cmd);$/;"	m	struct:command_s
+PlotGridX	ui.c	/^int PlotGridX, PlotGridY, PlotGridXdefault= 64, PlotGridYdefault= 64;$/;"	v
+PlotGridXdefault	ui.c	/^int PlotGridX, PlotGridY, PlotGridXdefault= 64, PlotGridYdefault= 64;$/;"	v
+PlotGridY	ui.c	/^int PlotGridX, PlotGridY, PlotGridXdefault= 64, PlotGridYdefault= 64;$/;"	v
+PlotGridYdefault	ui.c	/^int PlotGridX, PlotGridY, PlotGridXdefault= 64, PlotGridYdefault= 64;$/;"	v
+PrintAndLog	ui.c	/^void PrintAndLog(char *fmt, ...)$/;"	f
+ProxGuiQT	proxguiqt.cpp	/^ProxGuiQT::ProxGuiQT(int argc, char **argv) : plotapp(NULL), plotwidget(NULL),$/;"	f	class:ProxGuiQT
+ProxGuiQT	proxguiqt.h	/^class ProxGuiQT : public QObject$/;"	c
+ProxWidget	proxguiqt.cpp	/^ProxWidget::ProxWidget(QWidget *parent) : QWidget(parent), GraphStart(0), GraphPixelsPerPoint(1)$/;"	f	class:ProxWidget
+ProxWidget	proxguiqt.h	/^class ProxWidget : public QWidget$/;"	c
+QTGUI	Makefile	/^QTGUI = $(OBJDIR)\/proxgui.o $(OBJDIR)\/proxguiqt.o $(OBJDIR)\/proxguiqt.moc.o$/;"	m
+QTGUI	Makefile	/^QTGUI = guidummy.o$/;"	m
+QTLDLIBS	Makefile	/^QTLDLIBS = $(shell pkg-config --libs QtCore QtGui 2>\/dev\/null)$/;"	m
+QTLDLIBS	Makefile	/^QTLDLIBS = -L$(QTDIR)\/lib -lQtCore4 -lQtGui4$/;"	m
+QTLDLIBS	Makefile	/^QTLDLIBS = -framework QtGui -F\/opt\/local\/Library\/Frameworks -framework QtCore -L$(QTDIR)\/lib  $/;"	m
+Q_OBJECT	proxguiqt.h	/^	Q_OBJECT;$/;"	m	class:ProxGuiQT
+Q_OBJECT	proxguiqt.h	/^	Q_OBJECT;$/;"	m	class:ProxWidget
+READ_BLOCKSIZE	pm3_mfd2eml.py	/^READ_BLOCKSIZE = 16$/;"	v
+RM	Makefile	/^RM = rm -f$/;"	m
+ReceiveCommand	flasher.c	/^void ReceiveCommand(UsbCommand* rxcmd) {$/;"	f
+RepaintGraphWindow	guidummy.c	/^void RepaintGraphWindow(void) {}$/;"	f
+RepaintGraphWindow	proxgui.cpp	/^extern "C" void RepaintGraphWindow(void)$/;"	f
+RepaintGraphWindow	proxguiqt.cpp	/^void ProxGuiQT::RepaintGraphWindow(void)$/;"	f	class:ProxGuiQT
+RepaintGraphWindowSignal	proxguiqt.moc.cpp	/^void ProxGuiQT::RepaintGraphWindowSignal()$/;"	f	class:ProxGuiQT
+S1	nonce2key/crapto1.c	/^static const uint32_t S1[] = {     0x62141, 0x310A0, 0x18850, 0x0C428, 0x06214,$/;"	v	file:
+S2	nonce2key/crapto1.c	/^static const uint32_t S2[] = {  0x3A557B00, 0x5D2ABD80, 0x2E955EC0, 0x174AAF60,$/;"	v	file:
+SAMPLE_BUFFER_SIZE	data.h	/^#define SAMPLE_BUFFER_SIZE /;"	d
+SCRIPTING_H__	scripting.h	/^#define SCRIPTING_H__$/;"	d
+SLEEP_H__	sleep.h	/^#define SLEEP_H__$/;"	d
+SP_EVEN	uart.h	/^  SP_EVEN    = 0x02, \/\/ even parity$/;"	e	enum:__anon13
+SP_INVALID	uart.h	/^  SP_INVALID = 0x00, \/\/ invalid value, error occured$/;"	e	enum:__anon13
+SP_NONE	uart.h	/^  SP_NONE    = 0x01, \/\/ no parity (default)$/;"	e	enum:__anon13
+SP_ODD	uart.h	/^  SP_ODD     = 0x03  \/\/ odd parity$/;"	e	enum:__anon13
+SWAPENDIAN	nonce2key/crapto1.h	/^#define SWAPENDIAN(/;"	d
+SWAPENDIAN	nonce2key/crypto1.c	/^#define SWAPENDIAN(/;"	d	file:
+SendCommand	flasher.c	/^void SendCommand(UsbCommand* txcmd) {$/;"	f
+SendCommand	proxmark3.c	/^void SendCommand(UsbCommand *c) {$/;"	f
+SetLogFilename	ui.c	/^void SetLogFilename(char *fn)$/;"	f
+ShowGraphWindow	guidummy.c	/^void ShowGraphWindow(void)$/;"	f
+ShowGraphWindow	proxgui.cpp	/^extern "C" void ShowGraphWindow(void)$/;"	f
+ShowGraphWindow	proxguiqt.cpp	/^void ProxGuiQT::ShowGraphWindow(void)$/;"	f	class:ProxGuiQT
+ShowGraphWindowSignal	proxguiqt.moc.cpp	/^void ProxGuiQT::ShowGraphWindowSignal()$/;"	f	class:ProxGuiQT
+StateList_t	mifarehost.c	/^	} StateList_t;$/;"	t	typeref:struct:__anon6	file:
+T1	nonce2key/crapto1.c	/^static const uint32_t T1[] = {$/;"	v	file:
+T2	nonce2key/crapto1.c	/^static const uint32_t T2[] = {  0x3C88B810, 0x5E445C08, 0x2982A580, 0x14C152C0,$/;"	v	file:
+TOBIT	pm3_bitlib.c	/^#define TOBIT(/;"	d	file:
+TRACE_AUTH1	mifarehost.h	/^#define TRACE_AUTH1	/;"	d
+TRACE_AUTH2	mifarehost.h	/^#define TRACE_AUTH2	/;"	d
+TRACE_AUTH_OK	mifarehost.h	/^#define TRACE_AUTH_OK	/;"	d
+TRACE_ERROR	mifarehost.h	/^#define TRACE_ERROR	/;"	d
+TRACE_IDLE	mifarehost.h	/^#define TRACE_IDLE	/;"	d
+TRACE_READ_DATA	mifarehost.h	/^#define TRACE_READ_DATA /;"	d
+TRACE_WRITE_DATA	mifarehost.h	/^#define TRACE_WRITE_DATA	/;"	d
+TRACE_WRITE_OK	mifarehost.h	/^#define TRACE_WRITE_OK	/;"	d
+TagErrorStr	cmdhf15.c	/^static char* TagErrorStr(uint8_t error) {$/;"	f	file:
+TestEmlMfd	pm3_eml_mfd_test.py	/^class TestEmlMfd(unittest.TestCase):$/;"	c
+UI_H__	ui.h	/^#define UI_H__$/;"	d
+UNPACKNUMBER	pm3_binlib.c	/^#define UNPACKNUMBER(/;"	d	file:
+UNPACKSTRING	pm3_binlib.c	/^#define UNPACKSTRING(/;"	d	file:
+UsbCommandReceived	cmdmain.c	/^void UsbCommandReceived(UsbCommand *UC)$/;"	f
+VARIADIC	pm3_bitlib.c	/^#define VARIADIC(/;"	d	file:
+VPATH	Makefile	/^VPATH = ..\/common$/;"	m
+WaitForResponse	cmdmain.c	/^bool WaitForResponse(uint32_t cmd, UsbCommand* response) {$/;"	f
+WaitForResponseTimeout	cmdmain.c	/^bool WaitForResponseTimeout(uint32_t cmd, UsbCommand* response, size_t ms_timeout) {$/;"	f
+_HideGraphWindow	proxguiqt.cpp	/^void ProxGuiQT::_HideGraphWindow(void)$/;"	f	class:ProxGuiQT
+_POSIX_C_SOURCE	sleep.c	/^#define _POSIX_C_SOURCE	/;"	d	file:
+_RS232_H_	uart.h	/^#define _RS232_H_$/;"	d
+_RepaintGraphWindow	proxguiqt.cpp	/^void ProxGuiQT::_RepaintGraphWindow(void)$/;"	f	class:ProxGuiQT
+_ShowGraphWindow	proxguiqt.cpp	/^void ProxGuiQT::_ShowGraphWindow(void)$/;"	f	class:ProxGuiQT
+__ELF_H__	elf.h	/^#define __ELF_H__$/;"	d
+__FLASH_H__	flash.h	/^#define __FLASH_H__$/;"	d
+__NONCE2KEY_H	nonce2key/nonce2key.h	/^#define __NONCE2KEY_H$/;"	d
+__STDC_FORMAT_MACROS	nonce2key/nonce2key.c	/^#define __STDC_FORMAT_MACROS$/;"	d	file:
+__STDC_FORMAT_MACROS	proxmark3.h	/^#define __STDC_FORMAT_MACROS$/;"	d
+_commands.tostring 	lualibs/commands.lua	/^_commands.tostring = function(command)$/;"	f
+add	lualibs/htmlskel.lua	/^		function add(commaSeparated)$/;"	f
+ar_enc	mifarehost.c	/^uint32_t ar_enc;  \/\/ encrypted reader response$/;"	v
+argc	proxguiqt.h	/^		int argc;$/;"	m	class:ProxGuiQT
+argv	proxguiqt.h	/^		char **argv;$/;"	m	class:ProxGuiQT
+arraylen	data.h	/^#define arraylen(/;"	d
+at_enc	mifarehost.c	/^uint32_t at_enc;  \/\/ encrypted tag response$/;"	v
+at_par	mifarehost.c	/^uint32_t at_par; $/;"	v
+badcode	pm3_binlib.c	/^static void badcode(lua_State *L, int c)$/;"	f	file:
+binascii	pm3_eml2mfd.py	/^import binascii$/;"	i
+binascii	pm3_mfd2eml.py	/^import binascii$/;"	i
+binlib	pm3_binlib.c	/^static const luaL_Reg binlib[] =$/;"	v	file:
+binsearch	nonce2key/crapto1.c	/^binsearch(uint32_t *start, uint32_t *stop)$/;"	f	file:
+bitlib	pm3_bitlib.c	/^static const struct luaL_Reg bitlib[] = {$/;"	v	typeref:struct:luaL_Reg	file:
+blockNo	mifarehost.c	/^		uint32_t blockNo;$/;"	m	struct:__anon6	file:
+bp	nonce2key/crapto1.c	/^	uint32_t *bp;$/;"	m	struct:bucket	file:
+brute_top	nonce2key/crapto1.c	/^brute_top(uint32_t prefix, uint32_t rresp, unsigned char parities[8][8],$/;"	f	file:
+bucket	nonce2key/crapto1.c	/^typedef struct bucket {$/;"	s	file:
+bucket_array_t	nonce2key/crapto1.c	/^typedef bucket_t bucket_array_t[2][0x100];$/;"	t	file:
+bucket_info	nonce2key/crapto1.c	/^		} bucket_info[2][0x100];$/;"	m	struct:bucket_info	typeref:struct:bucket_info::__anon10	file:
+bucket_info	nonce2key/crapto1.c	/^typedef struct bucket_info {$/;"	s	file:
+bucket_info_t	nonce2key/crapto1.c	/^	} bucket_info_t;$/;"	t	typeref:struct:bucket_info	file:
+bucket_sort_intersect	nonce2key/crapto1.c	/^static void bucket_sort_intersect(uint32_t* const estart, uint32_t* const estop,$/;"	f	file:
+bucket_t	nonce2key/crapto1.c	/^} bucket_t;$/;"	t	typeref:struct:bucket	file:
+build_segs_from_phdrs	flash.c	/^static int build_segs_from_phdrs(flash_file_t *ctx, FILE *fd, Elf32_Phdr *phdrs, int num_phdrs)$/;"	f	file:
+byte_t	uart.h	/^typedef unsigned char byte_t;$/;"	t
+bytes_to_num	util.c	/^uint64_t bytes_to_num(uint8_t* src, size_t len)$/;"	f
+can_write_bl	flash.h	/^	int can_write_bl;$/;"	m	struct:__anon5
+checkBlock	scripts/mfkeys.lua	/^function checkBlock(blockNo, keys, keyType)$/;"	f
+checkCommand	scripts/mfkeys.lua	/^local function checkCommand(command)$/;"	f
+check_segs	flash.c	/^static int check_segs(flash_file_t *ctx, int can_write_bl) {$/;"	f	file:
+clearCommandBuffer	cmdmain.c	/^void clearCommandBuffer()$/;"	f
+close	scripts/ndef_dump.lua	/^local function close()$/;"	f
+closeEvent	proxguiqt.cpp	/^void ProxWidget::closeEvent(QCloseEvent *event)$/;"	f	class:ProxWidget
+cmdBuffer	cmdmain.c	/^static UsbCommand cmdBuffer[CMD_BUFFER_SIZE];$/;"	v	file:
+cmd_debug	flasher.c	/^void cmd_debug(UsbCommand* UC) {$/;"	f
+cmd_head	cmdmain.c	/^static int cmd_head;\/\/Starts as 0$/;"	v	file:
+cmd_tail	cmdmain.c	/^static int cmd_tail;\/\/Starts as 0$/;"	v	file:
+command_s	cmdparser.h	/^typedef struct command_s$/;"	s
+command_t	cmdparser.h	/^} command_t;$/;"	t	typeref:struct:command_s
+compar_int	mifarehost.c	/^int compar_int(const void * a, const void * b) {$/;"	f
+compar_state	nonce2key/nonce2key.c	/^int compar_state(const void * a, const void * b) {$/;"	f
+confirm 	scripts/mfkeys.lua	/^	confirm = function(message, ...)$/;"	f
+convert_ascii_dump_to_JS	lualibs/html_dumplib.lua	/^local function convert_ascii_dump_to_JS(infile)$/;"	f
+convert_bin_to_html	lualibs/html_dumplib.lua	/^local function convert_bin_to_html(input, output, blockLen)$/;"	f
+convert_binary_dump_to_JS	lualibs/html_dumplib.lua	/^local function convert_binary_dump_to_JS(infile, blockLen)$/;"	f
+convert_eml_to_html	lualibs/html_dumplib.lua	/^local function convert_eml_to_html(input, output)$/;"	f
+convert_to_ascii	scripts/dumptoemul.lua	/^local function convert_to_ascii(hexdata)$/;"	f
+convert_to_emulform	scripts/dumptoemul.lua	/^local function convert_to_emulform(hexdata)$/;"	f
+crypto1_bit	nonce2key/crypto1.c	/^uint8_t crypto1_bit(struct Crypto1State *s, uint8_t in, int is_encrypted)$/;"	f
+crypto1_byte	nonce2key/crypto1.c	/^uint8_t crypto1_byte(struct Crypto1State *s, uint8_t in, int is_encrypted)$/;"	f
+crypto1_create	nonce2key/crypto1.c	/^struct Crypto1State * crypto1_create(uint64_t key)$/;"	f
+crypto1_destroy	nonce2key/crypto1.c	/^void crypto1_destroy(struct Crypto1State *state)$/;"	f
+crypto1_get_lfsr	nonce2key/crypto1.c	/^void crypto1_get_lfsr(struct Crypto1State *state, uint64_t *lfsr)$/;"	f
+crypto1_word	nonce2key/crypto1.c	/^uint32_t crypto1_word(struct Crypto1State *s, uint32_t in, int is_encrypted)$/;"	f
+ct	uart.c	/^  COMMTIMEOUTS ct;  \/\/ Serial port time-out configuration$/;"	m	struct:__anon12	file:
+current_command	cmdmain.c	/^unsigned int current_command = CMD_UNKNOWN;$/;"	v
+current_command	flash.c	/^unsigned int current_command = CMD_UNKNOWN;$/;"	v
+data	flash.h	/^	void *data;$/;"	m	struct:__anon4
+dbg	lualibs/html_dumplib.lua	/^local function dbg(args)$/;"	f
+dbg	scripts/14araw.lua	/^function dbg(args)$/;"	f
+dbg	scripts/dumptoemul.lua	/^function dbg(args)$/;"	f
+dbg	scripts/emul2html.lua	/^function dbg(args)$/;"	f
+dbg	scripts/htmldump.lua	/^function dbg(args)$/;"	f
+dbg	scripts/mifare_autopwn.lua	/^function dbg(args)$/;"	f
+dc	lualibs/htmlskel.lua	/^	function dc(x){return document.createElement(x)}$/;"	f
+dcb	uart.c	/^  DCB dcb;          \/\/ Device control settings$/;"	m	struct:__anon12	file:
+debug	scripts/ndef_dump.lua	/^function debug(...)$/;"	f
+desc	cmdhf15.c	/^	char* desc;$/;"	m	struct:__anon1	file:
+disconnect	scripts/14araw.lua	/^function disconnect()$/;"	f
+displayresults	scripts/mfkeys.lua	/^local function displayresults(results)$/;"	f
+dist	nonce2key/crapto1.c	/^static uint16_t *dist = 0;$/;"	v	file:
+doendian	pm3_binlib.c	/^static int doendian(int c)$/;"	f	file:
+doswap	pm3_binlib.c	/^static void doswap(int swap, void *p, size_t n)$/;"	f	file:
+dump	scripts/mifare_autopwn.lua	/^function dump(uid)$/;"	f
+dumpAllHelp	proxmark3.c	/^static void dumpAllHelp(int markdown)$/;"	f	file:
+dumpCommandsRecursive	cmdparser.c	/^void dumpCommandsRecursive(const command_t cmds[], int markdown)$/;"	f
+dumptofile	scripts/mfkeys.lua	/^local function dumptofile(results)$/;"	f
+e_ehsize	elf.h	/^	uint16_t e_ehsize;$/;"	m	struct:__anon3
+e_entry	elf.h	/^	uint32_t e_entry;$/;"	m	struct:__anon3
+e_flags	elf.h	/^	uint32_t e_flags;$/;"	m	struct:__anon3
+e_ident	elf.h	/^	unsigned char   e_ident[EI_NIDENT];$/;"	m	struct:__anon3
+e_machine	elf.h	/^	uint16_t e_machine;$/;"	m	struct:__anon3
+e_phentsize	elf.h	/^	uint16_t e_phentsize;$/;"	m	struct:__anon3
+e_phnum	elf.h	/^	uint16_t e_phnum;$/;"	m	struct:__anon3
+e_phoff	elf.h	/^	uint32_t e_phoff;$/;"	m	struct:__anon3
+e_shentsize	elf.h	/^	uint16_t e_shentsize;$/;"	m	struct:__anon3
+e_shnum	elf.h	/^	uint16_t e_shnum;$/;"	m	struct:__anon3
+e_shoff	elf.h	/^	uint32_t e_shoff;$/;"	m	struct:__anon3
+e_shtrndx	elf.h	/^	uint16_t e_shtrndx;$/;"	m	struct:__anon3
+e_type	elf.h	/^	uint16_t e_type;$/;"	m	struct:__anon3
+e_version	elf.h	/^	uint32_t e_version;$/;"	m	struct:__anon3
+elf_ident	flash.c	/^static const uint8_t elf_ident[] = {$/;"	v	file:
+endsWith	cmdscript.c	/^bool endsWith (char* base, char* str) {$/;"	f
+enter_bootloader	flash.c	/^static int enter_bootloader(char *serial_port_name)$/;"	f	file:
+errorString15693	lualibs/hf_reader.lua	/^local function errorString15693(number)$/;"	f
+even	nonce2key/crapto1.h	/^struct Crypto1State {uint32_t odd, even;};$/;"	m	struct:Crypto1State
+extend_table	nonce2key/crapto1.c	/^extend_table(uint32_t *tbl, uint32_t **end, int bit, int m1, int m2, uint32_t in)$/;"	f	file:
+extend_table_simple	nonce2key/crapto1.c	/^extend_table_simple(uint32_t *tbl, uint32_t **end, int bit)$/;"	f	file:
+fastfwd	nonce2key/crapto1.c	/^static uint32_t fastfwd[2][8] = {$/;"	v	file:
+fd	uart.c	/^  int fd;           \/\/ Serial port file descriptor$/;"	m	struct:__anon11	file:
+filename	flash.h	/^	const char *filename;$/;"	m	struct:__anon5
+fill_lut	nonce2key/crapto1.c	/^static void __attribute__((constructor)) fill_lut()$/;"	f	file:
+filter	nonce2key/crapto1.c	/^#define filter(/;"	d	file:
+filter	nonce2key/crapto1.h	/^static inline int filter(uint32_t const x)$/;"	f
+filterlut	nonce2key/crapto1.c	/^static uint8_t filterlut[1 << 20];$/;"	v	file:
+flash_file_t	flash.h	/^} flash_file_t;$/;"	t	typeref:struct:__anon5
+flash_free	flash.c	/^void flash_free(flash_file_t *ctx)$/;"	f
+flash_load	flash.c	/^int flash_load(flash_file_t *ctx, const char *name, int can_write_bl)$/;"	f
+flash_seg_t	flash.h	/^} flash_seg_t;$/;"	t	typeref:struct:__anon4
+flash_start_flashing	flash.c	/^int flash_start_flashing(int enable_bl_writes,char *serial_port_name)$/;"	f
+flash_stop_flashing	flash.c	/^int flash_stop_flashing(void) {$/;"	f
+flash_write	flash.c	/^int flash_write(flash_file_t *ctx)$/;"	f
+flushAfterWrite	ui.c	/^int flushAfterWrite = 0;  \/\/buzzy$/;"	v
+foundKey	mifarehost.h	/^	int foundKey[2];$/;"	m	struct:__anon9
+getBlock	scripts/ndef_dump.lua	/^local function getBlock(block)$/;"	f
+getCommand	cmdmain.c	/^int getCommand(UsbCommand* response)$/;"	f
+getHTML	lualibs/htmlskel.lua	/^local function getHTML(data)$/;"	f
+getStaticMetaObject	proxguiqt.moc.cpp	/^const QMetaObject &ProxGuiQT::getStaticMetaObject() { return staticMetaObject; }$/;"	f	class:ProxGuiQT
+getStaticMetaObject	proxguiqt.moc.cpp	/^const QMetaObject &ProxWidget::getStaticMetaObject() { return staticMetaObject; }$/;"	f	class:ProxWidget
+getTagInfo	cmdhf15.c	/^static char* getTagInfo(uint8_t *uid) {$/;"	f	file:
+getTopLevelCommandTable	cmdmain.c	/^command_t* getTopLevelCommandTable()$/;"	f
+getUID	cmdhf15.c	/^int getUID(uint8_t *buf) $/;"	f
+get_proxmark_state	flash.c	/^static int get_proxmark_state(uint32_t *state)$/;"	f	file:
+get_trailer_block	cmdhfmf.c	/^get_trailer_block (uint32_t uiBlock)$/;"	f	file:
+getopt	lualibs/getopt.lua	/^local function getopt(args, ostr)$/;"	f
+gui	proxgui.cpp	/^static ProxGuiQT *gui = NULL;$/;"	v	file:
+hPort	uart.c	/^  HANDLE hPort;     \/\/ Serial port handle$/;"	m	struct:__anon12	file:
+handle	lualibs/htmlskel.lua	/^	function handle(dump)$/;"	f
+head	mifarehost.c	/^		} head;$/;"	m	struct:__anon6	typeref:union:__anon6::__anon7	file:
+head	nonce2key/crapto1.c	/^		uint32_t *head, *tail;$/;"	m	struct:bucket_info::__anon10	file:
+head	nonce2key/crapto1.c	/^	uint32_t *head;$/;"	m	struct:bucket	file:
+help	scripts/14araw.lua	/^function help()$/;"	f
+help	scripts/dumptoemul.lua	/^function help()$/;"	f
+help	scripts/emul2html.lua	/^function help()$/;"	f
+help	scripts/htmldump.lua	/^function help()$/;"	f
+help	scripts/mifare_autopwn.lua	/^function help()$/;"	f
+help	scripts/ndef_dump.lua	/^function help()$/;"	f
+hex_c14n	pm3_eml_mfd_test.py	/^def hex_c14n(inp):$/;"	f
+hexdigits	pm3_eml_mfd_test.py	/^from string import hexdigits$/;"	i
+hhu	proxmark3.h	/^#define hhu /;"	d
+imap	pm3_eml_mfd_test.py	/^from itertools import imap$/;"	i
+input 	scripts/mfkeys.lua	/^	input = function (message , default)$/;"	f
+isBlockEmpty	mifarehost.c	/^int isBlockEmpty(int blockN) {$/;"	f
+isBlockTrailer	mifarehost.c	/^int isBlockTrailer(int blockN) {$/;"	f
+isTraceCardEmpty	mifarehost.c	/^int isTraceCardEmpty(void) {$/;"	f
+iso14a_set_timeout	cmdhf14a.c	/^void iso14a_set_timeout(uint32_t timeout) {$/;"	f
+keyPressEvent	proxguiqt.cpp	/^void ProxWidget::keyPressEvent(QKeyEvent *event)$/;"	f	class:ProxWidget
+keyType	mifarehost.c	/^		uint32_t keyType;$/;"	m	struct:__anon6	file:
+keyhead	mifarehost.c	/^			uint64_t *keyhead;$/;"	m	union:__anon6::__anon7	file:
+keytail	mifarehost.c	/^			uint64_t *keytail;$/;"	m	union:__anon6::__anon8	file:
+ks1	mifarehost.c	/^		uint32_t ks1;$/;"	m	struct:__anon6	file:
+ks2	mifarehost.c	/^uint32_t ks2;$/;"	v
+ks3	mifarehost.c	/^uint32_t ks3;$/;"	v
+l_CmdConsole	scripting.c	/^static int l_CmdConsole(lua_State *L)$/;"	f	file:
+l_SendCommand	scripting.c	/^static int l_SendCommand(lua_State *L){$/;"	f	file:
+l_WaitForResponseTimeout	scripting.c	/^static int l_WaitForResponseTimeout(lua_State *L){$/;"	f	file:
+l_clearCommandBuffer	scripting.c	/^static int l_clearCommandBuffer(lua_State *L){$/;"	f	file:
+l_foobar	scripting.c	/^static int l_foobar(lua_State *L)$/;"	f	file:
+l_iso15693_crc	scripting.c	/^static int l_iso15693_crc(lua_State *L)$/;"	f	file:
+l_nonce2key	scripting.c	/^static int l_nonce2key(lua_State *L){$/;"	f	file:
+l_pack	pm3_binlib.c	/^static int l_pack(lua_State *L) 		\/** pack(f,...) *\/$/;"	f	file:
+l_ukbhit	scripting.c	/^static int l_ukbhit(lua_State *L)$/;"	f	file:
+l_unpack	pm3_binlib.c	/^static int l_unpack(lua_State *L) 		\/** unpack(f,s, [init]) *\/$/;"	f	file:
+le16	proxendian.h	/^# define le16(/;"	d
+le16	proxendian.h	/^static inline uint16_t le16(uint16_t v)$/;"	f
+le32	proxendian.h	/^# define le32(/;"	d
+le32	proxendian.h	/^static inline uint32_t le32(uint32_t v)$/;"	f
+len	mifarehost.c	/^		uint32_t len;$/;"	m	struct:__anon6	file:
+length	flash.h	/^	uint32_t length;$/;"	m	struct:__anon4
+lfsr	mifarehost.c	/^uint64_t lfsr;$/;"	v
+lfsr_common_prefix	nonce2key/crapto1.c	/^lfsr_common_prefix(uint32_t pfx, uint32_t rr, uint8_t ks[8], uint8_t par[8][8], uint8_t no_par)$/;"	f
+lfsr_prefix_ks	nonce2key/crapto1.c	/^uint32_t *lfsr_prefix_ks(uint8_t ks[8], int isodd)$/;"	f
+lfsr_recovery32	nonce2key/crapto1.c	/^struct Crypto1State* lfsr_recovery32(uint32_t ks2, uint32_t in)$/;"	f
+lfsr_recovery64	nonce2key/crapto1.c	/^struct Crypto1State* lfsr_recovery64(uint32_t ks2, uint32_t ks3)$/;"	f
+lfsr_rollback_bit	nonce2key/crapto1.c	/^void lfsr_rollback_bit(struct Crypto1State *s, uint32_t in, int fb)$/;"	f
+lfsr_rollback_byte	nonce2key/crapto1.c	/^void lfsr_rollback_byte(struct Crypto1State *s, uint32_t in, int fb)$/;"	f
+lfsr_rollback_word	nonce2key/crapto1.c	/^void lfsr_rollback_word(struct Crypto1State *s, uint32_t in, int fb)$/;"	f
+lli	proxmark3.h	/^#define lli /;"	d
+llx	nonce2key/nonce2key.c	/^#define llx /;"	d	file:
+llx	proxmark3.h	/^#define llx /;"	d
+loadGeneralInfo	lualibs/htmlskel.lua	/^	function loadGeneralInfo(data, info)$/;"	f
+loadIntoTable	lualibs/htmlskel.lua	/^	function loadIntoTable(data, info, ascii)$/;"	f
+loadTraceCard	mifarehost.c	/^int loadTraceCard(uint8_t *tuid) {$/;"	f
+local get 	scripts/mifare_autopwn.lua	/^			local get = function(num)$/;"	f
+logHexFileName	mifarehost.c	/^char logHexFileName[200] = {0x00};$/;"	v
+logfilename	ui.c	/^static char *logfilename = "proxmark3.log";$/;"	v	file:
+lookup	lualibs/htmlskel.lua	/^		function lookup(atqa, sak)$/;"	f
+lookupChipID	cmdhw.c	/^static void lookupChipID(uint32_t iChipID)$/;"	f	file:
+lookupManufacturer 	lualibs/taglib.lua	/^	lookupManufacturer = function (value)$/;"	f
+lua_UInteger	pm3_bitlib.c	/^typedef size_t lua_UInteger;$/;"	t	file:
+luaopen_binlib	pm3_binlib.c	/^LUALIB_API int luaopen_binlib (lua_State *L) {$/;"	f
+luaopen_bit	pm3_bitlib.c	/^LUALIB_API int luaopen_bit (lua_State *L) {$/;"	f
+main	cli.c	/^int main(int argc, char **argv)$/;"	f
+main	flasher.c	/^int main(int argc, char **argv)$/;"	f
+main	pm3_eml2mfd.py	/^def main(argv):$/;"	f
+main	pm3_mfd2eml.py	/^def main(argv):$/;"	f
+main	proxmark3.c	/^int main(int argc, char* argv[]) {$/;"	f
+main	scripts/14araw.lua	/^function main(args)$/;"	f
+main	scripts/dumptoemul.lua	/^local function main(args)$/;"	f
+main	scripts/emul2html.lua	/^local function main(args)$/;"	f
+main	scripts/hf_read.lua	/^local function main(args)$/;"	f
+main	scripts/htmldump.lua	/^local function main(args)$/;"	f
+main	scripts/mfkeys.lua	/^local function main( args)$/;"	f
+main	scripts/mifare_autopwn.lua	/^function main(args)$/;"	f
+main	scripts/ndef_dump.lua	/^local function main( args)$/;"	f
+main	scripts/parameters.lua	/^local function main(args)$/;"	f
+main	snooper.c	/^int main()$/;"	f
+main_func	proxguiqt.h	/^		void (*main_func)(void);$/;"	m	class:ProxGuiQT
+main_loop	proxmark3.c	/^static void *main_loop(void *targ) {$/;"	f	file:
+main_loop_arg	proxmark3.c	/^struct main_loop_arg {$/;"	s	file:
+mask	cmdhf15.c	/^	int mask; \/\/ how many MSB bits used$/;"	m	struct:__anon1	file:
+metaObject	proxguiqt.moc.cpp	/^const QMetaObject *ProxGuiQT::metaObject() const$/;"	f	class:ProxGuiQT
+metaObject	proxguiqt.moc.cpp	/^const QMetaObject *ProxWidget::metaObject() const$/;"	f	class:ProxWidget
+mfCGetBlock	mifarehost.c	/^int mfCGetBlock(uint8_t blockNo, uint8_t *data, uint8_t params) {$/;"	f
+mfCSetBlock	mifarehost.c	/^int mfCSetBlock(uint8_t blockNo, uint8_t *data, uint8_t *uid, int wantWipe, uint8_t params) {$/;"	f
+mfCSetUID	mifarehost.c	/^int mfCSetUID(uint8_t *uid, uint8_t *oldUID, int wantWipe) {$/;"	f
+mfCheckKeys	mifarehost.c	/^int mfCheckKeys (uint8_t blockNo, uint8_t keyType, uint8_t keycnt, uint8_t * keyBlock, uint64_t * key){$/;"	f
+mfEmlGetMem	mifarehost.c	/^int mfEmlGetMem(uint8_t *data, int blockNum, int blocksCount) {$/;"	f
+mfEmlSetMem	mifarehost.c	/^int mfEmlSetMem(uint8_t *data, int blockNum, int blocksCount) {$/;"	f
+mfTraceDecode	mifarehost.c	/^int mfTraceDecode(uint8_t *data_src, int len, uint32_t parity, bool wantSaveToEmlFile) {$/;"	f
+mfTraceInit	mifarehost.c	/^int mfTraceInit(uint8_t *tuid, uint8_t *atqa, uint8_t sak, bool wantSaveToEmlFile) {$/;"	f
+mf_crypto1_decrypt	mifarehost.c	/^void mf_crypto1_decrypt(struct Crypto1State *pcs, uint8_t *data, int len, bool isEncrypted){$/;"	f
+mfcrack	scripts/mifare_autopwn.lua	/^function mfcrack()$/;"	f
+mfcrack_inner	scripts/mifare_autopwn.lua	/^function mfcrack_inner()$/;"	f
+mfnested	mifarehost.c	/^int mfnested(uint8_t blockNo, uint8_t keyType, uint8_t * key, uint8_t trgBlockNo, uint8_t trgKeyType, uint8_t * resultKey, bool calibrate) $/;"	f
+mkdtemp	pm3_eml_mfd_test.py	/^from tempfile import mkdtemp$/;"	i
+mouseMoveEvent	proxguiqt.cpp	/^void ProxWidget::mouseMoveEvent(QMouseEvent *event)$/;"	f	class:ProxWidget
+mousePressEvent	proxguiqt.h	/^		void mousePressEvent(QMouseEvent *event) { mouseMoveEvent(event); }$/;"	f	class:ProxWidget
+msleep	sleep.h	/^# define msleep(/;"	d
+nbytes	cmdlfhitag.c	/^size_t nbytes(size_t nbits) {$/;"	f
+nested	scripts/mifare_autopwn.lua	/^function nested(key,sak)$/;"	f
+nested_worker_thread	mifarehost.c	/^void* nested_worker_thread(void *arg)$/;"	f
+new 	lualibs/commands.lua	/^	new = function(self, o)$/;"	f
+nonce2key	nonce2key/nonce2key.c	/^int nonce2key(uint32_t uid, uint32_t nt, uint32_t nr, uint64_t par_info, uint64_t ks_info, uint64_t * key) {$/;"	f
+nonce_distance	nonce2key/crapto1.c	/^int nonce_distance(uint32_t from, uint32_t to)$/;"	f
+nr_ar_par	mifarehost.c	/^uint32_t nr_ar_par; $/;"	v
+nr_enc	mifarehost.c	/^uint32_t nr_enc;  \/\/ encrypted reader challenge$/;"	v
+nsleep	sleep.c	/^void nsleep(uint64_t n) {$/;"	f
+nt	mifarehost.c	/^		uint32_t nt;$/;"	m	struct:__anon6	file:
+nt	mifarehost.c	/^uint32_t nt;      \/\/ tag challenge$/;"	v
+nt_par	mifarehost.c	/^uint32_t nt_par; $/;"	v
+num_segs	flash.h	/^	int num_segs;$/;"	m	struct:__anon5
+num_to_bytes	util.c	/^void num_to_bytes(uint64_t n, size_t len, uint8_t* dest)$/;"	f
+numbuckets	nonce2key/crapto1.c	/^		uint32_t numbuckets;$/;"	m	struct:bucket_info	file:
+odd	nonce2key/crapto1.h	/^struct Crypto1State {uint32_t odd, even;};$/;"	m	struct:Crypto1State
+offline	ui.c	/^int offline;$/;"	v
+oops	lualibs/html_dumplib.lua	/^local function oops(err)$/;"	f
+oops	scripts/14araw.lua	/^function oops(err)$/;"	f
+oops	scripts/dumptoemul.lua	/^function oops(err)$/;"	f
+oops	scripts/emul2html.lua	/^function oops(err)$/;"	f
+oops	scripts/htmldump.lua	/^function oops(err)$/;"	f
+oops	scripts/mifare_autopwn.lua	/^function oops(err)$/;"	f
+oops	scripts/ndef_dump.lua	/^function oops(err)$/;"	f
+open	scripts/ndef_dump.lua	/^local function open()$/;"	f
+os	pm3_eml_mfd_test.py	/^import unittest, os$/;"	i
+p_align	elf.h	/^	uint32_t p_align;$/;"	m	struct:__anon2
+p_filesz	elf.h	/^	uint32_t p_filesz;$/;"	m	struct:__anon2
+p_flags	elf.h	/^	uint32_t p_flags;$/;"	m	struct:__anon2
+p_memsz	elf.h	/^	uint32_t p_memsz;$/;"	m	struct:__anon2
+p_offset	elf.h	/^	uint32_t p_offset;$/;"	m	struct:__anon2
+p_paddr	elf.h	/^	uint32_t p_paddr;$/;"	m	struct:__anon2
+p_type	elf.h	/^	uint32_t p_type;$/;"	m	struct:__anon2
+p_vaddr	elf.h	/^	uint32_t p_vaddr;$/;"	m	struct:__anon2
+paintEvent	proxguiqt.cpp	/^void ProxWidget::paintEvent(QPaintEvent *event)$/;"	f	class:ProxWidget
+param_get32ex	util.c	/^uint32_t param_get32ex(const char *line, int paramnum, int deflt, int base)$/;"	f
+param_get64ex	util.c	/^uint64_t param_get64ex(const char *line, int paramnum, int deflt, int base)$/;"	f
+param_get8	util.c	/^uint8_t param_get8(const char *line, int paramnum)$/;"	f
+param_get8ex	util.c	/^uint8_t param_get8ex(const char *line, int paramnum, int deflt, int base)$/;"	f
+param_getchar	util.c	/^char param_getchar(const char *line, int paramnum)$/;"	f
+param_gethex	util.c	/^int param_gethex(const char *line, int paramnum, uint8_t * data, int hexcnt)$/;"	f
+param_getptr	util.c	/^int param_getptr(const char *line, int *bg, int *en, int paramnum)$/;"	f
+param_getstr	util.c	/^int param_getstr(const char *line, int paramnum, char * str)$/;"	f
+parent	cmdparser.c	/^char *parent = pparent;$/;"	v
+parity	nonce2key/crapto1.h	/^static inline int parity(uint32_t x)$/;"	f
+parse 	lualibs/commands.lua	/^	parse = function (packet)$/;"	f
+parse1443a	lualibs/read14a.lua	/^local function parse1443a(data)$/;"	f
+parse15693	lualibs/hf_reader.lua	/^local function parse15693(data)$/;"	f
+placeFirst	scripts/mfkeys.lua	/^local function placeFirst(akey, list)$/;"	f
+plotapp	proxguiqt.h	/^		QApplication *plotapp;$/;"	m	class:ProxGuiQT
+plotwidget	proxguiqt.h	/^		ProxWidget *plotwidget;$/;"	m	class:ProxGuiQT
+pm3_eml2mfd	pm3_eml_mfd_test.py	/^import pm3_eml2mfd, pm3_mfd2eml$/;"	i
+pm3_mfd2eml	pm3_eml_mfd_test.py	/^import pm3_eml2mfd, pm3_mfd2eml$/;"	i
+pparent	cmdparser.c	/^char pparent[512] = {0};$/;"	v
+prepareHF15Cmd	cmdhf15.c	/^int prepareHF15Cmd(char **cmd, UsbCommand *c, uint8_t iso15cmd[], int iso15cmdlen) {$/;"	f
+print_hex	util.c	/^void print_hex(const uint8_t * data, const size_t len)$/;"	f
+print_lock	proxmark3.c	/^pthread_mutex_t print_lock;$/;"	v
+prlog	scripts/ndef_dump.lua	/^function prlog(...)$/;"	f
+prng_successor	nonce2key/crypto1.c	/^uint32_t prng_successor(uint32_t x, uint32_t n)$/;"	f
+productName	cmdhf15.c	/^} productName; $/;"	t	typeref:struct:__anon1	file:
+prx	proxmark3.c	/^byte_t* prx = rx;$/;"	v
+qt_meta_data_ProxGuiQT	proxguiqt.moc.cpp	/^static const uint qt_meta_data_ProxGuiQT[] = {$/;"	v	file:
+qt_meta_data_ProxWidget	proxguiqt.moc.cpp	/^static const uint qt_meta_data_ProxWidget[] = {$/;"	v	file:
+qt_meta_stringdata_ProxGuiQT	proxguiqt.moc.cpp	/^static const char qt_meta_stringdata_ProxGuiQT[] = {$/;"	v	file:
+qt_meta_stringdata_ProxWidget	proxguiqt.moc.cpp	/^static const char qt_meta_stringdata_ProxWidget[] = {$/;"	v	file:
+qt_metacall	proxguiqt.moc.cpp	/^int ProxGuiQT::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:ProxGuiQT
+qt_metacall	proxguiqt.moc.cpp	/^int ProxWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:ProxWidget
+qt_metacast	proxguiqt.moc.cpp	/^void *ProxGuiQT::qt_metacast(const char *_clname)$/;"	f	class:ProxGuiQT
+qt_metacast	proxguiqt.moc.cpp	/^void *ProxWidget::qt_metacast(const char *_clname)$/;"	f	class:ProxWidget
+qt_static_metacall	proxguiqt.moc.cpp	/^void ProxGuiQT::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:ProxGuiQT
+qt_static_metacall	proxguiqt.moc.cpp	/^void ProxWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:ProxWidget
+read14443B	lualibs/hf_reader.lua	/^local function read14443B()$/;"	f
+read14443a	lualibs/read14a.lua	/^local function read14443a(dont_disconnect)$/;"	f
+read15693	lualibs/hf_reader.lua	/^local function read15693()$/;"	f
+readdump	scripts/dumptoemul.lua	/^local function readdump(infile)$/;"	f
+receiver_arg	proxmark3.c	/^struct receiver_arg {$/;"	s	file:
+recover	nonce2key/crapto1.c	/^recover(uint32_t *o_head, uint32_t *o_tail, uint32_t oks,$/;"	f	file:
+returnToLuaWithError	scripting.c	/^static int returnToLuaWithError(lua_State *L, const char* fmt, ...)$/;"	f	file:
+revstate	mifarehost.c	/^struct Crypto1State *revstate;$/;"	v	typeref:struct:Crypto1State
+rmtree	pm3_eml_mfd_test.py	/^from shutil import rmtree$/;"	i
+run	proxmark3.c	/^  int run;$/;"	m	struct:receiver_arg	file:
+rx	proxmark3.c	/^byte_t rx[0x1000000];$/;"	v
+sample_buf	data.c	/^uint8_t* sample_buf;$/;"	v
+sample_buf_len	data.c	/^size_t sample_buf_len;$/;"	v
+saveTraceCard	mifarehost.c	/^int saveTraceCard(void) {$/;"	f
+save_HTML	lualibs/html_dumplib.lua	/^local function save_HTML(javascript, filename)$/;"	f
+script_cmds_file	proxmark3.c	/^  char *script_cmds_file;$/;"	m	struct:main_loop_arg	file:
+sector	mifarehost.h	/^} sector;$/;"	t	typeref:struct:__anon9
+segments	flash.h	/^	flash_seg_t *segments;$/;"	m	struct:__anon5
+selftest	scripts/14araw.lua	/^function selftest()$/;"	f
+sendRaw	scripts/14araw.lua	/^function sendRaw(rawdata, options)$/;"	f
+sendToDevice	lualibs/hf_reader.lua	/^local function sendToDevice(command, ignoreresponse)$/;"	f
+sendToDevice	lualibs/read14a.lua	/^local function sendToDevice(command, ignoreresponse)$/;"	f
+serial_port	uart.h	/^typedef void* serial_port;$/;"	t
+serial_port_name	flasher.c	/^static char* serial_port_name;$/;"	v	file:
+serial_port_parity	uart.h	/^} serial_port_parity;$/;"	t	typeref:enum:__anon13
+serial_port_unix	uart.c	/^} serial_port_unix;$/;"	t	typeref:struct:__anon11	file:
+serial_port_windows	uart.c	/^} serial_port_windows;$/;"	t	typeref:struct:__anon12	file:
+setLuaPath	scripting.c	/^int setLuaPath( lua_State* L, const char* path )$/;"	f
+setUp	pm3_eml_mfd_test.py	/^    def setUp(self):$/;"	m	class:TestEmlMfd
+set_bin_library	pm3_binlib.c	/^int set_bin_library (lua_State *L) {$/;"	f
+set_bit_library	pm3_bitlib.c	/^int set_bit_library (lua_State *L) {$/;"	f
+set_pm3_libraries	scripting.c	/^int set_pm3_libraries(lua_State *L)$/;"	f
+show	scripts/ndef_dump.lua	/^local function show(data)$/;"	f
+show_usage	eml2UPPER.sh	/^show_usage()$/;"	f
+show_usage	eml2lower.sh	/^show_usage()$/;"	f
+show_usage	gen_pm3mfsim_script.sh	/^show_usage()$/;"	f
+showdata	scripts/14araw.lua	/^function showdata(usbpacket)$/;"	f
+sleep	sleep.h	/^# define sleep(/;"	d
+slhead	mifarehost.c	/^			struct Crypto1State *slhead;$/;"	m	union:__anon6::__anon7	typeref:struct:__anon6::__anon7::Crypto1State	file:
+sltail	mifarehost.c	/^			struct Crypto1State *sltail;$/;"	m	union:__anon6::__anon8	typeref:struct:__anon6::__anon8::Crypto1State	file:
+sp	flasher.c	/^static serial_port sp;$/;"	v	file:
+sp	proxmark3.c	/^static serial_port sp;$/;"	v	file:
+split	lualibs/getopt.lua	/^local function split(txt)$/;"	f
+sprintUID	cmdhf15.c	/^#define sprintUID(/;"	d	file:
+sprint_hex	util.c	/^char * sprint_hex(const uint8_t * data, const size_t len) {$/;"	f
+start	flash.h	/^	uint32_t start;$/;"	m	struct:__anon4
+startMax	proxguiqt.cpp	/^int startMax;$/;"	v
+staticMetaObject	proxguiqt.moc.cpp	/^const QMetaObject ProxGuiQT::staticMetaObject = {$/;"	m	class:ProxGuiQT	file:
+staticMetaObject	proxguiqt.moc.cpp	/^const QMetaObject ProxWidget::staticMetaObject = {$/;"	m	class:ProxWidget	file:
+staticMetaObjectExtraData	proxguiqt.moc.cpp	/^const QMetaObjectExtraData ProxGuiQT::staticMetaObjectExtraData = {$/;"	m	class:ProxGuiQT	file:
+staticMetaObjectExtraData	proxguiqt.moc.cpp	/^const QMetaObjectExtraData ProxWidget::staticMetaObjectExtraData = {$/;"	m	class:ProxWidget	file:
+storeCommand	cmdmain.c	/^void storeCommand(UsbCommand *command)$/;"	f
+str_ends_with	cmdscript.c	/^int str_ends_with(const char * str, const char * suffix) {$/;"	f
+sys	pm3_eml2mfd.py	/^import sys$/;"	i
+sys	pm3_mfd2eml.py	/^import sys$/;"	i
+tail	mifarehost.c	/^		} tail;$/;"	m	struct:__anon6	typeref:union:__anon6::__anon8	file:
+tail	nonce2key/crapto1.c	/^		uint32_t *head, *tail;$/;"	m	struct:bucket_info::__anon10	file:
+td	lualibs/htmlskel.lua	/^	function td(row, text){$/;"	f
+tearDown	pm3_eml_mfd_test.py	/^    def tearDown(self):$/;"	m	class:TestEmlMfd
+term_info	uart.c	/^typedef struct termios term_info;$/;"	t	typeref:struct:termios	file:
+test_eml2mfd	pm3_eml_mfd_test.py	/^    def test_eml2mfd(self):$/;"	m	class:TestEmlMfd
+test_mfd2eml	pm3_eml_mfd_test.py	/^    def test_mfd2eml(self):$/;"	m	class:TestEmlMfd
+three_argument_test	pm3_eml_mfd_test.py	/^    def three_argument_test(self, operation, cases, c14n=str):$/;"	m	class:TestEmlMfd
+tiNew	uart.c	/^  term_info tiNew;  \/\/ Terminal info during the transaction$/;"	m	struct:__anon11	file:
+tiOld	uart.c	/^  term_info tiOld;  \/\/ Terminal info before using the port$/;"	m	struct:__anon11	file:
+timeout	uart.c	/^const struct timeval timeout = {$/;"	v	typeref:struct:timeval
+to_ascii	lualibs/htmlskel.lua	/^	function to_ascii(hexval)$/;"	f
+tostring_1443a	lualibs/read14a.lua	/^local function tostring_1443a(sak)$/;"	f
+tr	lualibs/htmlskel.lua	/^	function tr(table){$/;"	f
+traceCard	mifarehost.c	/^static uint8_t traceCard[4096] = {0x00};$/;"	v	file:
+traceCrypto1	mifarehost.c	/^struct Crypto1State *traceCrypto1 = NULL;$/;"	v	typeref:struct:Crypto1State
+traceCurBlock	mifarehost.c	/^static uint8_t traceCurBlock = 0;$/;"	v	file:
+traceCurKey	mifarehost.c	/^static uint8_t traceCurKey = 0;$/;"	v	file:
+traceFileName	mifarehost.c	/^static char traceFileName[20];$/;"	v	file:
+traceState	mifarehost.c	/^static int traceState = TRACE_IDLE;$/;"	v	file:
+trailerAccessBytes	mifarehost.c	/^static uint8_t trailerAccessBytes[4] = {0x08, 0x77, 0x8F, 0x00};$/;"	v	file:
+txcmd	proxmark3.c	/^static UsbCommand txcmd;$/;"	v	file:
+txcmd_pending	proxmark3.c	/^volatile static bool txcmd_pending = false;$/;"	v	file:
+uart_close	uart.c	/^void uart_close(const serial_port sp) {$/;"	f
+uart_cts	uart.c	/^bool uart_cts(const serial_port sp) {$/;"	f
+uart_get_parity	uart.c	/^serial_port_parity uart_get_parity(const serial_port sp) {$/;"	f
+uart_get_speed	uart.c	/^uint32_t uart_get_speed(const serial_port sp) {$/;"	f
+uart_open	uart.c	/^serial_port uart_open(const char* pcPortName) {$/;"	f
+uart_open	uart.c	/^serial_port uart_open(const char* pcPortName)$/;"	f
+uart_receive	uart.c	/^bool uart_receive(const serial_port sp, byte_t* pbtRx, size_t* pszRxLen) {$/;"	f
+uart_receiver	proxmark3.c	/^static void *uart_receiver(void *targ) {$/;"	f	file:
+uart_send	uart.c	/^bool uart_send(const serial_port sp, const byte_t* pbtTx, const size_t szTxLen) {$/;"	f
+uart_set_parity	uart.c	/^bool uart_set_parity(serial_port sp, serial_port_parity spp) {$/;"	f
+uart_set_speed	uart.c	/^bool uart_set_speed(serial_port sp, const uint32_t uiPortSpeed) {$/;"	f
+uid	cmdhf15.c	/^	uint64_t uid;$/;"	m	struct:__anon1	file:
+uid	mifarehost.c	/^		uint32_t uid;$/;"	m	struct:__anon6	file:
+uid	mifarehost.c	/^uint32_t uid;     \/\/ serial number$/;"	v
+uidmapping	cmdhf15.c	/^const productName uidmapping[] = {$/;"	v
+ukbhit	util.c	/^int ukbhit(void) {$/;"	f
+ukbhit	util.c	/^int ukbhit(void)$/;"	f
+uniq	lualibs/mf_default_keys.lua	/^local function uniq(list)$/;"	f
+unittest	pm3_eml_mfd_test.py	/^import unittest, os$/;"	i
+unlink	flasher.c	/^# define unlink(/;"	d	file:
+upcase	uart.c	/^void upcase(char *p) {$/;"	f
+update_contribution	nonce2key/crapto1.c	/^update_contribution(uint32_t *item, const uint32_t mask1, const uint32_t mask2)$/;"	f	file:
+usage	flasher.c	/^static void usage(char *argv0)$/;"	f	file:
+usb_present	proxmark3.c	/^  int usb_present;$/;"	m	struct:main_loop_arg	file:
+usleep	sleep.h	/^# define usleep(/;"	d
+waitCmd	cmdhf14a.c	/^static void waitCmd(uint8_t iSelect)$/;"	f	file:
+waitCmd	scripts/ndef_dump.lua	/^function waitCmd(iSelect)$/;"	f
+waitFor14443a	lualibs/read14a.lua	/^local function waitFor14443a()$/;"	f
+waitForTag	lualibs/hf_reader.lua	/^local function waitForTag()$/;"	f
+wait_for_ack	flash.c	/^static int wait_for_ack(void)$/;"	f	file:
+wait_for_mifare	scripts/mifare_autopwn.lua	/^function wait_for_mifare()$/;"	f
+with_statement	pm3_eml2mfd.py	/^from __future__ import with_statement$/;"	i
+with_statement	pm3_eml_mfd_test.py	/^from __future__ import with_statement$/;"	i
+with_statement	pm3_mfd2eml.py	/^from __future__ import with_statement$/;"	i
+writeDumpFile 	scripts/ndef_dump.lua	/^	writeDumpFile = function(uid, blockData)$/;"	f
+write_block	flash.c	/^static int write_block(uint32_t address, uint8_t *data, uint32_t length)$/;"	f	file:
+~ProxGuiQT	proxguiqt.cpp	/^ProxGuiQT::~ProxGuiQT(void)$/;"	f	class:ProxGuiQT

@@ -10,7 +10,8 @@ APP_INCLUDES = apps.h
 
 #remove one of the following defines and comment out the relevant line
 #in the next section to remove that particular feature from compilation  
-APP_CFLAGS	= -DWITH_LF -DWITH_ISO15693 -DWITH_ISO14443a -DWITH_ISO14443b -DWITH_ICLASS -DWITH_LEGICRF -DWITH_HITAG
+#APP_CFLAGS	=  -DWITH_ISO14443a -DWITH_ISO14443b -DWITH_EMV -Wno-error=unused-but-set-variable
+APP_CFLAGS	= -DWITH_LF -DWITH_ISO15693 -DWITH_ISO14443a -DWITH_ISO14443b -DWITH_ICLASS -DWITH_LEGICRF -DWITH_HITAG -DWITH_EMV -Wno-error=unused-but-set-variable
 #-DWITH_LCD 
 
 #SRC_LCD = fonts.c LCD.c
@@ -19,17 +20,18 @@ SRC_ISO15693 = iso15693.c iso15693tools.c
 SRC_ISO14443a = epa.c iso14443a.c mifareutil.c mifarecmd.c mifaresniff.c
 SRC_ISO14443b = iso14443.c
 SRC_CRAPTO1 = crapto1.c crypto1.c
-
+SRC_EMV = tlv.c emvutil.c emvdataels.c emvcmd.c 
 THUMBSRC = start.c \
-	$(SRC_LCD) \
+    $(SRC_LCD) \
 	$(SRC_ISO15693) \
 	$(SRC_LF) \
-	appmain.c printf.c \
+	appmain.c \
+    printf.c \
 	util.c \
 	string.c \
 	usb_cdc.c \
-	cmd.c
-
+	cmd.c \
+    parity.c 
 # These are to be compiled in ARM mode
 ARMSRC = fpgaloader.c \
 	legicrf.c \
@@ -40,10 +42,12 @@ ARMSRC = fpgaloader.c \
 	$(SRC_CRAPTO1) \
 	legic_prng.c \
 	iclass.c \
-	crc.c
+	crc.c \
+    $(SRC_EMV) 
+#ASMSRC = irq_serial.s //might add IRQ support in future
 
 # stdint.h provided locally until GCC 4.5 becomes C99 compliant
-APP_CFLAGS += -I.
+APP_CFLAGS += -I. 
 
 # Do not move this inclusion before the definition of {THUMB,ASM,ARM}SRC
 include ../common/Makefile.common
@@ -56,7 +60,7 @@ $(OBJDIR)/fpga.o: fpga.bit
 	$(OBJCOPY) -O elf32-littlearm -I binary -B arm --redefine-sym _binary____fpga_fpga_bit_start=_binary_fpga_bit_start --redefine-sym _binary____fpga_fpga_bit_end=_binary_fpga_bit_end --prefix-sections=fpga_bit  $^ $@
 
 $(OBJDIR)/fullimage.elf: $(VERSIONOBJ) $(OBJDIR)/fpga.o $(THUMBOBJ) $(ARMOBJ)
-	$(CC) $(LDFLAGS) -Wl,-T,ldscript,-Map,$(patsubst %.elf,%.map,$@) -o $@ $^ $(LIBS)
+	$(CC) -v $(LDFLAGS) -Wl,-T,ldscript,-Map,$(patsubst %.elf,%.map,$@) -o $@ $^ $(LIBS)
 
 $(OBJDIR)/fpgaimage.elf: $(OBJDIR)/fullimage.elf
 	$(OBJCOPY) -F elf32-littlearm --only-section .fpgaimage $^ $@  

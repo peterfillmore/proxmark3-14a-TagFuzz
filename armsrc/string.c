@@ -23,7 +23,7 @@ void *memcpy(void *dest, const void *src, int len)
 	return dest;
 }
 
-void *memset(void *dest, int c, int len)
+RAMFUNC void *memset(void *dest, int c, int len)
 {
 	uint8_t *d = dest;
 	while((len--) > 0) {
@@ -33,7 +33,7 @@ void *memset(void *dest, int c, int len)
 	return dest;
 }
 
-int memcmp(const void *av, const void *bv, int len)
+RAMFUNC int memcmp(const void *av, const void *bv, int len)
 {
 	const uint8_t *a = av;
 	const uint8_t *b = bv;

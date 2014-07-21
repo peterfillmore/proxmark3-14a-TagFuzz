@@ -14,7 +14,7 @@
 #include "apps.h"
 #include "util.h"
 #include "string.h"
-
+#include "parity.h"
 #include "iso14443crc.h"
 
 //static void GetSamplesFor14443(int weTx, int n);
@@ -23,6 +23,7 @@
 #define READER_TAG_BUFFER_SIZE 2048
 #define TAG_READER_BUFFER_SIZE 2048
 #define DEMOD_DMA_BUFFER_SIZE 1024
+
 
 //=============================================================================
 // An ISO 14443 Type B tag. We listen for commands from the reader, using

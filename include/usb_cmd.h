@@ -151,6 +151,13 @@ typedef struct {
 
 #define CMD_MIFARE_SNIFFER                                                0x0630
 
+// For EMV Commands
+#define CMD_EMV_READ_RECORD                                               0x0700
+#define CMD_EMV_TRANSACTION                                               0x0701
+#define CMD_EMV_CLONE                                                     0x0702
+#define CMD_EMV_SIM                                                       0x0703
+#define CMD_EMV_TEST                                                      0x0704
+#define CMD_EMV_FUZZ_RATS                                                 0x0705
 #define CMD_UNKNOWN                                                       0xFFFF
 
 

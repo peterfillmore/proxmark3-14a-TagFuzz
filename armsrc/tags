@@ -1,0 +1,1292 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AID_ALIAS	emvdataels.c	/^const uint8_t AID_ALIAS[]     = {0xa0,0x00,0x00,0x00,0x29,0x10,0x10};$/;"	v
+AID_AMEX	emvdataels.c	/^const uint8_t AID_AMEX[]      = {0xa0,0x00,0x00,0x00,0x25};$/;"	v
+AID_EXPRESSPAY	emvdataels.c	/^const uint8_t AID_EXPRESSPAY[]= {0xa0,0x00,0x00,0x00,0x25,0x01,0x07,0x01};$/;"	v
+AID_LINK	emvdataels.c	/^const uint8_t AID_LINK[]      = {0xa0,0x00,0x00,0x00,0x29,0x10,0x10};$/;"	v
+AID_MAESTRO	emvdataels.c	/^const uint8_t AID_MAESTRO[] =   {0xa0,0x00,0x00,0x00,0x04,0x30,0x60};$/;"	v
+AID_MAESTRO_TEST	emvdataels.c	/^const uint8_t AID_MAESTRO_TEST[]={0xb0,0x12,0x34,0x56,0x78};$/;"	v
+AID_MAESTRO_UK	emvdataels.c	/^const uint8_t AID_MAESTRO_UK[]= {0xa0,0x00,0x00,0x00,0x05,0x00,0x01};$/;"	v
+AID_MASTERCARD	emvdataels.c	/^const uint8_t AID_MASTERCARD[]= {0xa0,0x00,0x00,0x00,0x04,0x10,0x10};$/;"	v
+AID_SELF_SERVICE	emvdataels.c	/^const uint8_t AID_SELF_SERVICE[]={0xa0,0x00,0x00,0x00,0x24,0x01};$/;"	v
+AID_VISA	emvdataels.c	/^const uint8_t AID_VISA[]    =   {0xa0,0x00,0x00,0x00,0x03};$/;"	v
+AID_VISA_ATM	emvdataels.c	/^const uint8_t AID_VISA_ATM[]=   {0xa0,0x00,0x00,0x00,0x03,0x99,0x99,0x10};$/;"	v
+AID_VISA_C	emvdataels.c	/^const uint8_t AID_VISA_C[]  =   {0xa0,0x00,0x00,0x00,0x03,0x10,0x10,0x01};$/;"	v
+AID_VISA_D	emvdataels.c	/^const uint8_t AID_VISA_D[]  =   {0xa0,0x00,0x00,0x00,0x03,0x10,0x10,0x02};$/;"	v
+AID_VISA_DB	emvdataels.c	/^const uint8_t AID_VISA_DB[] =   {0xa0,0x00,0x00,0x00,0x03,0x10,0x10};$/;"	v
+AID_VISA_E	emvdataels.c	/^const uint8_t AID_VISA_E[]  =   {0xa0,0x00,0x00,0x00,0x03,0x20,0x10};$/;"	v
+AID_VISA_I	emvdataels.c	/^const uint8_t AID_VISA_I[]  =   {0xa0,0x00,0x00,0x00,0x03,0x30,0x10};$/;"	v
+AID_VISA_P	emvdataels.c	/^const uint8_t AID_VISA_P[]  =   {0xa0,0x00,0x00,0x00,0x03,0x80,0x10};$/;"	v
+AIP_CARDHOLDER_VERIFICATION	emvdataels.c	/^#define AIP_CARDHOLDER_VERIFICATION /;"	d	file:
+AIP_CARDHOLDER_VERIFICATION	emvdataels.h	/^#define AIP_CARDHOLDER_VERIFICATION /;"	d
+AIP_CDA_SUPPORTED	emvdataels.c	/^#define AIP_CDA_SUPPORTED /;"	d	file:
+AIP_CDA_SUPPORTED	emvdataels.h	/^#define AIP_CDA_SUPPORTED /;"	d
+AIP_CHIP_SUPPORTED	emvdataels.c	/^#define AIP_CHIP_SUPPORTED /;"	d	file:
+AIP_CHIP_SUPPORTED	emvdataels.h	/^#define AIP_CHIP_SUPPORTED /;"	d
+AIP_DDA_SUPPORTED	emvdataels.c	/^#define AIP_DDA_SUPPORTED /;"	d	file:
+AIP_DDA_SUPPORTED	emvdataels.h	/^#define AIP_DDA_SUPPORTED /;"	d
+AIP_ISSUER_AUTH	emvdataels.c	/^#define AIP_ISSUER_AUTH /;"	d	file:
+AIP_ISSUER_AUTH	emvdataels.h	/^#define AIP_ISSUER_AUTH /;"	d
+AIP_MSR_SUPPORTED	emvdataels.c	/^#define AIP_MSR_SUPPORTED /;"	d	file:
+AIP_MSR_SUPPORTED	emvdataels.h	/^#define AIP_MSR_SUPPORTED /;"	d
+AIP_SDA_SUPPORTED	emvdataels.c	/^#define AIP_SDA_SUPPORTED /;"	d	file:
+AIP_SDA_SUPPORTED	emvdataels.h	/^#define AIP_SDA_SUPPORTED /;"	d
+AIP_TERMINAL_RISK	emvdataels.c	/^#define AIP_TERMINAL_RISK /;"	d	file:
+AIP_TERMINAL_RISK	emvdataels.h	/^#define AIP_TERMINAL_RISK /;"	d
+ALLOC	lfops.c	/^#define ALLOC /;"	d	file:
+APP_CFLAGS	Makefile	/^APP_CFLAGS	=  -DWITH_ISO14443a -DWITH_ISO14443b -DWITH_EMV -Wno-error=unused-but-set-variable$/;"	m
+APP_INCLUDES	Makefile	/^APP_INCLUDES = apps.h$/;"	m
+ARMSRC	Makefile	/^ARMSRC = fpgaloader.c \\$/;"	m
+ATQA	emvcard.h	/^    uint8_t ATQA[2]; \/\/Answer to Request $/;"	m	struct:__anon1
+ATS	emvcard.h	/^    uint8_t ATS[256]; $/;"	m	struct:__anon1
+ATS_len	emvcard.h	/^    uint8_t ATS_len; \/\/Answer to select  $/;"	m	struct:__anon1
+AUTH_FIRST	mifareutil.h	/^#define AUTH_FIRST /;"	d
+AUTH_NESTED	mifareutil.h	/^#define AUTH_NESTED /;"	d
+AUTH_TABLE_LENGTH	hitag2.c	/^#define AUTH_TABLE_LENGTH /;"	d	file:
+AUTH_TABLE_OFFSET	hitag2.c	/^#define AUTH_TABLE_OFFSET /;"	d	file:
+AcquireRawAdcSamples125k	lfops.c	/^void AcquireRawAdcSamples125k(int divisor)$/;"	f
+AcquireRawAdcSamplesIso14443	iso14443.c	/^void AcquireRawAdcSamplesIso14443(uint32_t parameter)$/;"	f
+AcquireRawAdcSamplesIso15693	iso15693.c	/^void AcquireRawAdcSamplesIso15693(void)$/;"	f
+AcquireTiType	lfops.c	/^void AcquireTiType(void)$/;"	f
+AddCrc	iso15693.c	/^#define AddCrc(/;"	d	file:
+AppMain	appmain.c	/^void  __attribute__((noreturn)) AppMain(void)$/;"	f
+AppendCrc14443a	iso14443a.c	/^void AppendCrc14443a(uint8_t* data, int len)$/;"	f
+AvgAdc	appmain.c	/^int AvgAdc(int ch) \/\/ was static - merlok$/;"	f
+BEBIT	crapto1.h	/^#define BEBIT(/;"	d
+BIT	crapto1.h	/^#define BIT(/;"	d
+BLACK	LCD.h	/^#define BLACK	/;"	d
+BLUE	LCD.h	/^#define BLUE	/;"	d
+BUTTON_CLICKED	util.c	/^int BUTTON_CLICKED(int ms)$/;"	f
+BUTTON_DOUBLE_CLICK	util.h	/^#define BUTTON_DOUBLE_CLICK /;"	d
+BUTTON_ERROR	util.h	/^#define BUTTON_ERROR /;"	d
+BUTTON_HELD	util.c	/^int BUTTON_HELD(int ms)$/;"	f
+BUTTON_HOLD	util.h	/^#define BUTTON_HOLD /;"	d
+BUTTON_NO_CLICK	util.h	/^#define BUTTON_NO_CLICK /;"	d
+BUTTON_SINGLE_CLICK	util.h	/^#define BUTTON_SINGLE_CLICK /;"	d
+BYTEx	util.h	/^#define BYTEx(/;"	d
+BigBuf	apps.h	/^uint32_t BigBuf[10000];$/;"	v
+BruteforceIso15693Afi	iso15693.c	/^void BruteforceIso15693Afi(uint32_t speed) $/;"	f
+BufferClear	appmain.c	/^void BufferClear(void)$/;"	f
+BuildIdentifyRequest	iso15693.c	/^static void BuildIdentifyRequest(void)$/;"	f	file:
+BuildInventoryResponse	iso15693.c	/^ static void BuildInventoryResponse(void)$/;"	f	file:
+BuildReadBlockRequest	iso15693.c	/^static void BuildReadBlockRequest(uint8_t *uid, uint8_t blockNumber )$/;"	f	file:
+C1	crapto1.c	/^static const uint32_t C1[] = { 0x846B5, 0x4235A, 0x211AD};$/;"	v	file:
+C2	crapto1.c	/^static const uint32_t C2[] = { 0x1A822E0, 0x21A822E0, 0x21A822E0};$/;"	v	file:
+CARD_ACK	mifareutil.h	/^#define CARD_ACK /;"	d
+CARD_MEMORY	iso14443a.h	/^#define CARD_MEMORY /;"	d
+CARD_MEMORY_LEN	iso14443a.h	/^#define CARD_MEMORY_LEN /;"	d
+CARD_NACK_NA	mifareutil.h	/^#define CARD_NACK_NA /;"	d
+CARD_NACK_TR	mifareutil.h	/^#define CARD_NACK_TR /;"	d
+CRAPTO1_INCLUDED	crapto1.h	/^#define CRAPTO1_INCLUDED$/;"	d
+CRYPT_ALL	mifareutil.h	/^#define CRYPT_ALL /;"	d
+CRYPT_NONE	mifareutil.h	/^#define CRYPT_NONE /;"	d
+CRYPT_REQUEST	mifareutil.h	/^#define CRYPT_REQUEST /;"	d
+CYAN	LCD.h	/^#define CYAN	/;"	d
+CmdHIDdemodFSK	lfops.c	/^void CmdHIDdemodFSK(int findone, int *high, int *low, int ledcontrol)$/;"	f
+CmdHIDsimTAG	lfops.c	/^void CmdHIDsimTAG(int hi, int lo, int ledcontrol)$/;"	f
+CmdIOdemodFSK	lfops.c	/^void CmdIOdemodFSK(int findone, int *high, int *low, int ledcontrol)$/;"	f
+Code4bitAnswerAsTag	iso14443a.c	/^void Code4bitAnswerAsTag(uint8_t cmd)$/;"	f
+CodeIClassCommand	iclass.c	/^void CodeIClassCommand(const uint8_t * cmd, int len)$/;"	f
+CodeIClassTagAnswer	iclass.c	/^static void CodeIClassTagAnswer(const uint8_t *cmd, int len)$/;"	f	file:
+CodeIClassTagSOF	iclass.c	/^static void CodeIClassTagSOF()$/;"	f	file:
+CodeIso14443aAsReaderPar	iso14443a.c	/^void CodeIso14443aAsReaderPar(const uint8_t * cmd, int len, uint8_t* paritystream)$/;"	f
+CodeIso14443aAsTag	iso14443a.c	/^void CodeIso14443aAsTag(const uint8_t *cmd, int len){$/;"	f
+CodeIso14443aAsTagPar	iso14443a.c	/^void CodeIso14443aAsTagPar(const uint8_t *cmd, int len, uint8_t* paritystream)$/;"	f
+CodeIso14443aBitsAsReaderPar	iso14443a.c	/^void CodeIso14443aBitsAsReaderPar(const uint8_t * cmd, int bits, uint8_t* paritystream)$/;"	f
+CodeIso14443bAsReader	iso14443.c	/^static void CodeIso14443bAsReader(const uint8_t *cmd, int len)$/;"	f	file:
+CodeIso14443bAsTag	iso14443.c	/^static void CodeIso14443bAsTag(const uint8_t *cmd, int len)$/;"	f	file:
+CodeIso15693AsReader	iso15693.c	/^static void CodeIso15693AsReader(uint8_t *cmd, int n)$/;"	f	file:
+CodeIso15693AsReader256	iso15693.c	/^static void CodeIso15693AsReader256(uint8_t *cmd, int n)$/;"	f	file:
+CopyHIDtoT55x7	lfops.c	/^void CopyHIDtoT55x7(uint32_t hi2, uint32_t hi, uint32_t lo, uint8_t longFMT)$/;"	f
+CopyIOtoT55x7	lfops.c	/^void CopyIOtoT55x7(uint32_t hi, uint32_t lo, uint8_t longFMT)$/;"	f
+CopyIndala224toT55x7	lfops.c	/^void CopyIndala224toT55x7(int uid1, int uid2, int uid3, int uid4, int uid5, int uid6, int uid7)$/;"	f
+CopyIndala64toT55x7	lfops.c	/^void CopyIndala64toT55x7(int hi, int lo)$/;"	f
+Crc	iso15693.c	/^#define Crc(/;"	d	file:
+Crypto1State	crapto1.h	/^struct Crypto1State {uint32_t odd, even;};$/;"	s
+DBD15STATLEN	iso15693.c	/^#define DBD15STATLEN /;"	d	file:
+DEBUG	iso15693.c	/^int DEBUG=0;$/;"	v
+DEBUG_FRAME_CONTENTS	lfops.c	/^#define DEBUG_FRAME_CONTENTS /;"	d	file:
+DELAY_AIR2ARM_AS_READER	iso14443a.h	/^#define DELAY_AIR2ARM_AS_READER /;"	d
+DELAY_AIR2ARM_AS_TAG	iso14443a.h	/^#define DELAY_AIR2ARM_AS_TAG /;"	d
+DELAY_ARM2AIR_AS_READER	iso14443a.h	/^#define DELAY_ARM2AIR_AS_READER /;"	d
+DELAY_ARM2AIR_AS_TAG	iso14443a.h	/^#define DELAY_ARM2AIR_AS_TAG /;"	d
+DELAY_FPGA_QUEUE	iso14443a.h	/^#define DELAY_FPGA_QUEUE /;"	d
+DELAY_READER_AIR2ARM_AS_SNIFFER	iso14443a.h	/^#define DELAY_READER_AIR2ARM_AS_SNIFFER /;"	d
+DELAY_TAG_AIR2ARM_AS_SNIFFER	iso14443a.h	/^#define DELAY_TAG_AIR2ARM_AS_SNIFFER /;"	d
+DEMOD_AWAITING_FALLING_EDGE_OF_SOF	iso14443.c	/^        DEMOD_AWAITING_FALLING_EDGE_OF_SOF,$/;"	e	enum:__anon14::__anon15	file:
+DEMOD_AWAITING_START_BIT	iso14443.c	/^        DEMOD_AWAITING_START_BIT,$/;"	e	enum:__anon14::__anon15	file:
+DEMOD_DMA_BUFFER_SIZE	iso14443.c	/^#define DEMOD_DMA_BUFFER_SIZE /;"	d	file:
+DEMOD_END_OF_COMMUNICATION	iclass.c	/^		DEMOD_END_OF_COMMUNICATION,$/;"	e	enum:__anon9::__anon10	file:
+DEMOD_END_OF_COMMUNICATION2	iclass.c	/^		DEMOD_END_OF_COMMUNICATION2,$/;"	e	enum:__anon9::__anon10	file:
+DEMOD_ERROR_WAIT	iclass.c	/^        DEMOD_ERROR_WAIT$/;"	e	enum:__anon9::__anon10	file:
+DEMOD_ERROR_WAIT	iso14443.c	/^        DEMOD_ERROR_WAIT$/;"	e	enum:__anon14::__anon15	file:
+DEMOD_GOT_FALLING_EDGE_OF_SOF	iso14443.c	/^        DEMOD_GOT_FALLING_EDGE_OF_SOF,$/;"	e	enum:__anon14::__anon15	file:
+DEMOD_MANCHESTER_D	iclass.c	/^		DEMOD_MANCHESTER_D,$/;"	e	enum:__anon9::__anon10	file:
+DEMOD_MANCHESTER_DATA	iso14443a.h	/^		DEMOD_MANCHESTER_DATA$/;"	e	enum:__anon16::__anon17
+DEMOD_MANCHESTER_E	iclass.c	/^		DEMOD_MANCHESTER_E,$/;"	e	enum:__anon9::__anon10	file:
+DEMOD_MANCHESTER_F	iclass.c	/^		DEMOD_MANCHESTER_F,$/;"	e	enum:__anon9::__anon10	file:
+DEMOD_PHASE_REF_TRAINING	iso14443.c	/^        DEMOD_PHASE_REF_TRAINING,$/;"	e	enum:__anon14::__anon15	file:
+DEMOD_RECEIVING_DATA	iso14443.c	/^        DEMOD_RECEIVING_DATA,$/;"	e	enum:__anon14::__anon15	file:
+DEMOD_SOF_COMPLETE	iclass.c	/^		DEMOD_SOF_COMPLETE,$/;"	e	enum:__anon9::__anon10	file:
+DEMOD_START_OF_COMMUNICATION	iclass.c	/^		DEMOD_START_OF_COMMUNICATION,$/;"	e	enum:__anon9::__anon10	file:
+DEMOD_START_OF_COMMUNICATION2	iclass.c	/^		DEMOD_START_OF_COMMUNICATION2,$/;"	e	enum:__anon9::__anon10	file:
+DEMOD_START_OF_COMMUNICATION3	iclass.c	/^		DEMOD_START_OF_COMMUNICATION3,$/;"	e	enum:__anon9::__anon10	file:
+DEMOD_TRACE_SIZE	iso14443.c	/^#define DEMOD_TRACE_SIZE /;"	d	file:
+DEMOD_UNSYNCD	iclass.c	/^        DEMOD_UNSYNCD,$/;"	e	enum:__anon9::__anon10	file:
+DEMOD_UNSYNCD	iso14443.c	/^        DEMOD_UNSYNCD,$/;"	e	enum:__anon14::__anon15	file:
+DEMOD_UNSYNCD	iso14443a.h	/^		DEMOD_UNSYNCD,$/;"	e	enum:__anon16::__anon17
+DF_PSE	emvdataels.c	/^const uint8_t DF_PSE[]      =   {0x32, 0x50, 0x41, 0x59, 0x2E, 0x53, 0x59, 0x53, 0x2E, 0x44, 0x44, 0x46, 0x30, 0x31};$/;"	v
+DMA_BUFFER_OFFSET	apps.h	/^#define DMA_BUFFER_OFFSET /;"	d
+DMA_BUFFER_SIZE	apps.h	/^#define DMA_BUFFER_SIZE /;"	d
+DYNAMIC_MODULATION_BUFFER_SIZE	emvcmd.c	/^	#define DYNAMIC_MODULATION_BUFFER_SIZE /;"	d	file:
+DYNAMIC_MODULATION_BUFFER_SIZE	iso14443a.c	/^	#define DYNAMIC_MODULATION_BUFFER_SIZE /;"	d	file:
+DYNAMIC_RESPONSE_BUFFER_SIZE	emvcmd.c	/^	#define DYNAMIC_RESPONSE_BUFFER_SIZE /;"	d	file:
+DYNAMIC_RESPONSE_BUFFER_SIZE	iso14443a.c	/^	#define DYNAMIC_RESPONSE_BUFFER_SIZE /;"	d	file:
+DbdecodeIso15693Answer	iso15693.c	/^void DbdecodeIso15693Answer(int len, uint8_t *d) {$/;"	f
+Dbhexdump	appmain.c	/^void Dbhexdump(int len, uint8_t *d, bool bAsci) {$/;"	f
+DbpString	appmain.c	/^void DbpString(char *str)$/;"	f
+Dbprintf	appmain.c	/^void Dbprintf(const char *fmt, ...) {$/;"	f
+Demod	iclass.c	/^} Demod;$/;"	v	typeref:struct:__anon9	file:
+Demod	iso14443.c	/^} Demod;$/;"	v	typeref:struct:__anon14	file:
+Demod	iso14443a.h	/^tDemod Demod;$/;"	v
+DemodPCF7931	lfops.c	/^int DemodPCF7931(uint8_t **outBlocks) {$/;"	f
+DemodReset	iso14443a.c	/^void DemodReset()$/;"	f
+DirectTag15693Command	iso15693.c	/^void DirectTag15693Command(uint32_t datalen,uint32_t speed, uint32_t recv, uint8_t data[]) {$/;"	f
+DoAcquisition125k	lfops.c	/^void DoAcquisition125k(void)$/;"	f
+DownloadFPGA	fpgaloader.c	/^static void DownloadFPGA(const char *FpgaImage, int FpgaImageLen, int bytereversal)$/;"	f	file:
+DownloadFPGA_byte	fpgaloader.c	/^static void DownloadFPGA_byte(unsigned char w)$/;"	f	file:
+EASCSET	LCD.h	/^#define EASCSET	/;"	d
+ECASET	LCD.h	/^#define ECASET	/;"	d
+ECOMSCN	LCD.h	/^#define ECOMSCN	/;"	d
+EDATCTL	LCD.h	/^#define EDATCTL	/;"	d
+EDISCTL	LCD.h	/^#define EDISCTL	/;"	d
+EDISINV	LCD.h	/^#define EDISINV	/;"	d
+EDISNOR	LCD.h	/^#define EDISNOR	/;"	d
+EDISOFF	LCD.h	/^#define EDISOFF	/;"	d
+EDISON	LCD.h	/^#define EDISON	/;"	d
+EEPCOUT	LCD.h	/^#define EEPCOUT	/;"	d
+EEPCTIN	LCD.h	/^#define EEPCTIN	/;"	d
+EEPMRD	LCD.h	/^#define EEPMRD	/;"	d
+EEPMWR	LCD.h	/^#define EEPMWR	/;"	d
+EEPSRRD1	LCD.h	/^#define EEPSRRD1	/;"	d
+EEPSRRD2	LCD.h	/^#define EEPSRRD2	/;"	d
+EM410X_HEADER	lfops.c	/^#define EM410X_HEADER	/;"	d	file:
+EM410X_ID_LENGTH	lfops.c	/^#define EM410X_ID_LENGTH	/;"	d	file:
+EM4xLogin	lfops.c	/^void EM4xLogin(uint32_t Password) {$/;"	f
+EM4xReadWord	lfops.c	/^void EM4xReadWord(uint8_t Address, uint32_t Pwd, uint8_t PwdMode) {$/;"	f
+EM4xWriteWord	lfops.c	/^void EM4xWriteWord(uint32_t Data, uint8_t Address, uint32_t Pwd, uint8_t PwdMode) {$/;"	f
+EML_RESPONSES	iso14443a.h	/^#define EML_RESPONSES /;"	d
+EMVClone	emvcmd.c	/^void EMVClone(uint8_t maxsfi, uint8_t maxrecord)$/;"	f
+EMVEMUL_ACK	emvutil.h	/^#define EMVEMUL_ACK /;"	d
+EMVEMUL_AUTH1	emvutil.h	/^#define EMVEMUL_AUTH1 /;"	d
+EMVEMUL_AUTH2	emvutil.h	/^#define EMVEMUL_AUTH2 /;"	d
+EMVEMUL_HALTED	emvutil.h	/^#define EMVEMUL_HALTED /;"	d
+EMVEMUL_IDLE	emvutil.h	/^#define EMVEMUL_IDLE /;"	d
+EMVEMUL_NOFIELD	emvutil.h	/^#define EMVEMUL_NOFIELD /;"	d
+EMVEMUL_SELECT1	emvutil.h	/^#define EMVEMUL_SELECT1 /;"	d
+EMVEMUL_SELECT2	emvutil.h	/^#define EMVEMUL_SELECT2 /;"	d
+EMVEMUL_SELECT3	emvutil.h	/^#define EMVEMUL_SELECT3 /;"	d
+EMVEMUL_WORK	emvutil.h	/^#define EMVEMUL_WORK	/;"	d
+EMVReadRecord	emvcmd.c	/^void EMVReadRecord(uint8_t arg0, uint8_t arg1,emvcard *currentcard)$/;"	f
+EMVSelectAID	emvcmd.c	/^void EMVSelectAID(uint8_t *AID, uint8_t AIDlen, emvcard* inputcard)$/;"	f
+EMVSelectPPSE	emvcmd.c	/^void EMVSelectPPSE()$/;"	f
+EMVSim	emvcmd.c	/^void EMVSim()$/;"	f
+EMVTest	emvcmd.c	/^void EMVTest()$/;"	f
+EMVTransaction	emvcmd.c	/^void EMVTransaction()$/;"	f
+EMV_DBGLEVEL	emvutil.c	/^int EMV_DBGLEVEL = EMV_DBG_ALL;$/;"	v
+EMV_DBG_ALL	emvutil.h	/^#define EMV_DBG_ALL /;"	d
+EMV_DBG_ERROR	emvutil.h	/^#define EMV_DBG_ERROR /;"	d
+EMV_DBG_EXTENDED	emvutil.h	/^#define EMV_DBG_EXTENDED /;"	d
+EMV_DBG_NONE	emvutil.h	/^#define EMV_DBG_NONE /;"	d
+EMV_MINFIELDV	emvutil.h	/^#define EMV_MINFIELDV /;"	d
+EMV_PaypassTransaction	emvcmd.c	/^int EMV_PaypassTransaction()$/;"	f
+EMV_PaywaveTransaction	emvcmd.c	/^int EMV_PaywaveTransaction()$/;"	f
+EMV_TAG_LIST	emvdataels.c	/^const tagdescription EMV_TAG_LIST[] = {$/;"	v
+ENOP	LCD.h	/^#define ENOP	/;"	d
+EOSCOFF	LCD.h	/^#define EOSCOFF	/;"	d
+EOSCON	LCD.h	/^#define EOSCON	/;"	d
+EPASET	LCD.h	/^#define EPASET	/;"	d
+EPA_Finish	epa.c	/^void EPA_Finish()$/;"	f
+EPA_PACE_Collect_Nonce	epa.c	/^void EPA_PACE_Collect_Nonce(UsbCommand *c)$/;"	f
+EPA_PACE_Collect_Nonce_Abort	epa.c	/^static void EPA_PACE_Collect_Nonce_Abort(uint8_t step, int func_return)$/;"	f	file:
+EPA_PACE_Get_Nonce	epa.c	/^int EPA_PACE_Get_Nonce(uint8_t requested_length, uint8_t *nonce)$/;"	f
+EPA_PACE_MSE_Set_AT	epa.c	/^int EPA_PACE_MSE_Set_AT(pace_version_info_t pace_version_info, uint8_t password)$/;"	f
+EPA_Parse_CardAccess	epa.c	/^size_t EPA_Parse_CardAccess(uint8_t *data,$/;"	f
+EPA_Read_CardAccess	epa.c	/^int EPA_Read_CardAccess(uint8_t *buffer, size_t max_length)$/;"	f
+EPA_Setup	epa.c	/^int EPA_Setup()$/;"	f
+EPTLIN	LCD.h	/^#define EPTLIN	/;"	d
+EPTLOUT	LCD.h	/^#define EPTLOUT	/;"	d
+EPWRCTR	LCD.h	/^#define EPWRCTR	/;"	d
+ERAMRD	LCD.h	/^#define ERAMRD	/;"	d
+ERAMWR	LCD.h	/^#define ERAMWR	/;"	d
+ERGBSET8	LCD.h	/^#define ERGBSET8	/;"	d
+ERMWIN	LCD.h	/^#define ERMWIN	/;"	d
+ERMWOUT	LCD.h	/^#define ERMWOUT	/;"	d
+ESCSTART	LCD.h	/^#define ESCSTART	/;"	d
+ESLPIN	LCD.h	/^#define ESLPIN	/;"	d
+ESLPOUT	LCD.h	/^#define ESLPOUT	/;"	d
+ETMPGRD	LCD.h	/^#define ETMPGRD	/;"	d
+EVOLCTR	LCD.h	/^#define EVOLCTR	/;"	d
+EVOLDOWN	LCD.h	/^#define EVOLDOWN	/;"	d
+EVOLUP	LCD.h	/^#define EVOLUP	/;"	d
+EmGetCmd	iso14443a.c	/^int EmGetCmd(uint8_t *received, int *len)$/;"	f
+EmLogTrace	iso14443a.c	/^bool EmLogTrace(uint8_t *reader_data, uint16_t reader_len, uint32_t reader_StartTime, uint32_t reader_EndTime, uint8_t* reader_Parity,$/;"	f
+EmSend4bit	iso14443a.c	/^int EmSend4bit(uint8_t resp){$/;"	f
+EmSend4bitEx	iso14443a.c	/^int EmSend4bitEx(uint8_t resp, bool correctionNeeded){$/;"	f
+EmSendCmd	iso14443a.c	/^int EmSendCmd(uint8_t *resp, int respLen){$/;"	f
+EmSendCmd14443aRaw	iso14443a.c	/^int EmSendCmd14443aRaw(uint8_t *resp, int respLen, bool correctionNeeded)$/;"	f
+EmSendCmdEx	iso14443a.c	/^int EmSendCmdEx(uint8_t *resp, int respLen, bool correctionNeeded){$/;"	f
+EmSendCmdExPar	iso14443a.c	/^int EmSendCmdExPar(uint8_t *resp, int respLen, bool correctionNeeded, uint8_t* paritystream){$/;"	f
+EmSendCmdPar	iso14443a.c	/^int EmSendCmdPar(uint8_t *resp, int respLen, uint8_t* paritystream){$/;"	f
+FONT6x8	fonts.c	/^const char FONT6x8[97][8] = {$/;"	v
+FOREACH_VALID_NONCE	crapto1.h	/^#define FOREACH_VALID_NONCE(/;"	d
+FPGA_CMD_SET_CONFREG	apps.h	/^#define FPGA_CMD_SET_CONFREG	/;"	d
+FPGA_CMD_SET_DIVISOR	apps.h	/^#define FPGA_CMD_SET_DIVISOR	/;"	d
+FPGA_HF_ISO14443A_READER_LISTEN	apps.h	/^#define FPGA_HF_ISO14443A_READER_LISTEN	/;"	d
+FPGA_HF_ISO14443A_READER_MOD	apps.h	/^#define FPGA_HF_ISO14443A_READER_MOD	/;"	d
+FPGA_HF_ISO14443A_SNIFFER	apps.h	/^#define FPGA_HF_ISO14443A_SNIFFER	/;"	d
+FPGA_HF_ISO14443A_TAGSIM_LISTEN	apps.h	/^#define FPGA_HF_ISO14443A_TAGSIM_LISTEN	/;"	d
+FPGA_HF_ISO14443A_TAGSIM_MOD	apps.h	/^#define FPGA_HF_ISO14443A_TAGSIM_MOD	/;"	d
+FPGA_HF_READER_RX_XCORR_848_KHZ	apps.h	/^#define FPGA_HF_READER_RX_XCORR_848_KHZ	/;"	d
+FPGA_HF_READER_RX_XCORR_QUARTER_FREQ	apps.h	/^#define FPGA_HF_READER_RX_XCORR_QUARTER_FREQ	/;"	d
+FPGA_HF_READER_RX_XCORR_SNOOP	apps.h	/^#define FPGA_HF_READER_RX_XCORR_SNOOP	/;"	d
+FPGA_HF_READER_TX_SHALLOW_MOD	apps.h	/^#define FPGA_HF_READER_TX_SHALLOW_MOD	/;"	d
+FPGA_HF_SIMULATOR_MODULATE_212K	apps.h	/^#define FPGA_HF_SIMULATOR_MODULATE_212K	/;"	d
+FPGA_HF_SIMULATOR_MODULATE_BPSK	apps.h	/^#define FPGA_HF_SIMULATOR_MODULATE_BPSK	/;"	d
+FPGA_HF_SIMULATOR_NO_MODULATION	apps.h	/^#define FPGA_HF_SIMULATOR_NO_MODULATION	/;"	d
+FPGA_LF_EDGE_DETECT_READER_FIELD	apps.h	/^#define FPGA_LF_EDGE_DETECT_READER_FIELD /;"	d
+FPGA_MAJOR_MODE_HF_ISO14443A	apps.h	/^#define FPGA_MAJOR_MODE_HF_ISO14443A	/;"	d
+FPGA_MAJOR_MODE_HF_READER_RX_XCORR	apps.h	/^#define FPGA_MAJOR_MODE_HF_READER_RX_XCORR	/;"	d
+FPGA_MAJOR_MODE_HF_READER_TX	apps.h	/^#define FPGA_MAJOR_MODE_HF_READER_TX	/;"	d
+FPGA_MAJOR_MODE_HF_SIMULATOR	apps.h	/^#define FPGA_MAJOR_MODE_HF_SIMULATOR	/;"	d
+FPGA_MAJOR_MODE_LF_EDGE_DETECT	apps.h	/^#define FPGA_MAJOR_MODE_LF_EDGE_DETECT	/;"	d
+FPGA_MAJOR_MODE_LF_PASSTHRU	apps.h	/^#define FPGA_MAJOR_MODE_LF_PASSTHRU	/;"	d
+FPGA_MAJOR_MODE_LF_READER	apps.h	/^#define FPGA_MAJOR_MODE_LF_READER	/;"	d
+FPGA_MAJOR_MODE_OFF	apps.h	/^#define FPGA_MAJOR_MODE_OFF	/;"	d
+FRAME_DELAY_TIME_PICC_TO_PCD	iso14443a.h	/^#define FRAME_DELAY_TIME_PICC_TO_PCD /;"	d
+FREE_BUFFER_OFFSET	apps.h	/^#define FREE_BUFFER_OFFSET /;"	d
+FREE_BUFFER_SIZE	apps.h	/^#define FREE_BUFFER_SIZE /;"	d
+FREQHI	lfops.c	/^	#define FREQHI /;"	d	file:
+FREQLO	lfops.c	/^	#define FREQLO /;"	d	file:
+FSAMPLE	lfops.c	/^	#define FSAMPLE /;"	d	file:
+FUZZ_EQUAL	legicrf.c	/^#define FUZZ_EQUAL(/;"	d	file:
+FWD_CMD_DISABLE	lfops.c	/^#define FWD_CMD_DISABLE /;"	d	file:
+FWD_CMD_LOGIN	lfops.c	/^#define FWD_CMD_LOGIN /;"	d	file:
+FWD_CMD_READ	lfops.c	/^#define FWD_CMD_READ /;"	d	file:
+FWD_CMD_WRITE	lfops.c	/^#define FWD_CMD_WRITE /;"	d	file:
+FormatVersionInformation	util.c	/^void FormatVersionInformation(char *dst, int len, const char *prefix, void *version_information)$/;"	f
+FpgaDisableSscDma	apps.h	/^#define FpgaDisableSscDma(/;"	d
+FpgaDownloadAndGo	fpgaloader.c	/^void FpgaDownloadAndGo(void)$/;"	f
+FpgaEnableSscDma	apps.h	/^#define FpgaEnableSscDma(/;"	d
+FpgaGatherVersion	fpgaloader.c	/^void FpgaGatherVersion(char *dst, int len)$/;"	f
+FpgaSendCommand	fpgaloader.c	/^void FpgaSendCommand(uint16_t cmd, uint16_t v)$/;"	f
+FpgaSendQueueDelay	iso14443a.h	/^uint16_t FpgaSendQueueDelay;$/;"	v
+FpgaSetupSsc	fpgaloader.c	/^void FpgaSetupSsc(void)$/;"	f
+FpgaSetupSscDma	fpgaloader.c	/^bool FpgaSetupSscDma(uint8_t *buf, int len)$/;"	f
+FpgaWriteConfWord	fpgaloader.c	/^void FpgaWriteConfWord(uint8_t v)$/;"	f
+FrameEOF	iso15693.c	/^#define FrameEOF /;"	d	file:
+FrameSOF	iso15693.c	/^#define FrameSOF /;"	d	file:
+GREEN	LCD.h	/^#define GREEN	/;"	d
+GetCountSspClk	util.c	/^uint32_t RAMFUNC GetCountSspClk(){$/;"	f
+GetCountUS	util.c	/^uint32_t RAMFUNC GetCountUS(){$/;"	f
+GetDeltaCountUS	util.c	/^uint32_t RAMFUNC GetDeltaCountUS(){$/;"	f
+GetIClassAnswer	iclass.c	/^static int GetIClassAnswer(uint8_t *receivedResponse, int maxLen, int *samples, int *elapsed) \/\/uint8_t *buffer$/;"	f	file:
+GetIClassCommandFromReader	iclass.c	/^static int GetIClassCommandFromReader(uint8_t *received, int *len, int maxLen)$/;"	f	file:
+GetIso14443CommandFromReader	iso14443.c	/^static int GetIso14443CommandFromReader(uint8_t *received, int *len, int maxLen)$/;"	f	file:
+GetIso14443aAnswerFromTag	iso14443a.c	/^int GetIso14443aAnswerFromTag(uint8_t *receivedResponse, uint16_t offset, int maxLen)$/;"	f
+GetIso14443aCommandFromReader	iso14443a.c	/^int GetIso14443aCommandFromReader(uint8_t *received, int *len, int maxLen)$/;"	f
+GetIso15693AnswerFromSniff	iso15693.c	/^static int GetIso15693AnswerFromSniff(uint8_t *receivedResponse, int maxLen, int *samples, int *elapsed)$/;"	f	file:
+GetIso15693AnswerFromTag	iso15693.c	/^static int GetIso15693AnswerFromTag(uint8_t *receivedResponse, int maxLen, int *samples, int *elapsed)$/;"	f	file:
+GetParity	iso14443a.c	/^uint32_t GetParity(const uint8_t * pbtCmd, int iLen)$/;"	f
+GetParityStream	iso14443a.c	/^uint8_t GetParityStream(const uint8_t * pbtCmd, int iLen,uint8_t* paritybitstream, uint8_t* paritybitstreamlen)$/;"	f
+GetSamplesFor14443Demod	iso14443.c	/^static void GetSamplesFor14443Demod(int weTx, int n, int quiet)$/;"	f	file:
+GetTickCount	util.c	/^uint32_t RAMFUNC GetTickCount(){$/;"	f
+GlobalUsCounter	util.c	/^static uint32_t GlobalUsCounter = 0;$/;"	v	file:
+HANDLE_BIT_IF_BODY	iso14443.c	/^#define HANDLE_BIT_IF_BODY /;"	d	file:
+HF_ONLY	appmain.c	/^#define HF_ONLY	/;"	d	file:
+HITAG_FRAME_LEN	hitag2.c	/^#define HITAG_FRAME_LEN /;"	d	file:
+HITAG_T_0_MIN	hitag2.c	/^#define HITAG_T_0_MIN /;"	d	file:
+HITAG_T_1_MIN	hitag2.c	/^#define HITAG_T_1_MIN /;"	d	file:
+HITAG_T_EOF	hitag2.c	/^#define HITAG_T_EOF /;"	d	file:
+HITAG_T_LOW	hitag2.c	/^#define HITAG_T_LOW	/;"	d	file:
+HITAG_T_STOP	hitag2.c	/^#define HITAG_T_STOP /;"	d	file:
+HITAG_T_TAG_CAPTURE_FOUR_HALF	hitag2.c	/^#define HITAG_T_TAG_CAPTURE_FOUR_HALF /;"	d	file:
+HITAG_T_TAG_CAPTURE_ONE_HALF	hitag2.c	/^#define HITAG_T_TAG_CAPTURE_ONE_HALF	/;"	d	file:
+HITAG_T_TAG_CAPTURE_THREE_HALF	hitag2.c	/^#define HITAG_T_TAG_CAPTURE_THREE_HALF	/;"	d	file:
+HITAG_T_TAG_CAPTURE_TWO_HALF	hitag2.c	/^#define HITAG_T_TAG_CAPTURE_TWO_HALF	/;"	d	file:
+HITAG_T_TAG_FOUR_HALF_PERIOD	hitag2.c	/^#define HITAG_T_TAG_FOUR_HALF_PERIOD /;"	d	file:
+HITAG_T_TAG_FULL_PERIOD	hitag2.c	/^#define HITAG_T_TAG_FULL_PERIOD	/;"	d	file:
+HITAG_T_TAG_HALF_PERIOD	hitag2.c	/^#define HITAG_T_TAG_HALF_PERIOD	/;"	d	file:
+HITAG_T_TAG_ONE_HALF_PERIOD	hitag2.c	/^#define HITAG_T_TAG_ONE_HALF_PERIOD	/;"	d	file:
+HITAG_T_TAG_THREE_HALF_PERIOD	hitag2.c	/^#define HITAG_T_TAG_THREE_HALF_PERIOD	/;"	d	file:
+HITAG_T_TAG_TWO_HALF_PERIOD	hitag2.c	/^#define HITAG_T_TAG_TWO_HALF_PERIOD	/;"	d	file:
+HITAG_T_WAIT_1	hitag2.c	/^#define HITAG_T_WAIT_1 /;"	d	file:
+HITAG_T_WAIT_2	hitag2.c	/^#define HITAG_T_WAIT_2 /;"	d	file:
+HITAG_T_WAIT_MAX	hitag2.c	/^#define HITAG_T_WAIT_MAX /;"	d	file:
+Handle14443SamplesDemod	iso14443.c	/^static RAMFUNC int Handle14443SamplesDemod(int ci, int cq)$/;"	f	file:
+Handle14443UartBit	iso14443.c	/^static int Handle14443UartBit(int bit)$/;"	f	file:
+IsBlock0PCF7931	lfops.c	/^int IsBlock0PCF7931(uint8_t *Block) {$/;"	f
+IsBlock1PCF7931	lfops.c	/^int IsBlock1PCF7931(uint8_t *Block) {$/;"	f
+IsManchesterModulationNibble1	iso14443a.h	/^#define IsManchesterModulationNibble1(/;"	d
+IsManchesterModulationNibble2	iso14443a.h	/^#define IsManchesterModulationNibble2(/;"	d
+IsMillerModulationNibble1	iso14443a.h	/^#define IsMillerModulationNibble1(/;"	d
+IsMillerModulationNibble2	iso14443a.h	/^#define IsMillerModulationNibble2(/;"	d
+Iso15693InitReader	iso15693.c	/^void Iso15693InitReader() {$/;"	f
+LCDFill	LCD.c	/^void LCDFill (unsigned char xs,unsigned char ys,unsigned char width,unsigned char height, unsigned char color)$/;"	f
+LCDInit	LCD.c	/^void LCDInit(void)$/;"	f
+LCDReset	LCD.c	/^void LCDReset(void)$/;"	f
+LCDSend	LCD.c	/^void LCDSend(unsigned int data)$/;"	f
+LCDSetPixel	LCD.c	/^void LCDSetPixel(unsigned char x, unsigned char y, unsigned char color)$/;"	f
+LCDSetXY	LCD.c	/^void LCDSetXY(unsigned char x, unsigned char y)$/;"	f
+LCDString	LCD.c	/^void LCDString (char *lcd_string, const char *font_style,unsigned char x, unsigned char y, unsigned char fcolor, unsigned char bcolor)$/;"	f
+LCD_XRES	LCD.h	/^#define LCD_XRES	/;"	d
+LCD_YRES	LCD.h	/^#define LCD_YRES	/;"	d
+LED	util.c	/^void LED(int led, int ms)$/;"	f
+LED_GREEN	util.h	/^#define LED_GREEN /;"	d
+LED_ORANGE	util.h	/^#define LED_ORANGE /;"	d
+LED_RED	util.h	/^#define LED_RED /;"	d
+LED_RED2	util.h	/^#define LED_RED2 /;"	d
+LEDsoff	util.c	/^void LEDsoff()$/;"	f
+LF_ONLY	appmain.c	/^#define LF_ONLY	/;"	d	file:
+LF_POLY_EVEN	crapto1.h	/^#define LF_POLY_EVEN /;"	d
+LF_POLY_ODD	crapto1.h	/^#define LF_POLY_ODD /;"	d
+LIGHT_LEN	appmain.c	/^static const int LIGHT_LEN = sizeof(LIGHT_SCHEME)\/sizeof(LIGHT_SCHEME[0]);$/;"	v	file:
+LIGHT_SCHEME	appmain.c	/^static const char LIGHT_SCHEME[] = {$/;"	v	file:
+LastProxToAirDuration	iso14443a.h	/^uint32_t LastProxToAirDuration;$/;"	v
+LastTimeProxToAirStart	iso14443a.h	/^uint32_t LastTimeProxToAirStart;$/;"	v
+LegicCRC	legicrf.c	/^static int LegicCRC(int byte_index, int value, int cmd_sz) {$/;"	f	file:
+LegicCommonInit	legicrf.c	/^static void LegicCommonInit(void) {$/;"	f	file:
+LegicRfReader	legicrf.c	/^int LegicRfReader(int offset, int bytes) {$/;"	f
+LegicRfSimulate	legicrf.c	/^void LegicRfSimulate(int phase, int frame, int reqresp)$/;"	f
+LegicRfWriter	legicrf.c	/^void LegicRfWriter(int bytes, int offset) {$/;"	f
+ListenReaderField	appmain.c	/^void ListenReaderField(int limit)$/;"	f
+LogTrace	iso14443a.c	/^bool RAMFUNC LogTrace(const uint8_t * btBytes, uint8_t iLen, uint32_t timestamp, uint8_t* paritystream, bool bReader)$/;"	f
+LogTraceHitag	hitag2.c	/^int LogTraceHitag(const uint8_t * btBytes, int iBits, int iSamples, uint32_t dwParity, int bReader)$/;"	f
+Logic0	iso15693.c	/^#define Logic0 /;"	d	file:
+Logic1	iso15693.c	/^#define Logic1 /;"	d	file:
+MAGENTA	LCD.h	/^#define MAGENTA	/;"	d
+MAKE_SOFT_DECISION	iso14443.c	/^#define MAKE_SOFT_DECISION(/;"	d	file:
+MAXNBUF	printf.c	/^#define MAXNBUF	/;"	d	file:
+MAX_FRAME_SIZE	iso14443a.h	/^#define MAX_FRAME_SIZE /;"	d
+MFEMUL_AUTH1	mifareutil.h	/^#define MFEMUL_AUTH1 /;"	d
+MFEMUL_AUTH2	mifareutil.h	/^#define MFEMUL_AUTH2 /;"	d
+MFEMUL_HALTED	mifareutil.h	/^#define MFEMUL_HALTED /;"	d
+MFEMUL_IDLE	mifareutil.h	/^#define MFEMUL_IDLE /;"	d
+MFEMUL_INTREG_DEC	mifareutil.h	/^#define MFEMUL_INTREG_DEC /;"	d
+MFEMUL_INTREG_INC	mifareutil.h	/^#define MFEMUL_INTREG_INC /;"	d
+MFEMUL_INTREG_REST	mifareutil.h	/^#define MFEMUL_INTREG_REST /;"	d
+MFEMUL_NOFIELD	mifareutil.h	/^#define MFEMUL_NOFIELD /;"	d
+MFEMUL_SELECT1	mifareutil.h	/^#define MFEMUL_SELECT1 /;"	d
+MFEMUL_SELECT2	mifareutil.h	/^#define MFEMUL_SELECT2 /;"	d
+MFEMUL_WORK	mifareutil.h	/^#define MFEMUL_WORK	/;"	d
+MFEMUL_WRITEBL2	mifareutil.h	/^#define MFEMUL_WRITEBL2 /;"	d
+MF_DBGLEVEL	mifareutil.c	/^int MF_DBGLEVEL = MF_DBG_ALL;$/;"	v
+MF_DBG_ALL	mifareutil.h	/^#define MF_DBG_ALL /;"	d
+MF_DBG_ERROR	mifareutil.h	/^#define MF_DBG_ERROR /;"	d
+MF_DBG_EXTENDED	mifareutil.h	/^#define MF_DBG_EXTENDED /;"	d
+MF_DBG_NONE	mifareutil.h	/^#define MF_DBG_NONE /;"	d
+MF_MINFIELDV	mifareutil.h	/^#define MF_MINFIELDV /;"	d
+MIFARE_BUFF_OFFSET	iso14443a.h	/^#define MIFARE_BUFF_OFFSET /;"	d
+MOD_BOTH_HALVES	iso14443a.h	/^	MOD_BOTH_HALVES$/;"	e	enum:__anon18
+MOD_FIRST_HALF	iso14443a.h	/^	MOD_FIRST_HALF,$/;"	e	enum:__anon18
+MOD_NOMOD	iso14443a.h	/^	MOD_NOMOD = 0,$/;"	e	enum:__anon18
+MOD_SECOND_HALF	iso14443a.h	/^	MOD_SECOND_HALF,$/;"	e	enum:__anon18
+ManchesterDecoding	iclass.c	/^static RAMFUNC int ManchesterDecoding(int v)$/;"	f	file:
+ManchesterDecoding	iso14443a.c	/^RAMFUNC int ManchesterDecoding(uint8_t bit, uint16_t offset, uint32_t non_real_time)$/;"	f
+MeasureAntennaTuning	appmain.c	/^void MeasureAntennaTuning(void)$/;"	f
+MeasureAntennaTuningHf	appmain.c	/^void MeasureAntennaTuningHf(void)$/;"	f
+MfSniffEnd	mifaresniff.c	/^bool MfSniffEnd(void){$/;"	f
+MfSniffInit	mifaresniff.c	/^bool MfSniffInit(void){$/;"	f
+MfSniffLogic	mifaresniff.c	/^bool RAMFUNC MfSniffLogic(const uint8_t *data, uint16_t len, uint8_t* parity, uint16_t bitCnt, bool reader) {$/;"	f
+MfSniffSend	mifaresniff.c	/^bool RAMFUNC MfSniffSend(uint16_t maxTimeoutMs) {$/;"	f
+Mifare1ksim	iso14443a.c	/^void Mifare1ksim(uint8_t flags, uint8_t exitAfterNReads, uint8_t arg2, uint8_t *datain)$/;"	f
+MifareCGetBlock	mifarecmd.c	/^void MifareCGetBlock(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datain){$/;"	f
+MifareCSetBlock	mifarecmd.c	/^void MifareCSetBlock(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datain){$/;"	f
+MifareChkKeys	mifarecmd.c	/^void MifareChkKeys(uint8_t arg0, uint8_t arg1, uint8_t arg2, uint8_t *datain)$/;"	f
+MifareECardLoad	mifarecmd.c	/^void MifareECardLoad(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datain){$/;"	f
+MifareEMemClr	mifarecmd.c	/^void MifareEMemClr(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datain){$/;"	f
+MifareEMemGet	mifarecmd.c	/^void MifareEMemGet(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datain){$/;"	f
+MifareEMemSet	mifarecmd.c	/^void MifareEMemSet(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datain){$/;"	f
+MifareNested	mifarecmd.c	/^void MifareNested(uint32_t arg0, uint32_t arg1, uint32_t calibrate, uint8_t *datain)$/;"	f
+MifareReadBlock	mifarecmd.c	/^void MifareReadBlock(uint8_t arg0, uint8_t arg1, uint8_t arg2, uint8_t *datain)$/;"	f
+MifareReadSector	mifarecmd.c	/^void MifareReadSector(uint8_t arg0, uint8_t arg1, uint8_t arg2, uint8_t *datain)$/;"	f
+MifareSetDbgLvl	mifarecmd.c	/^void MifareSetDbgLvl(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datain){$/;"	f
+MifareUReadBlock	mifarecmd.c	/^void MifareUReadBlock(uint8_t arg0,uint8_t *datain)$/;"	f
+MifareUReadCard	mifarecmd.c	/^void MifareUReadCard(uint8_t arg0, uint8_t *datain)$/;"	f
+MifareUWriteBlock	mifarecmd.c	/^void MifareUWriteBlock(uint8_t arg0, uint8_t *datain)$/;"	f
+MifareUWriteBlock_Special	mifarecmd.c	/^void MifareUWriteBlock_Special(uint8_t arg0, uint8_t *datain)$/;"	f
+MifareWriteBlock	mifarecmd.c	/^void MifareWriteBlock(uint8_t arg0, uint8_t arg1, uint8_t arg2, uint8_t *datain)$/;"	f
+MillerDecoding	iso14443a.c	/^RAMFUNC bool MillerDecoding(uint8_t bit, uint32_t non_real_time)$/;"	f
+ModThenAcquireRawAdcSamples125k	lfops.c	/^void ModThenAcquireRawAdcSamples125k(int delay_off, int period_0, int period_1, uint8_t *command)$/;"	f
+Mod_Manchester_LUT	iso14443a.c	/^const bool Mod_Manchester_LUT[] = {$/;"	v
+Mod_Manchester_LUT	iso14443a.h	/^const bool Mod_Manchester_LUT[16];$/;"	v
+Mod_Miller_LUT	iso14443a.c	/^const bool Mod_Miller_LUT[] = {$/;"	v
+Mod_Miller_LUT	iso14443a.h	/^const bool Mod_Miller_LUT[16];$/;"	v
+Modulation_t	iso14443a.h	/^	} Modulation_t;$/;"	t	typeref:enum:__anon18
+NBBY	printf.c	/^#define NBBY /;"	d	file:
+NextTransferTime	iso14443a.h	/^uint32_t NextTransferTime;$/;"	v
+NrAr	hitag2.c	/^byte_t NrAr[8];$/;"	v
+OBJS	Makefile	/^OBJS = $(OBJDIR)\/osimage.s19 $(OBJDIR)\/fpgaimage.s19$/;"	m
+OFFSET_LOG	legicrf.c	/^#define OFFSET_LOG /;"	d	file:
+OPEN_COIL	hitag2.c	/^#define OPEN_COIL(/;"	d	file:
+OPEN_COIL	lfops.c	/^#define OPEN_COIL(/;"	d	file:
+OPTS	appmain.c	/^#define OPTS /;"	d	file:
+OddByteParity	iso14443.c	/^const uint8_t OddByteParity[256] = {$/;"	v
+OutOfCnt	iclass.c	/^    int     OutOfCnt;$/;"	m	struct:__anon7	file:
+OutOfNDecoding	iclass.c	/^static RAMFUNC int OutOfNDecoding(int bit)$/;"	f	file:
+PBRS	LCD.h	/^#define PBRS	/;"	d
+PBSTROFF	LCD.h	/^#define PBSTROFF	/;"	d
+PBSTRON	LCD.h	/^#define PBSTRON	/;"	d
+PCASET	LCD.h	/^#define PCASET	/;"	d
+PCB	emvutil.c	/^uint8_t PCB = 0x00; \/\/track Protocol Control Byte externally$/;"	v
+PCHAR	printf.c	/^#define PCHAR(/;"	d	file:
+PCHAR	printf.c	/^#undef PCHAR$/;"	d	file:
+PCOLMOD	LCD.h	/^#define PCOLMOD	/;"	d
+PDAL	LCD.h	/^#define PDAL	/;"	d
+PDALO	LCD.h	/^#define PDALO	/;"	d
+PDF8C	LCD.h	/^#define PDF8C	/;"	d
+PDISPOFF	LCD.h	/^#define PDISPOFF	/;"	d
+PDISPON	LCD.h	/^#define PDISPON	/;"	d
+PDOR	LCD.h	/^#define PDOR	/;"	d
+PEC	LCD.h	/^#define PEC	/;"	d
+PECM	LCD.h	/^#define PECM	/;"	d
+PFINV	LCD.h	/^#define PFINV	/;"	d
+PIDMOFF	LCD.h	/^#define PIDMOFF	/;"	d
+PIDMON	LCD.h	/^#define PIDMON	/;"	d
+PINVOFF	LCD.h	/^#define PINVOFF	/;"	d
+PINVON	LCD.h	/^#define PINVON	/;"	d
+PIN_BLOCKED	emvdataels.c	/^const uint8_t PIN_BLOCKED[] = {0x69,0x84};$/;"	v
+PIN_BLOCKED2	emvdataels.c	/^const uint8_t PIN_BLOCKED2[] = {0x69,0x84};$/;"	v
+PIN_WRONG	emvdataels.c	/^const uint8_t PIN_WRONG[] = {0x63};$/;"	v
+PMADCTL	LCD.h	/^#define PMADCTL	/;"	d
+PNLI	LCD.h	/^#define PNLI	/;"	d
+PNOP	LCD.h	/^#define PNOP	/;"	d
+PNORON	LCD.h	/^#define PNORON	/;"	d
+PPASET	LCD.h	/^#define PPASET	/;"	d
+PPSS	emvcard.h	/^    uint8_t PPSS;$/;"	m	struct:__anon1
+PPTLAR	LCD.h	/^#define PPTLAR	/;"	d
+PPTLON	LCD.h	/^#define PPTLON	/;"	d
+PRAMWR	LCD.h	/^#define PRAMWR	/;"	d
+PRDDIDIF	LCD.h	/^#define PRDDIDIF	/;"	d
+PRDDST	LCD.h	/^#define PRDDST	/;"	d
+PRDID1	LCD.h	/^#define PRDID1	/;"	d
+PRDID2	LCD.h	/^#define PRDID2	/;"	d
+PRDID3	LCD.h	/^#define PRDID3	/;"	d
+PRDTEMP	LCD.h	/^#define PRDTEMP	/;"	d
+PRGBSET	LCD.h	/^#define PRGBSET	/;"	d
+PSEP	LCD.h	/^#define PSEP	/;"	d
+PSETBS	LCD.h	/^#define PSETBS	/;"	d
+PSETCON	LCD.h	/^#define PSETCON	/;"	d
+PSETMUL	LCD.h	/^#define PSETMUL	/;"	d
+PSETVOP	LCD.h	/^#define PSETVOP	/;"	d
+PSFD	LCD.h	/^#define PSFD	/;"	d
+PSLEEPIN	LCD.h	/^#define PSLEEPIN	/;"	d
+PSLEEPOUT	LCD.h	/^#define PSLEEPOUT	/;"	d
+PSWRESET	LCD.h	/^#define PSWRESET	/;"	d
+PTCDF	LCD.h	/^#define PTCDF	/;"	d
+PTCDFE	LCD.h	/^#define PTCDFE	/;"	d
+PTCVOPAB	LCD.h	/^#define PTCVOPAB	/;"	d
+PTCVOPCD	LCD.h	/^#define PTCVOPCD	/;"	d
+PTCVOPE	LCD.h	/^#define PTCVOPE	/;"	d
+PTEOFF	LCD.h	/^#define PTEOFF	/;"	d
+PTEON	LCD.h	/^#define PTEON	/;"	d
+PTRS	LCD.h	/^#define PTRS	/;"	d
+PVSCRDEF	LCD.h	/^#define PVSCRDEF	/;"	d
+PrepareDelayedTransfer	iso14443a.c	/^void PrepareDelayedTransfer(uint16_t delay)$/;"	f
+Prepare_Addr	lfops.c	/^uint8_t Prepare_Addr( uint8_t addr ) {$/;"	f
+Prepare_Cmd	lfops.c	/^uint8_t Prepare_Cmd( uint8_t cmd ) {$/;"	f
+Prepare_Data	lfops.c	/^uint8_t Prepare_Data( uint16_t data_low, uint16_t data_hi) {$/;"	f
+ProxToAirDuration	iso14443a.h	/^  uint32_t ProxToAirDuration;$/;"	m	struct:__anon21
+RAMFUNC	apps.h	/^#define RAMFUNC /;"	d
+READER_TAG_BUFFER_SIZE	iso14443.c	/^#define READER_TAG_BUFFER_SIZE /;"	d	file:
+RECV_CMD_OFFSET	apps.h	/^#define RECV_CMD_OFFSET /;"	d
+RECV_CMD_SIZE	apps.h	/^#define RECV_CMD_SIZE /;"	d
+RECV_RES_OFFSET	apps.h	/^#define RECV_RES_OFFSET /;"	d
+RECV_RES_SIZE	apps.h	/^#define RECV_RES_SIZE /;"	d
+RED	LCD.h	/^#define RED	/;"	d
+REQUEST_GUARD_TIME	iso14443a.h	/^#define REQUEST_GUARD_TIME /;"	d
+RWD_TIME_0	legicrf.c	/^#define RWD_TIME_0 /;"	d	file:
+RWD_TIME_1	legicrf.c	/^#define	RWD_TIME_1 /;"	d	file:
+RWD_TIME_FUZZ	legicrf.c	/^#define RWD_TIME_FUZZ /;"	d	file:
+RWD_TIME_PAUSE	legicrf.c	/^#define RWD_TIME_PAUSE /;"	d	file:
+ReadAdc	appmain.c	/^static int ReadAdc(int ch)$/;"	f	file:
+ReadMem	appmain.c	/^void ReadMem(int addr)$/;"	f
+ReadPCF7931	lfops.c	/^void ReadPCF7931() {$/;"	f
+ReadSTMemoryIso14443	iso14443.c	/^void ReadSTMemoryIso14443(uint32_t dwLast)$/;"	f
+ReadTItag	lfops.c	/^void ReadTItag(void)$/;"	f
+ReaderHitag	hitag2.c	/^void ReaderHitag(hitag_function htf, hitag_data* htd) {$/;"	f
+ReaderIClass	iclass.c	/^void ReaderIClass(uint8_t arg0) {$/;"	f
+ReaderIso14443a	iso14443a.c	/^void ReaderIso14443a(UsbCommand *c)$/;"	f
+ReaderIso15693	iso15693.c	/^void ReaderIso15693(uint32_t parameter)$/;"	f
+ReaderMifare	iso14443a.c	/^void ReaderMifare(bool first_try)$/;"	f
+ReaderReceive	iso14443a.c	/^int ReaderReceive(uint8_t* receivedAnswer)$/;"	f
+ReaderReceiveIClass	iclass.c	/^int ReaderReceiveIClass(uint8_t* receivedAnswer)$/;"	f
+ReaderReceiveOffset	iso14443a.c	/^int ReaderReceiveOffset(uint8_t* receivedAnswer, uint16_t offset)$/;"	f
+ReaderReceivePar	iso14443a.c	/^int ReaderReceivePar(uint8_t *receivedAnswer, uint8_t *parptr)$/;"	f
+ReaderTransmit	iso14443a.c	/^void ReaderTransmit(uint8_t* frame, int len, uint32_t *timing)$/;"	f
+ReaderTransmitBits	iso14443a.c	/^void ReaderTransmitBits(uint8_t* frame, int len, uint32_t *timing)$/;"	f
+ReaderTransmitBitsPar	iso14443a.c	/^void ReaderTransmitBitsPar(uint8_t* frame, int bits, uint8_t* paritystream, uint32_t *timing)$/;"	f
+ReaderTransmitIClass	iclass.c	/^void ReaderTransmitIClass(uint8_t* frame, int len)$/;"	f
+ReaderTransmitPar	iso14443a.c	/^void ReaderTransmitPar(uint8_t* frame, int len, uint8_t* paritystream, uint32_t *timing)$/;"	f
+RecordRawAdcSamplesIso15693	iso15693.c	/^void RecordRawAdcSamplesIso15693(void)$/;"	f
+S1	crapto1.c	/^static const uint32_t S1[] = {     0x62141, 0x310A0, 0x18850, 0x0C428, 0x06214,$/;"	v	file:
+S2	crapto1.c	/^static const uint32_t S2[] = {  0x3A557B00, 0x5D2ABD80, 0x2E955EC0, 0x174AAF60,$/;"	v	file:
+SAK	emvcard.h	/^    uint8_t SAK; $/;"	m	struct:__anon1
+SEC_D	iso14443a.h	/^#define	SEC_D /;"	d
+SEC_E	iso14443a.h	/^#define	SEC_E /;"	d
+SEC_F	iso14443a.h	/^#define	SEC_F /;"	d
+SEC_X	iclass.c	/^#define	SEC_X /;"	d	file:
+SEC_X	iso14443a.h	/^#define	SEC_X /;"	d
+SEC_Y	iclass.c	/^#define	SEC_Y /;"	d	file:
+SEC_Y	iso14443a.h	/^#define	SEC_Y /;"	d
+SEC_Z	iclass.c	/^#define	SEC_Z /;"	d	file:
+SEC_Z	iso14443a.h	/^#define	SEC_Z /;"	d
+SEND_BIT	fpgaloader.c	/^#define SEND_BIT(/;"	d	file:
+SESSION_IV	legicrf.c	/^#define SESSION_IV /;"	d	file:
+SFI	emvdataels.h	/^    uint8_t SFI ; \/\/all published EMV tags are less than 3 bytes$/;"	m	struct:__anon4
+SHORT_COIL	hitag2.c	/^#define SHORT_COIL(/;"	d	file:
+SHORT_COIL	lfops.c	/^#define SHORT_COIL(/;"	d	file:
+SIM_DIVISOR	legicrf.c	/^#define SIM_DIVISOR /;"	d	file:
+SIM_SHIFT	legicrf.c	/^#define SIM_SHIFT /;"	d	file:
+SNF_ANTICOL1	mifaresniff.h	/^#define SNF_ANTICOL1	/;"	d
+SNF_ANTICOL2	mifaresniff.h	/^#define SNF_ANTICOL2	/;"	d
+SNF_ATQA	mifaresniff.h	/^#define SNF_ATQA	/;"	d
+SNF_CARD_CMD	mifaresniff.h	/^#define SNF_CARD_CMD	/;"	d
+SNF_CARD_IDLE	mifaresniff.h	/^#define SNF_CARD_IDLE	/;"	d
+SNF_CARD_RESP	mifaresniff.h	/^#define SNF_CARD_RESP	/;"	d
+SNF_INIT	mifaresniff.h	/^#define SNF_INIT	/;"	d
+SNF_NO_FIELD	mifaresniff.h	/^#define SNF_NO_FIELD	/;"	d
+SNF_SAK	mifaresniff.h	/^#define SNF_SAK	/;"	d
+SNF_UID1	mifaresniff.h	/^#define SNF_UID1	/;"	d
+SNF_UID2	mifaresniff.h	/^#define SNF_UID2	/;"	d
+SNF_UID_4	mifaresniff.h	/^#define SNF_UID_4	/;"	d
+SNF_UID_7	mifaresniff.h	/^#define SNF_UID_7	/;"	d
+SNF_WUPREQ	mifaresniff.h	/^#define SNF_WUPREQ	/;"	d
+SRC_CRAPTO1	Makefile	/^SRC_CRAPTO1 = crapto1.c crypto1.c$/;"	m
+SRC_EMV	Makefile	/^SRC_EMV = tlv.c emvutil.c emvdataels.c emvcmd.c $/;"	m
+SRC_ISO14443a	Makefile	/^SRC_ISO14443a = epa.c iso14443a.c mifareutil.c mifarecmd.c mifaresniff.c$/;"	m
+SRC_ISO14443b	Makefile	/^SRC_ISO14443b = iso14443.c$/;"	m
+SRC_ISO15693	Makefile	/^SRC_ISO15693 = iso15693.c iso15693tools.c $/;"	m
+SRC_LF	Makefile	/^SRC_LF = lfops.c hitag2.c$/;"	m
+START_GAP	lfops.c	/^#define START_GAP /;"	d	file:
+STATE_AWAITING_START_BIT	iso14443.c	/^        STATE_AWAITING_START_BIT,$/;"	e	enum:__anon12::__anon13	file:
+STATE_CON	legicrf.c	/^  STATE_CON,$/;"	e	enum:__anon22	file:
+STATE_DISCON	legicrf.c	/^  STATE_DISCON,$/;"	e	enum:__anon22	file:
+STATE_ERROR_WAIT	iso14443.c	/^        STATE_ERROR_WAIT$/;"	e	enum:__anon12::__anon13	file:
+STATE_GOT_FALLING_EDGE_OF_SOF	iso14443.c	/^        STATE_GOT_FALLING_EDGE_OF_SOF,$/;"	e	enum:__anon12::__anon13	file:
+STATE_IV	legicrf.c	/^  STATE_IV,$/;"	e	enum:__anon22	file:
+STATE_MILLER_X	iso14443a.h	/^		STATE_MILLER_X,$/;"	e	enum:__anon19::__anon20
+STATE_MILLER_Y	iso14443a.h	/^		STATE_MILLER_Y,$/;"	e	enum:__anon19::__anon20
+STATE_MILLER_Z	iso14443a.h	/^		STATE_MILLER_Z,$/;"	e	enum:__anon19::__anon20
+STATE_RECEIVING	iclass.c	/^	STATE_RECEIVING$/;"	e	enum:__anon7::__anon8	file:
+STATE_RECEIVING_DATA	iso14443.c	/^        STATE_RECEIVING_DATA,$/;"	e	enum:__anon12::__anon13	file:
+STATE_START_OF_COMMUNICATION	iclass.c	/^        STATE_START_OF_COMMUNICATION,$/;"	e	enum:__anon7::__anon8	file:
+STATE_START_OF_COMMUNICATION	iso14443a.h	/^		STATE_START_OF_COMMUNICATION,$/;"	e	enum:__anon19::__anon20
+STATE_UNSYNCD	iclass.c	/^        STATE_UNSYNCD,$/;"	e	enum:__anon7::__anon8	file:
+STATE_UNSYNCD	iso14443.c	/^        STATE_UNSYNCD,$/;"	e	enum:__anon12::__anon13	file:
+STATE_UNSYNCD	iso14443a.h	/^		STATE_UNSYNCD,$/;"	e	enum:__anon19::__anon20
+SUB_BOTH	iclass.c	/^		SUB_BOTH$/;"	e	enum:__anon9::__anon11	file:
+SUB_FIRST_HALF	iclass.c	/^		SUB_FIRST_HALF,$/;"	e	enum:__anon9::__anon11	file:
+SUB_NONE	iclass.c	/^		SUB_NONE,$/;"	e	enum:__anon9::__anon11	file:
+SUB_SECOND_HALF	iclass.c	/^		SUB_SECOND_HALF,$/;"	e	enum:__anon9::__anon11	file:
+SW12_COND_NOT_SAT	emvdataels.c	/^const uint8_t SW12_COND_NOT_SAT[] = {0x69,0x83};$/;"	v
+SW12_NOT_FOUND	emvdataels.c	/^const uint8_t SW12_NOT_FOUND[] = {0x6a,0x82};$/;"	v
+SW12_NOT_SUPPORTED	emvdataels.c	/^const uint8_t SW12_NOT_SUPPORTED[] = {0x6a,0x81};$/;"	v
+SW1_OK	emvdataels.c	/^const uint8_t SW1_OK[] = {0x90,0x00};$/;"	v
+SW1_RESPONSE_BYTES	emvdataels.c	/^const uint8_t SW1_RESPONSE_BYTES[] = {0x61};$/;"	v
+SW1_WRONG_LENGTH	emvdataels.c	/^const uint8_t SW1_WRONG_LENGTH[] = {0x6c};$/;"	v
+SWAPENDIAN	crypto1.c	/^#define SWAPENDIAN(/;"	d	file:
+SamyRun	appmain.c	/^void SamyRun()$/;"	f
+SendDataTag	iso15693.c	/^int SendDataTag(uint8_t *send, int sendlen, int init, int speed, uint8_t **recv) {$/;"	f
+SendForward	lfops.c	/^void SendForward(uint8_t fwd_bit_count) {$/;"	f
+SendIClassAnswer	iclass.c	/^static int SendIClassAnswer(uint8_t *resp, int respLen, int delay)$/;"	f	file:
+SendRawCommand14443B	iso14443.c	/^void SendRawCommand14443B(uint32_t datalen, uint32_t recv,uint8_t powerfield, uint8_t data[])$/;"	f
+SendVersion	appmain.c	/^void SendVersion(void)$/;"	f
+SetAdcMuxFor	fpgaloader.c	/^void SetAdcMuxFor(uint32_t whichGpio)$/;"	f
+SetDebugIso15693	iso15693.c	/^void SetDebugIso15693(uint32_t debug) {$/;"	f
+SetupSpi	fpgaloader.c	/^void SetupSpi(int mode)$/;"	f
+SimTagIso15693	iso15693.c	/^void SimTagIso15693(uint32_t parameter)$/;"	f
+SimulateHitagTag	hitag2.c	/^void SimulateHitagTag(bool tag_mem_supplied, byte_t* data) {$/;"	f
+SimulateIClass	iclass.c	/^void SimulateIClass(uint8_t arg0, uint8_t *datain)$/;"	f
+SimulateIso14443Tag	iso14443.c	/^void SimulateIso14443Tag(void)$/;"	f
+SimulateIso14443aTag	iso14443a.c	/^void SimulateIso14443aTag(int tagType, int uid_1st, int uid_2nd, byte_t* data)$/;"	f
+SimulateTagHfListen	appmain.c	/^void SimulateTagHfListen(void)$/;"	f
+SimulateTagLowFrequency	lfops.c	/^void SimulateTagLowFrequency(int period, int gap, int ledcontrol)$/;"	f
+SimulateTagLowFrequencyBidir	lfops.c	/^void SimulateTagLowFrequencyBidir(int divisor, int t0)$/;"	f
+SniffMifare	iso14443a.c	/^void RAMFUNC SniffMifare(uint8_t param) {$/;"	f
+SnoopHitag	hitag2.c	/^void SnoopHitag(uint32_t type) {$/;"	f
+SnoopIClass	iclass.c	/^void RAMFUNC SnoopIClass(void)$/;"	f
+SnoopIso14443	iso14443.c	/^void RAMFUNC SnoopIso14443(void)$/;"	f
+SnoopIso14443a	iso14443a.c	/^void RAMFUNC SnoopIso14443a(uint8_t param) {$/;"	f
+SpinDelay	util.c	/^void SpinDelay(int ms)$/;"	f
+SpinDelayUs	util.c	/^void SpinDelayUs(int us)$/;"	f
+StartCountSspClk	util.c	/^void StartCountSspClk()$/;"	f
+StartCountUS	util.c	/^void StartCountUS()$/;"	f
+StartTickCount	util.c	/^void StartTickCount()$/;"	f
+SwapBits	util.c	/^uint32_t SwapBits(uint32_t value, int nrbits) {$/;"	f
+SwapBytes	util.c	/^void SwapBytes(uint8_t* bytestreamin, uint8_t len,uint8_t* bytestreamout){$/;"	f
+T0	emvcard.h	/^    uint8_t T0;$/;"	m	struct:__anon1
+T0	hitag2.c	/^#define T0 /;"	d	file:
+T1	crapto1.c	/^static const uint32_t T1[] = {$/;"	v	file:
+T2	crapto1.c	/^static const uint32_t T2[] = {  0x3C88B810, 0x5E445C08, 0x2982A580, 0x14C152C0,$/;"	v	file:
+T5555_BITRATE_SHIFT	lfops.c	/^#define T5555_BITRATE_SHIFT	/;"	d	file:
+T5555_FAST_WRITE	lfops.c	/^#define T5555_FAST_WRITE	/;"	d	file:
+T5555_INVERT_OUTPUT	lfops.c	/^#define T5555_INVERT_OUTPUT	/;"	d	file:
+T5555_MAXBLOCK_SHIFT	lfops.c	/^#define T5555_MAXBLOCK_SHIFT	/;"	d	file:
+T5555_MODULATION_BIPHASE	lfops.c	/^#define T5555_MODULATION_BIPHASE	/;"	d	file:
+T5555_MODULATION_DIRECT	lfops.c	/^#define T5555_MODULATION_DIRECT	/;"	d	file:
+T5555_MODULATION_FSK1	lfops.c	/^#define T5555_MODULATION_FSK1	/;"	d	file:
+T5555_MODULATION_FSK2	lfops.c	/^#define T5555_MODULATION_FSK2	/;"	d	file:
+T5555_MODULATION_MANCHESTER	lfops.c	/^#define T5555_MODULATION_MANCHESTER	/;"	d	file:
+T5555_MODULATION_PSK1	lfops.c	/^#define T5555_MODULATION_PSK1	/;"	d	file:
+T5555_MODULATION_PSK2	lfops.c	/^#define T5555_MODULATION_PSK2	/;"	d	file:
+T5555_MODULATION_PSK3	lfops.c	/^#define T5555_MODULATION_PSK3	/;"	d	file:
+T5555_PAGE_SELECT	lfops.c	/^#define T5555_PAGE_SELECT	/;"	d	file:
+T5555_PSK_RF_2	lfops.c	/^#define T5555_PSK_RF_2	/;"	d	file:
+T5555_PSK_RF_4	lfops.c	/^#define T5555_PSK_RF_4	/;"	d	file:
+T5555_PSK_RF_8	lfops.c	/^#define T5555_PSK_RF_8	/;"	d	file:
+T5555_ST_TERMINATOR	lfops.c	/^#define T5555_ST_TERMINATOR	/;"	d	file:
+T5555_USE_AOR	lfops.c	/^#define T5555_USE_AOR	/;"	d	file:
+T5555_USE_PWD	lfops.c	/^#define T5555_USE_PWD	/;"	d	file:
+T55x7_AOR	lfops.c	/^#define T55x7_AOR	/;"	d	file:
+T55x7_BITRATE_RF_100	lfops.c	/^#define T55x7_BITRATE_RF_100	/;"	d	file:
+T55x7_BITRATE_RF_128	lfops.c	/^#define T55x7_BITRATE_RF_128	/;"	d	file:
+T55x7_BITRATE_RF_16	lfops.c	/^#define T55x7_BITRATE_RF_16	/;"	d	file:
+T55x7_BITRATE_RF_32	lfops.c	/^#define T55x7_BITRATE_RF_32	/;"	d	file:
+T55x7_BITRATE_RF_40	lfops.c	/^#define T55x7_BITRATE_RF_40	/;"	d	file:
+T55x7_BITRATE_RF_50	lfops.c	/^#define T55x7_BITRATE_RF_50	/;"	d	file:
+T55x7_BITRATE_RF_64	lfops.c	/^#define T55x7_BITRATE_RF_64	/;"	d	file:
+T55x7_BITRATE_RF_8	lfops.c	/^#define T55x7_BITRATE_RF_8	/;"	d	file:
+T55x7_MAXBLOCK_SHIFT	lfops.c	/^#define T55x7_MAXBLOCK_SHIFT	/;"	d	file:
+T55x7_MODULATION_BIPHASE	lfops.c	/^#define T55x7_MODULATION_BIPHASE	/;"	d	file:
+T55x7_MODULATION_DIRECT	lfops.c	/^#define T55x7_MODULATION_DIRECT	/;"	d	file:
+T55x7_MODULATION_FSK1	lfops.c	/^#define T55x7_MODULATION_FSK1	/;"	d	file:
+T55x7_MODULATION_FSK1a	lfops.c	/^#define T55x7_MODULATION_FSK1a	/;"	d	file:
+T55x7_MODULATION_FSK2	lfops.c	/^#define T55x7_MODULATION_FSK2	/;"	d	file:
+T55x7_MODULATION_FSK2a	lfops.c	/^#define T55x7_MODULATION_FSK2a	/;"	d	file:
+T55x7_MODULATION_MANCHESTER	lfops.c	/^#define T55x7_MODULATION_MANCHESTER	/;"	d	file:
+T55x7_MODULATION_PSK1	lfops.c	/^#define T55x7_MODULATION_PSK1	/;"	d	file:
+T55x7_MODULATION_PSK2	lfops.c	/^#define T55x7_MODULATION_PSK2	/;"	d	file:
+T55x7_MODULATION_PSK3	lfops.c	/^#define T55x7_MODULATION_PSK3	/;"	d	file:
+T55x7_POR_DELAY	lfops.c	/^#define T55x7_POR_DELAY	/;"	d	file:
+T55x7_PSKCF_RF_2	lfops.c	/^#define T55x7_PSKCF_RF_2	/;"	d	file:
+T55x7_PSKCF_RF_4	lfops.c	/^#define T55x7_PSKCF_RF_4	/;"	d	file:
+T55x7_PSKCF_RF_8	lfops.c	/^#define T55x7_PSKCF_RF_8	/;"	d	file:
+T55x7_PWD	lfops.c	/^#define T55x7_PWD	/;"	d	file:
+T55x7_ST_TERMINATOR	lfops.c	/^#define T55x7_ST_TERMINATOR	/;"	d	file:
+T55xxReadBlock	lfops.c	/^void T55xxReadBlock(uint32_t Block, uint32_t Pwd, uint8_t PwdMode)$/;"	f
+T55xxReadTrace	lfops.c	/^void T55xxReadTrace(void){$/;"	f
+T55xxWriteBit	lfops.c	/^void T55xxWriteBit(int bit)$/;"	f
+T55xxWriteBlock	lfops.c	/^void T55xxWriteBlock(uint32_t Data, uint32_t Block, uint32_t Pwd, uint8_t PwdMode)$/;"	f
+TA1	emvcard.h	/^    uint8_t TA1;$/;"	m	struct:__anon1
+TAG_LENGTH	tlv.h	/^#define TAG_LENGTH /;"	d
+TAG_READER_BUFFER_SIZE	iso14443.c	/^#define TAG_READER_BUFFER_SIZE /;"	d	file:
+TAG_RESPONSE_COUNT	emvcmd.c	/^    #define TAG_RESPONSE_COUNT /;"	d	file:
+TAG_RESPONSE_COUNT	iso14443a.c	/^	#define TAG_RESPONSE_COUNT /;"	d	file:
+TAG_STATE_ACTIVATED	hitag2.c	/^		TAG_STATE_ACTIVATED  = 0x03,       \/\/ Activation complete, awaiting read\/write commands$/;"	e	enum:hitag2_tag::__anon6	file:
+TAG_STATE_ACTIVATING	hitag2.c	/^		TAG_STATE_ACTIVATING = 0x02 ,      \/\/ In activation phase (password mode), sent UID, awaiting reader password$/;"	e	enum:hitag2_tag::__anon6	file:
+TAG_STATE_RESET	hitag2.c	/^		TAG_STATE_RESET      = 0x01,       \/\/ Just powered up, awaiting GetSnr$/;"	e	enum:hitag2_tag::__anon6	file:
+TAG_STATE_WRITING	hitag2.c	/^		TAG_STATE_WRITING    = 0x04,       \/\/ In write command, awaiting sector contents to be written$/;"	e	enum:hitag2_tag::__anon6	file:
+TAG_TIME_BIT	legicrf.c	/^#define TAG_TIME_BIT /;"	d	file:
+TAG_TIME_WAIT	legicrf.c	/^#define TAG_TIME_WAIT /;"	d	file:
+TB1	emvcard.h	/^    uint8_t TB1;$/;"	m	struct:__anon1
+TC1	emvcard.h	/^    uint8_t TC1;$/;"	m	struct:__anon1
+THUMBSRC	Makefile	/^THUMBSRC = start.c \\$/;"	m
+TIBUFLEN	lfops.c	/^	#define TIBUFLEN /;"	d	file:
+TL	emvcard.h	/^    uint8_t TL;$/;"	m	struct:__anon1
+TLV_DATA_MASK	tlv.h	/^#define TLV_DATA_MASK /;"	d
+TLV_LENGTH_MASK	tlv.h	/^#define TLV_LENGTH_MASK /;"	d
+TLV_TAG_MASK	tlv.h	/^#define TLV_TAG_MASK /;"	d
+TLV_TAG_NUMBER_MASK	tlv.h	/^#define TLV_TAG_NUMBER_MASK /;"	d
+TO_SEND_SIZE	apps.h	/^#define TO_SEND_SIZE /;"	d
+TRACE_OFFSET	apps.h	/^#define TRACE_OFFSET /;"	d
+TRACE_SIZE	apps.h	/^#define TRACE_SIZE /;"	d
+ToSend	appmain.c	/^uint8_t ToSend[TO_SEND_SIZE];$/;"	v
+ToSendBit	appmain.c	/^static int ToSendBit;$/;"	v	file:
+ToSendMax	appmain.c	/^int ToSendMax;$/;"	v
+ToSendReset	appmain.c	/^void ToSendReset(void)$/;"	f
+ToSendStuffBit	appmain.c	/^void ToSendStuffBit(int b)$/;"	f
+TransmitFor14443	iso14443.c	/^static void TransmitFor14443(void)$/;"	f	file:
+TransmitFor14443a	iso14443a.c	/^void TransmitFor14443a(const uint8_t *cmd, int len, uint32_t *timing)$/;"	f
+TransmitIClassCommand	iclass.c	/^static void TransmitIClassCommand(const uint8_t *cmd, int len, int *samples, int *wait)$/;"	f	file:
+TransmitTo15693Reader	iso15693.c	/^static void TransmitTo15693Reader(const uint8_t *cmd, int len, int *samples, int *wait)$/;"	f	file:
+TransmitTo15693Tag	iso15693.c	/^static void TransmitTo15693Tag(const uint8_t *cmd, int len, int *samples, int *wait)$/;"	f	file:
+UID	emvcard.h	/^    uint8_t UID[10]; $/;"	m	struct:__anon1
+UID_len	emvcard.h	/^    uint8_t UID_len; $/;"	m	struct:__anon1
+Uart	iclass.c	/^} Uart;$/;"	v	typeref:struct:__anon7	file:
+Uart	iso14443.c	/^} Uart;$/;"	v	typeref:struct:__anon12	file:
+Uart	iso14443a.c	/^tUart Uart;$/;"	v
+UartReset	iso14443a.c	/^void UartReset()$/;"	f
+UsbPacketReceived	appmain.c	/^void UsbPacketReceived(uint8_t *packet, int len)$/;"	f
+VALUE_LENGTH	tlv.h	/^#define VALUE_LENGTH /;"	d
+Vector	start.c	/^void __attribute__((section(".startos"))) Vector(void)$/;"	f
+WHITE	LCD.h	/^#define WHITE	/;"	d
+WRITE_0	lfops.c	/^#define WRITE_0 /;"	d	file:
+WRITE_1	lfops.c	/^#define WRITE_1 /;"	d	file:
+WRITE_GAP	lfops.c	/^#define WRITE_GAP /;"	d	file:
+WriteEM410x	lfops.c	/^void WriteEM410x(uint32_t card, uint32_t id_hi, uint32_t id_lo)$/;"	f
+WriteTIbyte	lfops.c	/^void WriteTIbyte(uint8_t b)$/;"	f
+WriteTItag	lfops.c	/^void WriteTItag(uint32_t idhi, uint32_t idlo, uint16_t crc)$/;"	f
+YELLOW	LCD.h	/^#define YELLOW	/;"	d
+__APPS_H	apps.h	/^#define __APPS_H$/;"	d
+__EMVCARD_H	emvcard.h	/^#define __EMVCARD_H$/;"	d
+__EMVCMD_H	emvcmd.h	/^#define __EMVCMD_H$/;"	d
+__EMVDATAELS_H	emvdataels.c	/^#define __EMVDATAELS_H$/;"	d	file:
+__EMVDATAELS_H	emvdataels.h	/^#define __EMVDATAELS_H$/;"	d
+__EMVUTIL_H	emvutil.h	/^#define __EMVUTIL_H$/;"	d
+__EPA_H	epa.h	/^#define __EPA_H$/;"	d
+__FONTS_H	fonts.h	/^#define __FONTS_H$/;"	d
+__ISO14443A_H	iso14443a.h	/^#define __ISO14443A_H$/;"	d
+__LCD_H	LCD.h	/^#define __LCD_H$/;"	d
+__LEGICRF_H	legicrf.h	/^#define __LEGICRF_H$/;"	d
+__MIFARECMD_H	mifarecmd.h	/^#define __MIFARECMD_H$/;"	d
+__MIFARESNIFF_H	mifaresniff.h	/^#define __MIFARESNIFF_H$/;"	d
+__MIFAREUTIL_H	mifareutil.h	/^#define __MIFAREUTIL_H$/;"	d
+__PRINTF_H	printf.h	/^#define __PRINTF_H$/;"	d
+__STDINT_H	stdint.h	/^#define __STDINT_H$/;"	d
+__STRING_H	string.h	/^#define __STRING_H$/;"	d
+__TLV_H	tlv.h	/^#define __TLV_H$/;"	d
+__UTIL_H	util.h	/^#define __UTIL_H$/;"	d
+_bitparse_fixed_header	fpgaloader.c	/^static const char _bitparse_fixed_header[] = {0x00, 0x09, 0x0f, 0xf0, 0x0f, 0xf0, 0x0f, 0xf0, 0x0f, 0xf0, 0x00, 0x00, 0x01};$/;"	v	file:
+_f20	hitag2.c	/^static u32 _f20 (const u64 x)$/;"	f	file:
+_hitag2_byte	hitag2.c	/^static u32 _hitag2_byte (u64 * x)$/;"	f	file:
+_hitag2_init	hitag2.c	/^static u64 _hitag2_init (const u64 key, const u32 serial, const u32 IV)$/;"	f	file:
+_hitag2_round	hitag2.c	/^static u64 _hitag2_round (u64 *state)$/;"	f	file:
+abs	appmain.c	/^#define abs(/;"	d	file:
+abs	lfops.c	/^#define abs(/;"	d	file:
+active_sector	hitag2.c	/^	unsigned int active_sector;$/;"	m	struct:hitag2_tag	file:
+apdu_general_authenticate_pace_get_nonce	epa.c	/^static const uint8_t apdu_general_authenticate_pace_get_nonce[] = {$/;"	v	file:
+apdu_mse_set_at_start	epa.c	/^static const uint8_t apdu_mse_set_at_start[] = {$/;"	v	file:
+apdu_read_binary	epa.c	/^static const uint8_t apdu_read_binary[] = {$/;"	v	file:
+apdu_select_binary_cardaccess	epa.c	/^static const uint8_t apdu_select_binary_cardaccess[] = {$/;"	v	file:
+arraylen	iso15693.c	/^#define arraylen(/;"	d	file:
+auth_table	hitag2.c	/^byte_t* auth_table = (byte_t *)BigBuf+AUTH_TABLE_OFFSET;$/;"	v
+auth_table_len	hitag2.c	/^size_t auth_table_len = AUTH_TABLE_LENGTH;$/;"	v
+auth_table_pos	hitag2.c	/^size_t auth_table_pos = 0;$/;"	v
+bAuthenticating	hitag2.c	/^bool bAuthenticating;$/;"	v
+bCrypto	hitag2.c	/^bool bCrypto;$/;"	v
+bPwd	hitag2.c	/^bool bPwd;$/;"	v
+bQuiet	hitag2.c	/^static bool bQuiet;$/;"	v	file:
+bSuccessful	hitag2.c	/^bool bSuccessful;$/;"	v
+binsearch	crapto1.c	/^static inline uint32_t* binsearch(uint32_t *start, uint32_t *stop)$/;"	f	file:
+bit	hitag2.c	/^#define bit(/;"	d	file:
+bit32	hitag2.c	/^#define bit32(/;"	d	file:
+bitBuffer	iclass.c	/^    int     bitBuffer;$/;"	m	struct:__anon7	file:
+bitCnt	iclass.c	/^    int     bitCnt;$/;"	m	struct:__anon7	file:
+bitCnt	iso14443.c	/^    int     bitCnt;$/;"	m	struct:__anon12	file:
+bitCount	iclass.c	/^    int     bitCount;$/;"	m	struct:__anon9	file:
+bitCount	iso14443.c	/^    int     bitCount;$/;"	m	struct:__anon14	file:
+bitCount	iso14443a.h	/^	uint16_t bitCount;$/;"	m	struct:__anon16
+bitCount	iso14443a.h	/^	uint16_t bitCount;$/;"	m	struct:__anon19
+bitparse_bitstream_end	fpgaloader.c	/^static char *bitparse_bitstream_end;$/;"	v	file:
+bitparse_find_section	fpgaloader.c	/^int bitparse_find_section(char section_name, char **section_start, unsigned int *section_length)$/;"	f
+bitparse_headers_start	fpgaloader.c	/^static char *bitparse_headers_start;$/;"	v	file:
+bitparse_init	fpgaloader.c	/^static int bitparse_init(void * start_address, void *end_address)$/;"	f	file:
+bitparse_initialized	fpgaloader.c	/^static int bitparse_initialized;$/;"	v	file:
+bits	legicrf.c	/^	int bits;$/;"	m	struct:legic_frame	file:
+blocknr	hitag2.c	/^size_t blocknr;$/;"	v
+buff	iclass.c	/^	int     buff;$/;"	m	struct:__anon9	file:
+buffer	iclass.c	/^	int     buffer;$/;"	m	struct:__anon9	file:
+buffer2	iclass.c	/^	int     buffer2;$/;"	m	struct:__anon9	file:
+buffer3	iclass.c	/^	int	buffer3;$/;"	m	struct:__anon9	file:
+byteCnt	iclass.c	/^    int     byteCnt;$/;"	m	struct:__anon7	file:
+byteCnt	iso14443.c	/^    int     byteCnt;$/;"	m	struct:__anon12	file:
+byteCntMax	iclass.c	/^    int     byteCntMax;$/;"	m	struct:__anon7	file:
+byteCntMax	iso14443.c	/^    int     byteCntMax;$/;"	m	struct:__anon12	file:
+byteCntMax	iso14443a.h	/^	uint16_t byteCntMax;$/;"	m	struct:__anon19
+bytes_to_num	util.c	/^uint64_t bytes_to_num(uint8_t* src, size_t len)$/;"	f
+cardSTATE_TO_IDLE	mifareutil.h	/^#define cardSTATE_TO_IDLE(/;"	d
+check_pfx_parity	crapto1.c	/^check_pfx_parity(uint32_t prefix, uint32_t rresp, uint8_t parities[8][8],$/;"	f	file:
+cipher_state	hitag2.c	/^uint64_t cipher_state;$/;"	v
+collisionPos	iso14443a.h	/^	uint16_t collisionPos;$/;"	m	struct:__anon16
+common_area	appmain.c	/^struct common_area common_area __attribute__((section(".commonarea")));$/;"	v	typeref:struct:common_area
+counter	iclass.c	/^    int     counter;$/;"	m	struct:__anon7	file:
+crypto1_bit	crypto1.c	/^uint8_t crypto1_bit(struct Crypto1State *s, uint8_t in, int is_encrypted)$/;"	f
+crypto1_byte	crypto1.c	/^uint8_t crypto1_byte(struct Crypto1State *s, uint8_t in, int is_encrypted)$/;"	f
+crypto1_create	crypto1.c	/^void crypto1_create(struct Crypto1State *s, uint64_t key)$/;"	f
+crypto1_destroy	crypto1.c	/^void crypto1_destroy(struct Crypto1State *state)$/;"	f
+crypto1_get_lfsr	crypto1.c	/^void crypto1_get_lfsr(struct Crypto1State *state, uint64_t *lfsr)$/;"	f
+crypto1_word	crypto1.c	/^uint32_t crypto1_word(struct Crypto1State *s, uint32_t in, int is_encrypted)$/;"	f
+crypto_active	hitag2.c	/^	byte_t crypto_active;$/;"	m	struct:hitag2_tag	file:
+cs	hitag2.c	/^	uint64_t cs;$/;"	m	struct:hitag2_tag	file:
+current_frame	legicrf.c	/^} current_frame;$/;"	v	typeref:struct:legic_frame	file:
+currentcard	emvcmd.c	/^static emvcard currentcard;$/;"	v	file:
+data	legicrf.c	/^	uint32_t data;$/;"	m	struct:legic_frame	file:
+decode_ber_tlv_item	tlv.c	/^int decode_ber_tlv_item(uint8_t* data, tlvtag* returnedtag)$/;"	f
+description	emvdataels.c	/^char description[255];$/;"	m	struct:__anon2	file:
+description	emvdataels.h	/^    char description[255];$/;"	m	struct:__anon3
+dist	crapto1.c	/^static uint16_t *dist = 0;$/;"	v	file:
+dist_nt	iso14443a.c	/^int32_t dist_nt(uint32_t nt1, uint32_t nt2) {$/;"	f
+dropPosition	iclass.c	/^    int     dropPosition;$/;"	m	struct:__anon7	file:
+emit	legicrf.c	/^static void emit(int bit)$/;"	f	file:
+emlCheckValBl	mifareutil.c	/^int emlCheckValBl(int blockNum) {$/;"	f
+emlClearMem	mifareutil.c	/^void emlClearMem(void) {$/;"	f
+emlGetKey	mifareutil.c	/^uint64_t emlGetKey(int sectorNum, int keyType) {$/;"	f
+emlGetMem	mifareutil.c	/^void emlGetMem(uint8_t *data, int blockNum, int blocksCount) {$/;"	f
+emlGetMemBt	mifareutil.c	/^void emlGetMemBt(uint8_t *data, int bytePtr, int byteCount) {$/;"	f
+emlGetValBl	mifareutil.c	/^int emlGetValBl(uint32_t *blReg, uint8_t *blBlock, int blockNum) {$/;"	f
+emlSetMem	mifareutil.c	/^void emlSetMem(uint8_t *data, int blockNum, int blocksCount) {$/;"	f
+emlSetValBl	mifareutil.c	/^int emlSetValBl(uint32_t blReg, uint8_t blBlock, int blockNum) {$/;"	f
+eml_get_bigbufptr_cardmem	mifareutil.c	/^uint8_t* eml_get_bigbufptr_cardmem(void) {$/;"	f
+eml_get_bigbufptr_recbuf	mifareutil.c	/^uint8_t* eml_get_bigbufptr_recbuf(void) {$/;"	f
+eml_get_bigbufptr_sendbuf	mifareutil.c	/^uint8_t* eml_get_bigbufptr_sendbuf(void) {$/;"	f
+emv_computecryptogram	emvutil.c	/^int emv_computecryptogram(uint8_t* UDOL, uint8_t UDOLlen)$/;"	f
+emv_decodeAFL	emvutil.c	/^int emv_decodeAFL(uint8_t* AFL, uint8_t AFLlen )$/;"	f
+emv_decodeAIP	emvutil.c	/^int emv_decodeAIP(uint8_t* AIP)$/;"	f
+emv_decodeCVM	emvutil.c	/^int emv_decodeCVM(uint8_t* CVM, uint8_t CVMlen)$/;"	f
+emv_decode_field	emvutil.c	/^int emv_decode_field(uint8_t* inputfield,uint16_t inputlength, emvcard *result)$/;"	f
+emv_emvcard_decode_tag	emvutil.c	/^int emv_emvcard_decode_tag(tlvtag* inputtag, emvcard* currentcard)$/;"	f
+emv_generateAC	emvutil.c	/^int emv_generateAC(uint8_t refcontrolparam, uint8_t* cdolinput, uint8_t cdolinputlen)$/;"	f
+emv_generateDOL	emvutil.c	/^int emv_generateDOL(uint8_t* DOL, uint8_t DOLlen,emvcard* currentcard,uint8_t* DOLoutput, uint8_t* DOLoutputlen)$/;"	f
+emv_generatetemplate	emvutil.c	/^int emv_generatetemplate(uint8_t* templateval,emvcard* currentcard, uint8_t* returnedval, uint8_t* returnedlen,uint8_t numtags, ...)$/;"	f
+emv_get_bigbufptr	emvutil.c	/^uint8_t* emv_get_bigbufptr(void) {$/;"	f
+emv_get_bigbufptr_recbuf	emvutil.c	/^uint8_t* emv_get_bigbufptr_recbuf(void) {$/;"	f
+emv_get_bigbufptr_sendbuf	emvutil.c	/^uint8_t* emv_get_bigbufptr_sendbuf(void) {$/;"	f
+emv_getchallenge	emvutil.c	/^int emv_getchallenge()$/;"	f
+emv_getprocessingoptions	emvutil.c	/^int emv_getprocessingoptions(uint8_t* pdol, uint8_t pdollen)$/;"	f
+emv_lookuptag	emvutil.c	/^int emv_lookuptag(uint8_t* tag, emvcard *currentcard, uint8_t* outputval, uint8_t* outputvallen)$/;"	f
+emv_loopback	emvutil.c	/^int emv_loopback(uint8_t datalen, uint8_t* data, uint8_t* response)$/;"	f
+emv_printtag	emvutil.c	/^int emv_printtag(uint8_t* selected_tag, emvcard* inputcard, uint8_t* outputstring, uint8_t* outputlen)$/;"	f
+emv_readrecord	emvutil.c	/^int emv_readrecord(uint8_t recordnumber, uint8_t sfi, uint8_t* rr_response)$/;"	f
+emv_select	emvutil.c	/^int emv_select(uint8_t* AID, uint8_t AIDlength)$/;"	f
+emv_selectPPSE	emvutil.c	/^int emv_selectPPSE()$/;"	f
+emv_sendapdu	emvutil.c	/^int emv_sendapdu(uint8_t cla, uint8_t ins, uint8_t p1, uint8_t p2, uint8_t lc, uint8_t* data, uint8_t le)$/;"	f
+emvcard	emvcard.h	/^}emvcard;$/;"	t	typeref:struct:__anon1
+emvsnoop	emvutil.c	/^void emvsnoop()$/;"	f
+encode_ber_tlv_item	tlv.c	/^int encode_ber_tlv_item(uint8_t* tag, uint8_t taglen, uint8_t* data, uint32_t datalen, uint8_t* outputtag, uint32_t* outputtaglen)$/;"	f
+endTime	iso14443a.h	/^	uint32_t startTime, endTime;$/;"	m	struct:__anon16
+endTime	iso14443a.h	/^	uint32_t startTime, endTime;$/;"	m	struct:__anon19
+even	crapto1.h	/^struct Crypto1State {uint32_t odd, even;};$/;"	m	struct:Crypto1State
+extend_table	crapto1.c	/^extend_table(uint32_t *tbl, uint32_t **end, int bit, int m1, int m2, uint32_t in)$/;"	f	file:
+extend_table_simple	crapto1.c	/^static inline void extend_table_simple(uint32_t *tbl, uint32_t **end, int bit)$/;"	f	file:
+fastfwd	crapto1.c	/^static uint32_t fastfwd[2][8] = {$/;"	v	file:
+fc	lfops.c	/^static void fc(int c, int *n) {$/;"	f	file:
+fieldlength	tlv.h	/^    uint16_t fieldlength;$/;"	m	struct:__anon23
+file	emvdataels.h	/^}file;$/;"	t	typeref:struct:__anon4
+fill_lut	crapto1.c	/^static void __attribute__((constructor)) fill_lut()$/;"	f	file:
+filter	crapto1.c	/^#define filter(/;"	d	file:
+filter	crapto1.h	/^static inline int filter(uint32_t const x)$/;"	f
+filterlut	crapto1.c	/^static uint8_t filterlut[1 << 20];$/;"	v	file:
+forwardLink_data	lfops.c	/^uint8_t forwardLink_data[64]; \/\/array of forwarded bits$/;"	v
+forward_ptr	lfops.c	/^uint8_t * forward_ptr; \/\/ptr for forward message preparation$/;"	v
+frame_append_bit	legicrf.c	/^static void frame_append_bit(struct legic_frame * const f, int bit)$/;"	f	file:
+frame_clean	legicrf.c	/^static void frame_clean(struct legic_frame * const f)$/;"	f	file:
+frame_handle_tag	legicrf.c	/^static void frame_handle_tag(struct legic_frame const * const f)$/;"	f	file:
+frame_receive_rwd	legicrf.c	/^static void frame_receive_rwd(struct legic_frame * const f, int bits, int crypt)$/;"	f	file:
+frame_send_rwd	legicrf.c	/^static void frame_send_rwd(uint32_t data, int bits)$/;"	f	file:
+frame_send_tag	legicrf.c	/^static void frame_send_tag(uint16_t response, int bits, int crypt)$/;"	f	file:
+free_buffer_pointer	iso14443a.c	/^uint8_t* free_buffer_pointer = (((uint8_t *)BigBuf) + FREE_BUFFER_OFFSET);$/;"	v
+fwd_bit_sz	lfops.c	/^uint8_t fwd_bit_sz; \/\/forwardlink bit counter$/;"	v
+fwd_write_ptr	lfops.c	/^uint8_t * fwd_write_ptr; \/\/forwardlink bit pointer$/;"	v
+get_key_stream	legicrf.c	/^static uint32_t get_key_stream(int skip, int count)$/;"	f	file:
+hex2ascii	printf.c	/^#define hex2ascii(/;"	d	file:
+hex2ascii_data	printf.c	/^char const hex2ascii_data[] = "0123456789abcdefghijklmnopqrstuvwxyz";$/;"	v
+highCnt	iclass.c	/^    int     highCnt;$/;"	m	struct:__anon7	file:
+highCnt	iso14443a.h	/^	uint16_t highCnt;$/;"	m	struct:__anon16
+highCnt	iso14443a.h	/^	uint16_t highCnt;$/;"	m	struct:__anon19
+historicalbytes	emvcard.h	/^    uint8_t* historicalbytes;$/;"	m	struct:__anon1
+hitag2_authenticate	hitag2.c	/^bool hitag2_authenticate(byte_t* rx, const size_t rxlen, byte_t* tx, size_t* txlen) {$/;"	f
+hitag2_cipher_authenticate	hitag2.c	/^static int hitag2_cipher_authenticate(uint64_t* cs, const byte_t *authenticator_is)$/;"	f	file:
+hitag2_cipher_reset	hitag2.c	/^static void hitag2_cipher_reset(struct hitag2_tag *tag, const byte_t *iv)$/;"	f	file:
+hitag2_cipher_transcrypt	hitag2.c	/^static int hitag2_cipher_transcrypt(uint64_t* cs, byte_t *data, unsigned int bytes, unsigned int bits)$/;"	f	file:
+hitag2_crypto	hitag2.c	/^bool hitag2_crypto(byte_t* rx, const size_t rxlen, byte_t* tx, size_t* txlen) {$/;"	f
+hitag2_handle_reader_command	hitag2.c	/^void hitag2_handle_reader_command(byte_t* rx, const size_t rxlen, byte_t* tx, size_t* txlen)$/;"	f
+hitag2_init	hitag2.c	/^int hitag2_init(void)$/;"	f
+hitag2_password	hitag2.c	/^bool hitag2_password(byte_t* rx, const size_t rxlen, byte_t* tx, size_t* txlen) {$/;"	f
+hitag2_reset	hitag2.c	/^int hitag2_reset(void)$/;"	f
+hitag2_tag	hitag2.c	/^struct hitag2_tag {$/;"	s	file:
+hitag2_test_auth_attempts	hitag2.c	/^bool hitag2_test_auth_attempts(byte_t* rx, const size_t rxlen, byte_t* tx, size_t* txlen) {$/;"	f
+hitag_reader_send_bit	hitag2.c	/^static void hitag_reader_send_bit(int bit) {$/;"	f	file:
+hitag_reader_send_frame	hitag2.c	/^static void hitag_reader_send_frame(const byte_t* frame, size_t frame_len)$/;"	f	file:
+hitag_send_bit	hitag2.c	/^static void hitag_send_bit(int bit) {$/;"	f	file:
+hitag_send_frame	hitag2.c	/^static void hitag_send_frame(const byte_t* frame, size_t frame_len)$/;"	f	file:
+ht2_f4a	hitag2.c	/^static const u32 ht2_f4a = 0x2C79;		\/\/ 0010 1100 0111 1001$/;"	v	file:
+ht2_f4b	hitag2.c	/^static const u32 ht2_f4b = 0x6671;		\/\/ 0110 0110 0111 0001$/;"	v	file:
+ht2_f5c	hitag2.c	/^static const u32 ht2_f5c = 0x7907287B;	\/\/ 0111 1001 0000 0111 0010 1000 0111 1011$/;"	v	file:
+i4	hitag2.c	/^#define i4(/;"	d	file:
+int16_t	stdint.h	/^typedef short int				int16_t;$/;"	t
+int32_t	stdint.h	/^typedef int						int32_t;$/;"	t
+int64_t	stdint.h	/^typedef long long int			int64_t;$/;"	t
+int8_t	stdint.h	/^typedef signed char				int8_t;$/;"	t
+intMfSniffSend	mifaresniff.c	/^bool intMfSniffSend() {$/;"	f
+intmax_t	printf.c	/^typedef int32_t intmax_t;$/;"	t	file:
+intptr_t	stdint.h	/^typedef int						intptr_t;$/;"	t
+inv32	hitag2.c	/^#define inv32(/;"	d	file:
+iso14443a_select_card	iso14443a.c	/^int iso14443a_select_card(byte_t* uid_ptr, iso14a_card_select_t* p_hi14a_card, uint32_t* cuid_ptr) {$/;"	f
+iso14443a_setup	iso14443a.c	/^void iso14443a_setup(uint8_t fpga_minor_mode) {$/;"	f
+iso14_apdu	iso14443a.c	/^int iso14_apdu(uint8_t * cmd, size_t cmd_len, void * data) {$/;"	f
+iso14_pcb_blocknum	iso14443a.c	/^uint8_t iso14_pcb_blocknum = 0;$/;"	v
+iso14a_clear_trace	iso14443a.c	/^void iso14a_clear_trace() {$/;"	f
+iso14a_get_timeout	iso14443a.c	/^void iso14a_get_timeout(uint32_t* timeout) {$/;"	f
+iso14a_set_timeout	iso14443a.c	/^void iso14a_set_timeout(uint32_t timeout) {$/;"	f
+iso14a_set_tracing	iso14443a.c	/^void iso14a_set_tracing(bool enable) {$/;"	f
+iso14a_set_trigger	iso14443a.c	/^void iso14a_set_trigger(bool enable) {$/;"	f
+iso14a_timeout	iso14443a.c	/^uint32_t iso14a_timeout;$/;"	v
+itoa	string.c	/^void itoa(int n, char s[])$/;"	f
+key	hitag2.c	/^byte_t key[8];$/;"	v
+ksprintn	printf.c	/^ksprintn(char *nbuf, uintmax_t num, int base, int *lenp, int upper)$/;"	f	file:
+kvsprintf	printf.c	/^kvsprintf(char const *fmt, void *arg, int radix, va_list ap)$/;"	f
+legic_crc	legicrf.c	/^static crc_t    legic_crc;$/;"	v	file:
+legic_frame	legicrf.c	/^static struct legic_frame {$/;"	s	file:
+legic_frame_drift	legicrf.c	/^static int      legic_frame_drift;$/;"	v	file:
+legic_phase_drift	legicrf.c	/^static int      legic_phase_drift;$/;"	v	file:
+legic_prng_bc	legicrf.c	/^static uint32_t legic_prng_bc;$/;"	v	file:
+legic_prng_iv	legicrf.c	/^static uint32_t legic_prng_iv;$/;"	v	file:
+legic_read_byte	legicrf.c	/^int legic_read_byte(int byte_index, int cmd_sz) {$/;"	f
+legic_read_count	legicrf.c	/^static int      legic_read_count;$/;"	v	file:
+legic_reqresp_drift	legicrf.c	/^static int      legic_reqresp_drift;$/;"	v	file:
+legic_state	legicrf.c	/^} legic_state;$/;"	v	typeref:enum:__anon22	file:
+legic_write_byte	legicrf.c	/^int legic_write_byte(int byte, int addr, int addr_sz) {$/;"	f
+len	iclass.c	/^    int     len;$/;"	m	struct:__anon9	file:
+len	iso14443.c	/^    int     len;$/;"	m	struct:__anon14	file:
+len	iso14443a.h	/^	uint16_t len;$/;"	m	struct:__anon16
+len	iso14443a.h	/^	uint16_t len;$/;"	m	struct:__anon19
+lfsr_common_prefix	crapto1.c	/^lfsr_common_prefix(uint32_t pfx, uint32_t rr, uint8_t ks[8], uint8_t par[8][8])$/;"	f
+lfsr_prefix_ks	crapto1.c	/^uint32_t *lfsr_prefix_ks(uint8_t ks[8], int isodd)$/;"	f
+lfsr_recovery32	crapto1.c	/^struct Crypto1State* lfsr_recovery32(uint32_t ks2, uint32_t in)$/;"	f
+lfsr_recovery64	crapto1.c	/^struct Crypto1State* lfsr_recovery64(uint32_t ks2, uint32_t ks3)$/;"	f
+lfsr_rollback_bit	crapto1.c	/^uint8_t lfsr_rollback_bit(struct Crypto1State *s, uint32_t in, int fb)$/;"	f
+lfsr_rollback_byte	crapto1.c	/^uint8_t lfsr_rollback_byte(struct Crypto1State *s, uint32_t in, int fb)$/;"	f
+lfsr_rollback_word	crapto1.c	/^uint32_t lfsr_rollback_word(struct Crypto1State *s, uint32_t in, int fb)$/;"	f
+max	lfops.c	/^#define max(/;"	d	file:
+memcmp	string.c	/^RAMFUNC int memcmp(const void *av, const void *bv, int len)$/;"	f
+memcpy	string.c	/^void *memcpy(void *dest, const void *src, int len)$/;"	f
+memset	string.c	/^RAMFUNC void *memset(void *dest, int c, int len)$/;"	f
+metric	iso14443.c	/^    int     metric;$/;"	m	struct:__anon14	file:
+metricN	iso14443.c	/^    int     metricN;$/;"	m	struct:__anon14	file:
+mf_crypto1_decrypt	mifareutil.c	/^void mf_crypto1_decrypt(struct Crypto1State *pcs, uint8_t *data, int len){$/;"	f
+mf_crypto1_encrypt	mifareutil.c	/^void mf_crypto1_encrypt(struct Crypto1State *pcs, uint8_t *data, int len, uint32_t *par) {$/;"	f
+mf_crypto1_encrypt4bit	mifareutil.c	/^uint8_t mf_crypto1_encrypt4bit(struct Crypto1State *pcs, uint8_t data) {$/;"	f
+mifare_classic_auth	mifareutil.c	/^int mifare_classic_auth(struct Crypto1State *pcs, uint32_t uid, uint8_t blockNo, uint8_t keyType, uint64_t ui64Key, uint64_t isNested) $/;"	f
+mifare_classic_authex	mifareutil.c	/^int mifare_classic_authex(struct Crypto1State *pcs, uint32_t uid, uint8_t blockNo, uint8_t keyType, uint64_t ui64Key, uint64_t isNested, uint32_t * ntptr, uint32_t *timing) $/;"	f
+mifare_classic_halt	mifareutil.c	/^int mifare_classic_halt(struct Crypto1State *pcs, uint32_t uid) $/;"	f
+mifare_classic_readblock	mifareutil.c	/^int mifare_classic_readblock(struct Crypto1State *pcs, uint32_t uid, uint8_t blockNo, uint8_t *blockData) $/;"	f
+mifare_classic_writeblock	mifareutil.c	/^int mifare_classic_writeblock(struct Crypto1State *pcs, uint32_t uid, uint8_t blockNo, uint8_t *blockData) $/;"	f
+mifare_get_bigbufptr	mifareutil.c	/^uint8_t* mifare_get_bigbufptr(void) {$/;"	f
+mifare_sendcmd_short	mifareutil.c	/^int mifare_sendcmd_short(struct Crypto1State *pcs, uint8_t crypted, uint8_t cmd, uint8_t data, uint8_t* answer, uint32_t *timing)$/;"	f
+mifare_sendcmd_short_special	mifareutil.c	/^int mifare_sendcmd_short_special(struct Crypto1State *pcs, uint8_t crypted, uint8_t cmd, uint8_t* data, uint8_t* answer, uint8_t *timing)$/;"	f
+mifare_sendcmd_shortex	mifareutil.c	/^int mifare_sendcmd_shortex(struct Crypto1State *pcs, uint8_t crypted, uint8_t cmd, uint8_t data, uint8_t* answer, uint32_t * parptr, uint32_t *timing)$/;"	f
+mifare_ultra_halt	mifareutil.c	/^int mifare_ultra_halt(uint32_t uid)$/;"	f
+mifare_ultra_readblock	mifareutil.c	/^int mifare_ultra_readblock(uint32_t uid, uint8_t blockNo, uint8_t *blockData)$/;"	f
+mifare_ultra_special_writeblock	mifareutil.c	/^int mifare_ultra_special_writeblock(uint32_t uid, uint8_t blockNo, uint8_t *blockData)$/;"	f
+mifare_ultra_writeblock	mifareutil.c	/^int mifare_ultra_writeblock(uint32_t uid, uint8_t blockNo, uint8_t *blockData) $/;"	f
+modulation	iso14443a.h	/^  uint8_t* modulation;$/;"	m	struct:__anon21
+modulation_n	iso14443a.h	/^  size_t   modulation_n;$/;"	m	struct:__anon21
+nOutOfCnt	iclass.c	/^    int     nOutOfCnt;$/;"	m	struct:__anon7	file:
+nbytes	util.c	/^size_t nbytes(size_t nbits) {$/;"	f
+nonce_distance	crapto1.c	/^int nonce_distance(uint32_t from, uint32_t to)$/;"	f
+num_to_bytes	util.c	/^void num_to_bytes(uint64_t n, size_t len, uint8_t* dest)$/;"	f
+odd	crapto1.h	/^struct Crypto1State {uint32_t odd, even;};$/;"	m	struct:Crypto1State
+oddparity	iso14443a.c	/^byte_t oddparity (const byte_t bt)$/;"	f
+oid	epa.h	/^	uint8_t oid[10];$/;"	m	struct:__anon5
+oid_pace_start	epa.c	/^static const uint8_t oid_pace_start[] = {$/;"	v	file:
+output	iclass.c	/^    uint8_t   *output;$/;"	m	struct:__anon7	file:
+output	iclass.c	/^    uint8_t   *output;$/;"	m	struct:__anon9	file:
+output	iso14443.c	/^    uint8_t   *output;$/;"	m	struct:__anon12	file:
+output	iso14443.c	/^    uint8_t   *output;$/;"	m	struct:__anon14	file:
+output	iso14443a.h	/^	uint8_t  *output;$/;"	m	struct:__anon16
+output	iso14443a.h	/^    uint8_t *output;$/;"	m	struct:__anon19
+pace_version_info_t	epa.h	/^} pace_version_info_t;$/;"	t	typeref:struct:__anon5
+parameter_id	epa.h	/^	uint8_t parameter_id;$/;"	m	struct:__anon5
+parity	crapto1.h	/^static inline int parity(uint32_t x)$/;"	f
+parityBits	iclass.c	/^	int     parityBits;$/;"	m	struct:__anon9	file:
+parityBits	iclass.c	/^    int     parityBits;$/;"	m	struct:__anon7	file:
+parityBits	iso14443a.h	/^	uint8_t  parityBits[MAX_FRAME_SIZE\/8];$/;"	m	struct:__anon16
+parityBits	iso14443a.h	/^	uint8_t parityBits[32]; \/\/max frame size of 256 bytes$/;"	m	struct:__anon19
+password	hitag2.c	/^byte_t password[4];$/;"	v
+perform_setup_phase_rwd	legicrf.c	/^static uint32_t perform_setup_phase_rwd(int iv)$/;"	f	file:
+posCnt	iclass.c	/^    int     posCnt;$/;"	m	struct:__anon7	file:
+posCnt	iso14443.c	/^    int     posCnt;$/;"	m	struct:__anon12	file:
+posCnt	iso14443a.h	/^	uint16_t posCnt;$/;"	m	struct:__anon19
+posCount	iclass.c	/^    int     posCount;$/;"	m	struct:__anon9	file:
+posCount	iso14443.c	/^    int     posCount;$/;"	m	struct:__anon14	file:
+pps	epa.c	/^static const uint8_t pps[] = {0xD0, 0x11, 0x00, 0x52, 0xA6};$/;"	v	file:
+prepare_allocated_tag_modulation	iso14443a.c	/^bool prepare_allocated_tag_modulation(tag_response_info_t* response_info) {$/;"	f
+prepare_tag_modulation	iso14443a.c	/^bool prepare_tag_modulation(tag_response_info_t* response_info, size_t max_buffer_size) {$/;"	f
+prng_successor	crypto1.c	/^uint32_t prng_successor(uint32_t x, uint32_t n)$/;"	f
+prng_timer	legicrf.c	/^AT91PS_TC prng_timer;$/;"	v
+quad_t	printf.c	/^typedef long long quad_t;$/;"	t	file:
+quicksort	crapto1.c	/^static void quicksort(uint32_t* const start, uint32_t* const stop)$/;"	f	file:
+record	emvdataels.h	/^    uint8_t record;$/;"	m	struct:__anon4
+recover	crapto1.c	/^recover(uint32_t *o_head, uint32_t *o_tail, uint32_t oks,$/;"	f	file:
+reset_free_buffer	iso14443a.c	/^void reset_free_buffer() {$/;"	f
+response	iso14443a.h	/^  uint8_t* response;$/;"	m	struct:__anon21
+response_n	iso14443a.h	/^  size_t   response_n;$/;"	m	struct:__anon21
+rev16	hitag2.c	/^#define rev16(/;"	d	file:
+rev32	hitag2.c	/^#define rev32(/;"	d	file:
+rev64	hitag2.c	/^#define rev64(/;"	d	file:
+rev8	hitag2.c	/^#define rev8(/;"	d	file:
+rotateCSN	iclass.c	/^void rotateCSN(uint8_t* originalCSN, uint8_t* rotatedCSN) {$/;"	f
+rotl64	hitag2.c	/^#define rotl64(/;"	d	file:
+rsamples	iso14443a.c	/^int rsamples = 0;$/;"	v
+samples	iclass.c	/^	int     samples;$/;"	m	struct:__anon9	file:
+samples	iclass.c	/^    int     samples;$/;"	m	struct:__anon7	file:
+samples	iso14443a.h	/^	uint16_t samples;$/;"	m	struct:__anon16
+sectors	hitag2.c	/^	byte_t sectors[12][4];$/;"	m	struct:hitag2_tag	file:
+setup_timer	legicrf.c	/^static void setup_timer(void)$/;"	f	file:
+shiftReg	iclass.c	/^    uint16_t    shiftReg;$/;"	m	struct:__anon7	file:
+shiftReg	iclass.c	/^    uint16_t    shiftReg;$/;"	m	struct:__anon9	file:
+shiftReg	iso14443.c	/^    uint16_t    shiftReg;$/;"	m	struct:__anon12	file:
+shiftReg	iso14443.c	/^    uint16_t    shiftReg;$/;"	m	struct:__anon14	file:
+shiftReg	iso14443a.h	/^	uint16_t shiftReg;$/;"	m	struct:__anon16
+shiftReg	iso14443a.h	/^	uint16_t shiftReg;$/;"	m	struct:__anon19
+sniffATQA	mifaresniff.c	/^static uint8_t sniffATQA[2];$/;"	v	file:
+sniffBuf	mifaresniff.c	/^static uint8_t sniffBuf[16];$/;"	v	file:
+sniffSAK	mifaresniff.c	/^static uint8_t sniffSAK;$/;"	v	file:
+sniffState	mifaresniff.c	/^static int sniffState = SNF_INIT;$/;"	v	file:
+sniffUID	mifaresniff.c	/^static uint8_t sniffUID[8];$/;"	v	file:
+sniffUIDType	mifaresniff.c	/^static uint8_t sniffUIDType;$/;"	v	file:
+sprintUID	iso15693.c	/^#define sprintUID(/;"	d	file:
+sprintf	printf.c	/^sprintf(char *dest, const char *fmt, ...)$/;"	f
+ssize_t	printf.c	/^typedef int ssize_t;$/;"	t	file:
+startTime	iso14443a.h	/^	uint32_t startTime, endTime;$/;"	m	struct:__anon16
+startTime	iso14443a.h	/^	uint32_t startTime, endTime;$/;"	m	struct:__anon19
+state	hitag2.c	/^	} state;$/;"	m	struct:hitag2_tag	typeref:enum:hitag2_tag::__anon6	file:
+state	iclass.c	/^    }       state;$/;"	m	struct:__anon7	typeref:enum:__anon7::__anon8	file:
+state	iclass.c	/^    }       state;$/;"	m	struct:__anon9	typeref:enum:__anon9::__anon10	file:
+state	iso14443.c	/^    }       state;$/;"	m	struct:__anon12	typeref:enum:__anon12::__anon13	file:
+state	iso14443.c	/^    }       state;$/;"	m	struct:__anon14	typeref:enum:__anon14::__anon15	file:
+state	iso14443a.h	/^		} state;$/;"	m	struct:__anon19	typeref:enum:__anon19::__anon20
+state	iso14443a.h	/^	} state;$/;"	m	struct:__anon16	typeref:enum:__anon16::__anon17
+strcat	string.c	/^char* strcat(char *dest, const char *src)$/;"	f
+strlen	string.c	/^int strlen(const char *str)$/;"	f
+strncat	string.c	/^char* strncat(char *dest, const char *src, unsigned int n)$/;"	f
+strreverse	string.c	/^void strreverse(char s[])$/;"	f
+sub	iclass.c	/^	}		sub;$/;"	m	struct:__anon9	typeref:enum:__anon9::__anon11	file:
+sumI	iso14443.c	/^    int     sumI;$/;"	m	struct:__anon14	file:
+sumQ	iso14443.c	/^    int     sumQ;$/;"	m	struct:__anon14	file:
+swapper	iclass.c	/^    int     swapper;$/;"	m	struct:__anon7	file:
+switch_off_tag_rwd	legicrf.c	/^static void switch_off_tag_rwd(void)$/;"	f	file:
+syncBit	iclass.c	/^	int     syncBit;$/;"	m	struct:__anon9	file:
+syncBit	iclass.c	/^    int     syncBit;$/;"	m	struct:__anon7	file:
+syncBit	iso14443a.h	/^	uint16_t syncBit;$/;"	m	struct:__anon16
+syncBit	iso14443a.h	/^	uint16_t syncBit;$/;"	m	struct:__anon19
+tDemod	iso14443a.h	/^} tDemod;$/;"	t	typeref:struct:__anon16
+tUart	iso14443a.h	/^} tUart;$/;"	t	typeref:struct:__anon19
+tag	emvdataels.c	/^uint8_t tag[2];$/;"	m	struct:__anon2	file:
+tag	emvdataels.h	/^    uint8_t tag[2];$/;"	m	struct:__anon3
+tag	hitag2.c	/^static struct hitag2_tag tag = {$/;"	v	typeref:struct:hitag2_tag	file:
+tag	tlv.h	/^    uint8_t tag[TAG_LENGTH];$/;"	m	struct:__anon23
+tag_4F	emvcard.h	/^    uint8_t tag_4F[16]; \/\/Application Identifier (AID) $/;"	m	struct:__anon1
+tag_4F_len	emvcard.h	/^    uint8_t tag_4F_len; \/\/length of AID $/;"	m	struct:__anon1
+tag_50	emvcard.h	/^    uint8_t tag_50[16]; \/\/Application Label$/;"	m	struct:__anon1
+tag_50_len	emvcard.h	/^    uint8_t tag_50_len; \/\/length of application label $/;"	m	struct:__anon1
+tag_56	emvcard.h	/^    uint8_t tag_56[76]; \/\/Track 1 Data$/;"	m	struct:__anon1
+tag_56_len	emvcard.h	/^    uint8_t tag_56_len; \/\/track1 length $/;"	m	struct:__anon1
+tag_57	emvcard.h	/^    uint8_t tag_57[19]; \/\/Track 2 Equivalent Data$/;"	m	struct:__anon1
+tag_57_len	emvcard.h	/^    uint8_t tag_57_len; \/\/track2 equiv len $/;"	m	struct:__anon1
+tag_5A	emvcard.h	/^    uint8_t tag_5A[10]; \/\/Application Primary Account Number (PAN)$/;"	m	struct:__anon1
+tag_5A_len	emvcard.h	/^    uint8_t tag_5A_len; \/\/PAN length $/;"	m	struct:__anon1
+tag_5F20	emvcard.h	/^    uint8_t tag_5F20[26]; \/\/Cardholder Name$/;"	m	struct:__anon1
+tag_5F20_len	emvcard.h	/^    uint8_t tag_5F20_len; $/;"	m	struct:__anon1
+tag_5F24	emvcard.h	/^    uint8_t tag_5F24[3]; \/\/Application Expiry Date $/;"	m	struct:__anon1
+tag_5F25	emvcard.h	/^    uint8_t tag_5F25[3]; \/\/Application Effective Date YYMMDD$/;"	m	struct:__anon1
+tag_5F28	emvcard.h	/^    uint8_t tag_5F28[2]; \/\/Issuer Country Code  $/;"	m	struct:__anon1
+tag_5F2A	emvcard.h	/^    uint8_t tag_5F2A[2]; \/\/Transaction Currency Code$/;"	m	struct:__anon1
+tag_5F2D	emvcard.h	/^    uint8_t tag_5F2D[8]; \/\/Language Preference$/;"	m	struct:__anon1
+tag_5F2D_len	emvcard.h	/^    uint8_t tag_5F2D_len; $/;"	m	struct:__anon1
+tag_5F30	emvcard.h	/^    uint8_t tag_5F30[2]; \/\/Service Code$/;"	m	struct:__anon1
+tag_5F34	emvcard.h	/^    uint8_t tag_5F34[1]; \/\/Application Primary Account Number (PAN) Sequence Number$/;"	m	struct:__anon1
+tag_5F36	emvcard.h	/^    uint8_t tag_5F36[2]; \/\/ATC$/;"	m	struct:__anon1
+tag_5F50	emvcard.h	/^    uint8_t tag_5F50[255]; \/\/Issuer URL $/;"	m	struct:__anon1
+tag_5F50_len	emvcard.h	/^    uint8_t tag_5F50_len; $/;"	m	struct:__anon1
+tag_5F54	emvcard.h	/^    uint8_t tag_5F54[11]; \/\/Bank Identifier Code (BIC) $/;"	m	struct:__anon1
+tag_5F54_len	emvcard.h	/^    uint8_t tag_5F54_len; $/;"	m	struct:__anon1
+tag_61	emvcard.h	/^    uint8_t tag_61[255]; \/\/Application template$/;"	m	struct:__anon1
+tag_61_len	emvcard.h	/^    uint8_t tag_61_len; $/;"	m	struct:__anon1
+tag_6F	emvcard.h	/^    uint8_t tag_6F[255]; \/\/6F template$/;"	m	struct:__anon1
+tag_6F_len	emvcard.h	/^    uint8_t tag_6F_len; $/;"	m	struct:__anon1
+tag_70	emvcard.h	/^    uint8_t tag_70[255]; \/\/70 template$/;"	m	struct:__anon1
+tag_70_len	emvcard.h	/^    uint8_t tag_70_len; $/;"	m	struct:__anon1
+tag_77	emvcard.h	/^    uint8_t tag_77[255]; \/\/77 template$/;"	m	struct:__anon1
+tag_77_len	emvcard.h	/^    uint8_t tag_77_len; $/;"	m	struct:__anon1
+tag_80	emvcard.h	/^    uint8_t tag_80[255]; \/\/80 template $/;"	m	struct:__anon1
+tag_80_len	emvcard.h	/^    uint8_t tag_80_len; $/;"	m	struct:__anon1
+tag_82	emvcard.h	/^    uint8_t tag_82[2]; \/\/Application Interchange Profile AIP$/;"	m	struct:__anon1
+tag_84	emvcard.h	/^    uint8_t tag_84[16]; \/\/DF Name$/;"	m	struct:__anon1
+tag_84_len	emvcard.h	/^    uint8_t tag_84_len; $/;"	m	struct:__anon1
+tag_86	emvcard.h	/^    uint8_t tag_86[261]; \/\/Issuer Script Command$/;"	m	struct:__anon1
+tag_86_len	emvcard.h	/^    uint8_t tag_86_len; $/;"	m	struct:__anon1
+tag_87	emvcard.h	/^    uint8_t tag_87[1]; \/\/Application Priority Indicator$/;"	m	struct:__anon1
+tag_88	emvcard.h	/^    uint8_t tag_88[1]; \/\/Short File Identifier$/;"	m	struct:__anon1
+tag_8A	emvcard.h	/^    uint8_t tag_8A[2]; \/\/Authorisation Response Code$/;"	m	struct:__anon1
+tag_8C	emvcard.h	/^    uint8_t tag_8C[252]; \/\/CDOL1$/;"	m	struct:__anon1
+tag_8C_len	emvcard.h	/^    uint8_t tag_8C_len; $/;"	m	struct:__anon1
+tag_8D	emvcard.h	/^    uint8_t tag_8D[252]; \/\/CDOL2$/;"	m	struct:__anon1
+tag_8D_len	emvcard.h	/^    uint8_t tag_8D_len; $/;"	m	struct:__anon1
+tag_8E	emvcard.h	/^    uint8_t tag_8E[252]; \/\/Cardholder Verification Method (CVM) List$/;"	m	struct:__anon1
+tag_8E_len	emvcard.h	/^    uint8_t tag_8E_len; $/;"	m	struct:__anon1
+tag_8F	emvcard.h	/^    uint8_t tag_8F[1];  \/\/Certification Authority Public Key Index$/;"	m	struct:__anon1
+tag_90	emvcard.h	/^    uint8_t tag_90[255]; \/\/ssuer Public Key Certificate$/;"	m	struct:__anon1
+tag_90_len	emvcard.h	/^    uint8_t tag_90_len; $/;"	m	struct:__anon1
+tag_91	emvcard.h	/^    uint8_t tag_91[16]; $/;"	m	struct:__anon1
+tag_91_len	emvcard.h	/^    uint8_t tag_91_len; \/\/Issuer Authentication Data $/;"	m	struct:__anon1
+tag_92	emvcard.h	/^    uint8_t tag_92[255]; \/\/Issuer Public Key Remainder$/;"	m	struct:__anon1
+tag_92_len	emvcard.h	/^    uint8_t tag_92_len; $/;"	m	struct:__anon1
+tag_93	emvcard.h	/^    uint8_t tag_93[255]; \/\/Signed Static Application Data$/;"	m	struct:__anon1
+tag_93_len	emvcard.h	/^    uint8_t tag_93_len; $/;"	m	struct:__anon1
+tag_94	emvcard.h	/^    uint8_t tag_94[252]; \/\/Application File Locator AFL$/;"	m	struct:__anon1
+tag_94_len	emvcard.h	/^    uint8_t tag_94_len; $/;"	m	struct:__anon1
+tag_95	emvcard.h	/^    uint8_t tag_95[5]; \/\/Terminal Verification Results$/;"	m	struct:__anon1
+tag_97	emvcard.h	/^    uint8_t tag_97[252]; \/\/Transaction Certificate Data Object List (TDOL)$/;"	m	struct:__anon1
+tag_97_len	emvcard.h	/^    uint8_t tag_97_len; $/;"	m	struct:__anon1
+tag_98	emvcard.h	/^    uint8_t tag_98[20]; \/\/Transaction Certificate (TC) Hash Value $/;"	m	struct:__anon1
+tag_99	emvcard.h	/^    uint8_t tag_99[20]; \/\/Transaction Personal Identification Number (PIN) Data $/;"	m	struct:__anon1
+tag_99_len	emvcard.h	/^    uint8_t tag_99_len; $/;"	m	struct:__anon1
+tag_9A	emvcard.h	/^    uint8_t tag_9A[3]; \/\/Transaction Date $/;"	m	struct:__anon1
+tag_9B	emvcard.h	/^    uint8_t tag_9B[2]; \/\/Transaction Status Information $/;"	m	struct:__anon1
+tag_9C	emvcard.h	/^    uint8_t tag_9C[1]; \/\/Transaction Type$/;"	m	struct:__anon1
+tag_9D	emvcard.h	/^    uint8_t tag_9D[16]; \/\/Directory Definition File$/;"	m	struct:__anon1
+tag_9D_len	emvcard.h	/^    uint8_t tag_9D_len;$/;"	m	struct:__anon1
+tag_9F01	emvcard.h	/^    uint8_t tag_9F01[6]; \/\/Acquirer Identifier $/;"	m	struct:__anon1
+tag_9F02	emvcard.h	/^    uint8_t tag_9F02[6]; \/\/ Amount, Authorised (Numeric)$/;"	m	struct:__anon1
+tag_9F03	emvcard.h	/^    uint8_t tag_9F03[6]; \/\/Amount, Other (Numeric) $/;"	m	struct:__anon1
+tag_9F04	emvcard.h	/^    uint8_t tag_9F04[4]; \/\/Amount, Other (Binary)$/;"	m	struct:__anon1
+tag_9F05	emvcard.h	/^    uint8_t tag_9F05[32]; \/\/Application Discretionary Data $/;"	m	struct:__anon1
+tag_9F05_len	emvcard.h	/^    uint8_t tag_9F05_len; $/;"	m	struct:__anon1
+tag_9F06	emvcard.h	/^    uint8_t tag_9F06[16]; \/\/AID terminal $/;"	m	struct:__anon1
+tag_9F06_len	emvcard.h	/^    uint8_t tag_9F06_len; $/;"	m	struct:__anon1
+tag_9F07	emvcard.h	/^    uint8_t tag_9F07[2]; \/\/Application Usage Control  $/;"	m	struct:__anon1
+tag_9F08	emvcard.h	/^    uint8_t tag_9F08[2]; \/\/Application Version Number $/;"	m	struct:__anon1
+tag_9F09	emvcard.h	/^    uint8_t tag_9F09[2]; \/\/Application Version Number$/;"	m	struct:__anon1
+tag_9F0B	emvcard.h	/^    uint8_t tag_9F0B[45]; \/\/Cardholder Name Extended$/;"	m	struct:__anon1
+tag_9F0B_len	emvcard.h	/^    uint8_t tag_9F0B_len; $/;"	m	struct:__anon1
+tag_9F0D	emvcard.h	/^    uint8_t tag_9F0D[5]; \/\/Issuer Action Code - Default $/;"	m	struct:__anon1
+tag_9F0E	emvcard.h	/^    uint8_t tag_9F0E[5]; \/\/Issuer Action Code - Denial $/;"	m	struct:__anon1
+tag_9F0F	emvcard.h	/^    uint8_t tag_9F0F[5]; \/\/Issuer Action Code - Online $/;"	m	struct:__anon1
+tag_9F10	emvcard.h	/^    uint8_t tag_9F10[32]; $/;"	m	struct:__anon1
+tag_9F10_len	emvcard.h	/^    uint8_t tag_9F10_len; \/\/Issuer Application Data$/;"	m	struct:__anon1
+tag_9F11	emvcard.h	/^    uint8_t tag_9F11[1]; \/\/Issuer Code Table Index$/;"	m	struct:__anon1
+tag_9F12	emvcard.h	/^    uint8_t tag_9F12[255]; \/\/Application Preferred Name $/;"	m	struct:__anon1
+tag_9F12_len	emvcard.h	/^    uint8_t tag_9F12_len; $/;"	m	struct:__anon1
+tag_9F13	emvcard.h	/^    uint8_t tag_9F13[2]; \/\/Last Online Application Transaction Counter (ATC) Registerjk $/;"	m	struct:__anon1
+tag_9F14	emvcard.h	/^    uint8_t tag_9F14[1]; \/\/Lower Consecutive Offline Limit$/;"	m	struct:__anon1
+tag_9F15	emvcard.h	/^    uint8_t tag_9F15[2]; \/\/Merchant Category Code $/;"	m	struct:__anon1
+tag_9F16	emvcard.h	/^    uint8_t tag_9F16[15]; \/\/Merchant Identifier$/;"	m	struct:__anon1
+tag_9F17	emvcard.h	/^    uint8_t tag_9F17[1]; \/\/Personal Identification Number (PIN) Try Counter$/;"	m	struct:__anon1
+tag_9F18	emvcard.h	/^    uint8_t tag_9F18[4]; \/\/Issuer Script Identifier$/;"	m	struct:__anon1
+tag_9F1A	emvcard.h	/^    uint8_t tag_9F1A[2]; \/\/Terminal Country Code$/;"	m	struct:__anon1
+tag_9F1B	emvcard.h	/^    uint8_t tag_9F1B[4]; \/\/Terminal Floor Limit$/;"	m	struct:__anon1
+tag_9F1C	emvcard.h	/^    uint8_t tag_9F1C[8]; \/\/Terminal Identification$/;"	m	struct:__anon1
+tag_9F1D	emvcard.h	/^    uint8_t tag_9F1D[8]; \/\/Terminal Risk Management Data $/;"	m	struct:__anon1
+tag_9F1D_len	emvcard.h	/^    uint8_t tag_9F1D_len; $/;"	m	struct:__anon1
+tag_9F1E	emvcard.h	/^    uint8_t tag_9F1E[8]; \/\/Interface Device (IFD) Serial Number $/;"	m	struct:__anon1
+tag_9F1F	emvcard.h	/^    uint8_t tag_9F1F[255]; \/\/Track 1 Discretionary Data $/;"	m	struct:__anon1
+tag_9F1F_len	emvcard.h	/^    uint8_t tag_9F1F_len;$/;"	m	struct:__anon1
+tag_9F20	emvcard.h	/^    uint8_t tag_9F20[255]; \/\/Track 2 DD $/;"	m	struct:__anon1
+tag_9F20_len	emvcard.h	/^    uint8_t tag_9F20_len;$/;"	m	struct:__anon1
+tag_9F21	emvcard.h	/^    uint8_t tag_9F21[3]; \/\/Transaction Time$/;"	m	struct:__anon1
+tag_9F22	emvcard.h	/^    uint8_t tag_9F22[1]; \/\/Certification Authority Public Key Index$/;"	m	struct:__anon1
+tag_9F23	emvcard.h	/^    uint8_t tag_9F23[1]; \/\/Upper Consecutive Offline Limit$/;"	m	struct:__anon1
+tag_9F26	emvcard.h	/^    uint8_t tag_9F26[8]; \/\/Application Cryptogram$/;"	m	struct:__anon1
+tag_9F27	emvcard.h	/^    uint8_t tag_9F27[1]; \/\/Cryptogram Information Data$/;"	m	struct:__anon1
+tag_9F2D	emvcard.h	/^    uint8_t tag_9F2D[255]; \/\/Integrated Circuit Card (ICC) PIN Encipherment Public Key Certificate$/;"	m	struct:__anon1
+tag_9F2D_len	emvcard.h	/^    uint8_t tag_9F2D_len; $/;"	m	struct:__anon1
+tag_9F2E	emvcard.h	/^    uint8_t tag_9F2E[3]; \/\/Integrated Circuit Card (ICC) PIN Encipherment Public Key Exponent$/;"	m	struct:__anon1
+tag_9F2F	emvcard.h	/^    uint8_t tag_9F2F[255]; \/\/Integrated Circuit Card (ICC) PIN Encipherment Public Key Remainder $/;"	m	struct:__anon1
+tag_9F2F_len	emvcard.h	/^    uint8_t tag_9F2F_len; $/;"	m	struct:__anon1
+tag_9F32	emvcard.h	/^    uint8_t tag_9F32[3]; \/\/Issuer Public Key Exponent$/;"	m	struct:__anon1
+tag_9F32_len	emvcard.h	/^    uint8_t tag_9F32_len; $/;"	m	struct:__anon1
+tag_9F33	emvcard.h	/^    uint8_t tag_9F33[3]; \/\/Terminal Capabilities$/;"	m	struct:__anon1
+tag_9F34	emvcard.h	/^    uint8_t tag_9F34[3]; \/\/Cardholder Verification Method (CVM) Results $/;"	m	struct:__anon1
+tag_9F35	emvcard.h	/^    uint8_t tag_9F35[1]; \/\/Terminal Type$/;"	m	struct:__anon1
+tag_9F36	emvcard.h	/^    uint8_t tag_9F36[2]; \/\/Application Transaction Counter (ATC)$/;"	m	struct:__anon1
+tag_9F37	emvcard.h	/^    uint8_t tag_9F37[4]; \/\/Unpredictable Number$/;"	m	struct:__anon1
+tag_9F38	emvcard.h	/^    uint8_t tag_9F38[255]; \/\/PDOL $/;"	m	struct:__anon1
+tag_9F38_len	emvcard.h	/^    uint8_t tag_9F38_len; $/;"	m	struct:__anon1
+tag_9F39	emvcard.h	/^    uint8_t tag_9F39[1]; \/\/Point-of-Service (POS) Entry Mode$/;"	m	struct:__anon1
+tag_9F40	emvcard.h	/^    uint8_t tag_9F40[5]; \/\/Additional Terminal Capabilities$/;"	m	struct:__anon1
+tag_9F41	emvcard.h	/^    uint8_t tag_9F41[4]; \/\/Transaction Sequence Counter$/;"	m	struct:__anon1
+tag_9F42	emvcard.h	/^    uint8_t tag_9F42[2]; \/\/Application Currency Code$/;"	m	struct:__anon1
+tag_9F43	emvcard.h	/^    uint8_t tag_9F43[4]; \/\/Application Reference Currency Exponent$/;"	m	struct:__anon1
+tag_9F44	emvcard.h	/^    uint8_t tag_9F44[1]; \/\/Application Currency Exponent$/;"	m	struct:__anon1
+tag_9F45	emvcard.h	/^    uint8_t tag_9F45[2]; \/\/Data Authentication Code$/;"	m	struct:__anon1
+tag_9F46	emvcard.h	/^    uint8_t tag_9F46[255]; \/\/ICC Public Key Certificate$/;"	m	struct:__anon1
+tag_9F46_len	emvcard.h	/^    uint8_t tag_9F46_len; $/;"	m	struct:__anon1
+tag_9F47	emvcard.h	/^    uint8_t tag_9F47[3]; \/\/ICC Public Key Exponent$/;"	m	struct:__anon1
+tag_9F47_len	emvcard.h	/^    uint8_t tag_9F47_len; $/;"	m	struct:__anon1
+tag_9F48	emvcard.h	/^    uint8_t tag_9F48[255]; \/\/ICC Public Key Remainder$/;"	m	struct:__anon1
+tag_9F48_len	emvcard.h	/^    uint8_t tag_9F48_len; $/;"	m	struct:__anon1
+tag_9F49	emvcard.h	/^    uint8_t tag_9F49[252]; $/;"	m	struct:__anon1
+tag_9F49_len	emvcard.h	/^    uint8_t tag_9F49_len; $/;"	m	struct:__anon1
+tag_9F4A	emvcard.h	/^    uint8_t tag_9F4A[1]; \/\/SDA Tag list$/;"	m	struct:__anon1
+tag_9F4B	emvcard.h	/^    uint8_t tag_9F4B[255]; \/\/Signed Dynamic Application Data $/;"	m	struct:__anon1
+tag_9F4B_len	emvcard.h	/^    uint8_t tag_9F4B_len; $/;"	m	struct:__anon1
+tag_9F4C	emvcard.h	/^    uint8_t tag_9F4C[8]; \/\/ICC Dynamic Number$/;"	m	struct:__anon1
+tag_9F4D	emvcard.h	/^    uint8_t tag_9F4D[2]; \/\/Log Entry$/;"	m	struct:__anon1
+tag_9F4E	emvcard.h	/^    uint8_t tag_9F4E[255]; \/\/Merchant Name and Location$/;"	m	struct:__anon1
+tag_9F60	emvcard.h	/^    uint8_t tag_9F60[2]; \/\/CVC3 track1$/;"	m	struct:__anon1
+tag_9F61	emvcard.h	/^    uint8_t tag_9F61[2]; \/\/CVC3 track2$/;"	m	struct:__anon1
+tag_9F62	emvcard.h	/^    uint8_t tag_9F62[6]; \/\/Track 1 Bit Map for CVC3 (PCVC3TRACK1)$/;"	m	struct:__anon1
+tag_9F63	emvcard.h	/^    uint8_t tag_9F63[6]; \/\/Track 1 Bit Map for UN and ATC (PUNATCTRACK1)$/;"	m	struct:__anon1
+tag_9F64	emvcard.h	/^    uint8_t tag_9F64[1]; \/\/Track 1 Number of ATC Digits (NATCTRACK1)$/;"	m	struct:__anon1
+tag_9F65	emvcard.h	/^    uint8_t tag_9F65[2]; \/\/rack 2 Bit Map for CVC3 (PCVC3TRACK2)$/;"	m	struct:__anon1
+tag_9F66	emvcard.h	/^    uint8_t tag_9F66[2];   \/\/Track 2 Bit Map for UN and ATC (PUNATCTRACK2), or VISA card type$/;"	m	struct:__anon1
+tag_9F67	emvcard.h	/^    uint8_t tag_9F67[1];   \/\/Track 2 Number of ATC Digits (NATCTRACK2)$/;"	m	struct:__anon1
+tag_9F68	emvcard.h	/^    uint8_t tag_9F68[252]; \/\/Mag Stripe CVM List$/;"	m	struct:__anon1
+tag_9F68_len	emvcard.h	/^    uint8_t tag_9F68_len; $/;"	m	struct:__anon1
+tag_9F69	emvcard.h	/^    uint8_t tag_9F69[255]; \/\/Unpredictable Number Data Object List (UDOL)$/;"	m	struct:__anon1
+tag_9F69_len	emvcard.h	/^    uint8_t tag_9F69_len; $/;"	m	struct:__anon1
+tag_9F6A	emvcard.h	/^    uint8_t tag_9F6A[8]; \/\/Unpredictable Number (Numeric)$/;"	m	struct:__anon1
+tag_9F6B	emvcard.h	/^    uint8_t tag_9F6B[19]; \/\/track 2 data$/;"	m	struct:__anon1
+tag_9F6B_len	emvcard.h	/^    uint8_t tag_9F6B_len; $/;"	m	struct:__anon1
+tag_9F6C	emvcard.h	/^    uint8_t tag_9F6C[2]; \/\/Mag Stripe Application Version  Number(Card)$/;"	m	struct:__anon1
+tag_A5	emvcard.h	/^    uint8_t tag_A5[255]; \/\/A5 template $/;"	m	struct:__anon1
+tag_A5_len	emvcard.h	/^    uint8_t tag_A5_len; $/;"	m	struct:__anon1
+tag_AF	emvcard.h	/^    uint8_t tag_AF[255]; \/\/Proprietary Information $/;"	m	struct:__anon1
+tag_AF_len	emvcard.h	/^    uint8_t tag_AF_len; $/;"	m	struct:__anon1
+tag_BF0C	emvcard.h	/^    uint8_t tag_BF0C[222]; \/\/File Control Information (FCI) Issuer Discretionary Data $/;"	m	struct:__anon1
+tag_BF0C_len	emvcard.h	/^    uint8_t tag_BF0C_len; $/;"	m	struct:__anon1
+tag_CD	emvcard.h	/^    uint8_t tag_CD[3]; \/\/Card Issuer Action Codes Paypass$/;"	m	struct:__anon1
+tag_CE	emvcard.h	/^    uint8_t tag_CE[3];$/;"	m	struct:__anon1
+tag_CF	emvcard.h	/^    uint8_t tag_CF[3];$/;"	m	struct:__anon1
+tag_D7	emvcard.h	/^    uint8_t tag_D7[3]; \/\/Application Control (PayPass)$/;"	m	struct:__anon1
+tag_D8	emvcard.h	/^    uint8_t tag_D8[2]; \/\/Application Interchange Profile (PayPass) $/;"	m	struct:__anon1
+tag_D9	emvcard.h	/^    uint8_t tag_D9[16]; $/;"	m	struct:__anon1
+tag_D9_len	emvcard.h	/^    uint8_t tag_D9_len; \/\/Application File Locator (PayPass) $/;"	m	struct:__anon1
+tag_DA	emvcard.h	/^    uint8_t tag_DA[2]; \/\/Static CVC3track1 $/;"	m	struct:__anon1
+tag_DB	emvcard.h	/^    uint8_t tag_DB[2]; \/\/Static CVC3track2 $/;"	m	struct:__anon1
+tag_DC	emvcard.h	/^    uint8_t tag_DC[2]; \/\/IVCVC3 CVC3track1 $/;"	m	struct:__anon1
+tag_DD	emvcard.h	/^    uint8_t tag_DD[2]; \/\/IVCVC3 CVC3track2 $/;"	m	struct:__anon1
+tag_response_info_t	iso14443a.h	/^} tag_response_info_t;$/;"	t	typeref:struct:__anon21
+tagdescription	emvdataels.c	/^}tagdescription;$/;"	t	typeref:struct:__anon2	file:
+tagdescription	emvdataels.h	/^}tagdescription;$/;"	t	typeref:struct:__anon3
+thisBit	iso14443.c	/^    int     thisBit;$/;"	m	struct:__anon14	file:
+timeout	iclass.c	/^static int timeout = 4096;$/;"	v	file:
+timer	legicrf.c	/^AT91PS_TC timer;$/;"	v
+timerData	mifaresniff.c	/^static uint32_t timerData = 0;$/;"	v	file:
+timestamp	legicrf.c	/^int timestamp;$/;"	v
+tlvtag	tlv.h	/^}tlvtag;$/;"	t	typeref:struct:__anon23
+toupper	printf.c	/^#define toupper(/;"	d	file:
+trace	iso14443a.c	/^uint8_t* trace = (uint8_t *) BigBuf+TRACE_OFFSET;$/;"	v
+traceLen	iso14443a.c	/^int traceLen = 0;$/;"	v
+tracing	iso14443a.c	/^int tracing = TRUE;$/;"	v
+trigger	iso14443a.c	/^uint8_t trigger = 0;$/;"	v
+twoBits	iso14443a.h	/^	uint16_t twoBits;$/;"	m	struct:__anon16
+twoBits	iso14443a.h	/^	uint16_t twoBits;$/;"	m	struct:__anon19
+u32	hitag2.c	/^#define u32	/;"	d	file:
+u64	hitag2.c	/^#define u64	/;"	d	file:
+u8	hitag2.c	/^#define u8	/;"	d	file:
+u_char	printf.c	/^typedef unsigned char u_char;$/;"	t	file:
+u_int	printf.c	/^typedef unsigned int u_int;$/;"	t	file:
+u_long	printf.c	/^typedef unsigned long u_long;$/;"	t	file:
+u_quad_t	printf.c	/^typedef unsigned long long u_quad_t;$/;"	t	file:
+u_short	printf.c	/^typedef unsigned short u_short;$/;"	t	file:
+uid	hitag2.c	/^	uint32_t uid;$/;"	m	struct:hitag2_tag	file:
+uint16_t	stdint.h	/^typedef unsigned short int		uint16_t;$/;"	t
+uint32_t	stdint.h	/^typedef unsigned int			uint32_t;$/;"	t
+uint64_t	stdint.h	/^typedef unsigned long long int	uint64_t;$/;"	t
+uint8_t	stdint.h	/^typedef unsigned char			uint8_t;$/;"	t
+uintmax_t	printf.c	/^typedef uint32_t uintmax_t;$/;"	t	file:
+uintptr_t	stdint.h	/^typedef unsigned int			uintptr_t;$/;"	t
+update_contribution	crapto1.c	/^update_contribution(uint32_t *item, const uint32_t mask1, const uint32_t mask2)$/;"	f	file:
+valid_nonce	mifarecmd.c	/^int valid_nonce(uint32_t Nt, uint32_t NtEnc, uint32_t Ks1, byte_t * parity) {$/;"	f
+value	tlv.h	/^    uint8_t value[VALUE_LENGTH];$/;"	m	struct:__anon23
+valuelength	tlv.h	/^    uint16_t valuelength; $/;"	m	struct:__anon23
+version	epa.h	/^	uint8_t version;$/;"	m	struct:__anon5
+version_information	version.c	/^const struct version_information __attribute__((section(".version_information"))) version_information = {$/;"	v	typeref:struct:version_information
+vsprintf	printf.c	/^int vsprintf(char *dest, const char *fmt, va_list ap)$/;"	f

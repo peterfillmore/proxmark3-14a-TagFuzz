@@ -24,8 +24,7 @@ void MifareReadBlock(uint8_t arg0, uint8_t arg1, uint8_t arg2, uint8_t *datain)
 	uint8_t keyType = arg1;
 	uint64_t ui64Key = 0;
 	ui64Key = bytes_to_num(datain, 6);
-	
-	// variables
+        // variables
 	byte_t isOK = 0;
 	byte_t dataoutbuf[16];
 	uint8_t uid[10];
@@ -76,7 +75,7 @@ void MifareReadBlock(uint8_t arg0, uint8_t arg1, uint8_t arg2, uint8_t *datain)
 
 	// add trace trailer
 	memset(uid, 0x44, 4);
-	LogTrace(uid, 4, 0, 0, TRUE);
+	LogTrace(uid, 4, 0, NULL, TRUE);
 
 //	UsbCommand ack = {CMD_ACK, {isOK, 0, 0}};
 //	memcpy(ack.d.asBytes, dataoutbuf, 16);
@@ -105,7 +104,7 @@ void MifareUReadBlock(uint8_t arg0,uint8_t *datain)
 	uint8_t uid[10];
 	uint32_t cuid;
     
-	// clear trace
+    // clear trace
 	iso14a_clear_trace();
 	iso14443a_setup(FPGA_HF_ISO14443A_READER_LISTEN);
     
@@ -137,7 +136,7 @@ void MifareUReadBlock(uint8_t arg0,uint8_t *datain)
     
 	// add trace trailer
 	memset(uid, 0x44, 4);
-	LogTrace(uid, 4, 0, 0, TRUE);
+	LogTrace(uid, 4, 0, NULL, TRUE);
 	LED_B_ON();
         cmd_send(CMD_ACK,isOK,0,0,dataoutbuf,16);
 	LED_B_OFF();
@@ -159,8 +158,10 @@ void MifareReadSector(uint8_t arg0, uint8_t arg1, uint8_t arg2, uint8_t *datain)
 	uint8_t keyType = arg1;
 	uint64_t ui64Key = 0;
 	ui64Key = bytes_to_num(datain, 6);
-	
-	// variables
+    //parity_t parity;	
+    //uint32_t paritybuffer[MAX_FRAME_SIZE/32];
+    //parity.byte = paritybuffer;	
+    // variables
 	byte_t isOK = 0;
 	byte_t dataoutbuf[16 * 4];
 	uint8_t uid[10];
@@ -223,7 +224,7 @@ void MifareReadSector(uint8_t arg0, uint8_t arg1, uint8_t arg2, uint8_t *datain)
 
 	// add trace trailer
 	memset(uid, 0x44, 4);
-	LogTrace(uid, 4, 0, 0, TRUE);
+	LogTrace(uid, 4, 0, NULL, TRUE);
 
 //	UsbCommand ack = {CMD_ACK, {isOK, 0, 0}};
 //	memcpy(ack.d.asBytes, dataoutbuf, 16 * 2);
@@ -290,7 +291,7 @@ void MifareUReadCard(uint8_t arg0, uint8_t *datain)
 
         // add trace trailer
         memset(uid, 0x44, 4);
-        LogTrace(uid, 4, 0, 0, TRUE);
+        LogTrace(uid, 4, 0, NULL, TRUE);
         
         LED_B_ON();
 		cmd_send(CMD_ACK,isOK,0,0,dataoutbuf,64);
@@ -316,7 +317,6 @@ void MifareWriteBlock(uint8_t arg0, uint8_t arg1, uint8_t arg2, uint8_t *datain)
 	uint8_t keyType = arg1;
 	uint64_t ui64Key = 0;
 	byte_t blockdata[16];
-
 	ui64Key = bytes_to_num(datain, 6);
 	memcpy(blockdata, datain + 10, 16);
 	
@@ -370,7 +370,7 @@ void MifareWriteBlock(uint8_t arg0, uint8_t arg1, uint8_t arg2, uint8_t *datain)
 
 	// add trace trailer
 	memset(uid, 0x44, 4);
-	LogTrace(uid, 4, 0, 0, TRUE);
+	LogTrace(uid, 4, 0, NULL, TRUE);
 
 //	UsbCommand ack = {CMD_ACK, {isOK, 0, 0}};
 	
@@ -400,7 +400,6 @@ void MifareUWriteBlock(uint8_t arg0, uint8_t *datain)
         byte_t isOK = 0;
         uint8_t uid[10];
         uint32_t cuid;
-
         // clear trace
         iso14a_clear_trace();
 	//  iso14a_set_tracing(false);
@@ -435,7 +434,7 @@ void MifareUWriteBlock(uint8_t arg0, uint8_t *datain)
 
         // add trace trailer
         memset(uid, 0x44, 4);
-        LogTrace(uid, 4, 0, 0, TRUE);
+        LogTrace(uid, 4, 0, NULL, TRUE);
 
         LED_B_ON();
   	cmd_send(CMD_ACK,isOK,0,0,0,0);
@@ -462,7 +461,6 @@ void MifareUWriteBlock_Special(uint8_t arg0, uint8_t *datain)
         byte_t isOK = 0;
         uint8_t uid[10];
         uint32_t cuid;
-
         // clear trace
         iso14a_clear_trace();
         //  iso14a_set_tracing(false);
@@ -497,7 +495,7 @@ void MifareUWriteBlock_Special(uint8_t arg0, uint8_t *datain)
 
         // add trace trailer
 	memset(uid, 0x44, 4);
-        LogTrace(uid, 4, 0, 0, TRUE);
+        LogTrace(uid, 4, 0, NULL, TRUE);
 
        LED_B_ON();
         cmd_send(CMD_ACK,isOK,0,0,0,0);
@@ -541,8 +539,11 @@ void MifareNested(uint32_t arg0, uint32_t arg1, uint32_t calibrate, uint8_t *dat
 	uint16_t davg;
 	static uint16_t dmin, dmax;
 	uint8_t uid[10];
-	uint32_t cuid, nt1, nt2, nttmp, nttest, par, ks1;
-	uint32_t target_nt[2], target_ks[2];
+	uint32_t cuid, nt1, nt2, nttmp, nttest, ks1;
+    parity_t par; 
+    //uint32_t paritybuffer[MAX_FRAME_SIZE/32];
+    //par.byte = paritybuffer; 
+    uint32_t target_nt[2], target_ks[2];
 	
 	uint8_t par_array[4];
 	uint16_t ncount = 0;
@@ -670,14 +671,13 @@ void MifareNested(uint32_t arg0, uint32_t arg1, uint32_t calibrate, uint8_t *dat
 				if (MF_DBGLEVEL >= 1)	Dbprintf("Nested: Auth2 error len=%d", len);
 				continue;
 			};
-		
 			nt2 = bytes_to_num(receivedAnswer, 4);		
-			if (MF_DBGLEVEL >= 3) Dbprintf("Nonce#%d: Testing nt1=%08x nt2enc=%08x nt2par=%02x", i+1, nt1, nt2, par);
+			if (MF_DBGLEVEL >= 3) Dbprintf("Nonce#%d: Testing nt1=%08x nt2enc=%08x nt2par=%02x", i+1, nt1, nt2, par.byte[0]);
 			
 			// Parity validity check
 			for (j = 0; j < 4; j++) {
-				par_array[j] = (oddparity(receivedAnswer[j]) != ((par & 0x08) >> 3));
-				par = par << 1;
+				par_array[j] = (oddparity(receivedAnswer[j]) != (par.byte[0] & 0x08) >> 3);
+				par.byte[0] = par.byte[0] << 1;
 			}
 			
 			ncount = 0;
@@ -714,7 +714,7 @@ void MifareNested(uint32_t arg0, uint32_t arg1, uint32_t calibrate, uint8_t *dat
 	
 	// add trace trailer
 	memset(uid, 0x44, 4);
-	LogTrace(uid, 4, 0, 0, TRUE);
+	LogTrace(uid, 4, 0, &par, TRUE);
 
 	byte_t buf[4 + 4 * 4];
 	memcpy(buf, &cuid, 4);
@@ -745,7 +745,6 @@ void MifareChkKeys(uint8_t arg0, uint8_t arg1, uint8_t arg2, uint8_t *datain)
 	uint8_t keyType = arg1;
 	uint8_t keyCount = arg2;
 	uint64_t ui64Key = 0;
-	
 	// variables
 	int i;
 	byte_t isOK = 0;
@@ -800,7 +799,7 @@ void MifareChkKeys(uint8_t arg0, uint8_t arg1, uint8_t arg2, uint8_t *datain)
 	
 	// add trace trailer
 	memset(uid, 0x44, 4);
-	LogTrace(uid, 4, 0, 0, TRUE);
+	LogTrace(uid, 4, 0, NULL, TRUE);
 
 	LED_B_ON();
     cmd_send(CMD_ACK,isOK,0,0,datain + i * 6,6);
@@ -860,7 +859,6 @@ void MifareECardLoad(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datai
 	struct Crypto1State mpcs = {0, 0};
 	struct Crypto1State *pcs;
 	pcs = &mpcs;
-
 	// variables
 	byte_t dataoutbuf[16];
 	byte_t dataoutbuf2[16];
@@ -944,7 +942,7 @@ void MifareECardLoad(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datai
 
 	// add trace trailer
 	memset(uid, 0x44, 4);
-	LogTrace(uid, 4, 0, 0, TRUE);
+	LogTrace(uid, 4, 0, NULL, TRUE);
 }
 
 //-----------------------------------------------------------------------------
@@ -968,7 +966,10 @@ void MifareCSetBlock(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datai
 	// bit 4 - need reset FPGA and LED
 	uint8_t workFlags = arg1;
 	uint8_t blockNo = arg2;
-	
+    parity_t parity;
+    //uint32_t paritybuffer[MAX_FRAME_SIZE/32];
+    //memset(paritybuffer,0x00, sizeof(paritybuffer));
+    //parity.byte = paritybuffer;	
 	// card commands
 	uint8_t wupC1[]       = { 0x40 }; 
 	uint8_t wupC2[]       = { 0x43 }; 
@@ -1016,7 +1017,7 @@ void MifareCSetBlock(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datai
 	
 		// reset chip
 		if (needWipe){
-      ReaderTransmitBitsPar(wupC1,7,0, NULL);
+      ReaderTransmitBitsPar(wupC1,7,&parity, NULL);
 			if(!ReaderReceive(receivedAnswer) || (receivedAnswer[0] != 0x0a)) {
 				if (MF_DBGLEVEL >= 1)	Dbprintf("wupC1 error");
 				break;
@@ -1036,7 +1037,7 @@ void MifareCSetBlock(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datai
 
 		// write block
 		if (workFlags & 0x02) {
-      ReaderTransmitBitsPar(wupC1,7,0, NULL);
+      ReaderTransmitBitsPar(wupC1,7,&parity, NULL);
 			if(!ReaderReceive(receivedAnswer) || (receivedAnswer[0] != 0x0a)) {
 				if (MF_DBGLEVEL >= 1)	Dbprintf("wupC1 error");
 				break;
@@ -1108,8 +1109,11 @@ void MifareCGetBlock(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datai
 	// bit 4 - need reset FPGA and LED
 	uint8_t workFlags = arg0;
 	uint8_t blockNo = arg2;
-	
-	// card commands
+	parity_t parity;
+    //uint32_t paritybuffer[MAX_FRAME_SIZE/32];
+    //memset(paritybuffer,0x00, sizeof(paritybuffer));
+    //parity.byte = paritybuffer;	
+// card commands
 	uint8_t wupC1[]       = { 0x40 }; 
 	uint8_t wupC2[]       = { 0x43 }; 
 	
@@ -1140,7 +1144,7 @@ void MifareCGetBlock(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datai
 
 	while (true) {
 		if (workFlags & 0x02) {
-			ReaderTransmitBitsPar(wupC1,7,0, NULL);
+			ReaderTransmitBitsPar(wupC1,7,&parity, NULL);
 			if(!ReaderReceive(receivedAnswer) || (receivedAnswer[0] != 0x0a)) {
 				if (MF_DBGLEVEL >= 1)	Dbprintf("wupC1 error");
 				break;

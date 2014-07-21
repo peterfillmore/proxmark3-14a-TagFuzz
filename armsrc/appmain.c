@@ -36,9 +36,9 @@
 // is the order in which they go out on the wire.
 //=============================================================================
 
-uint8_t ToSend[512];
+uint8_t ToSend[TO_SEND_SIZE];
 int ToSendMax;
-static int ToSendBit;
+static unsigned int ToSendBit;
 struct common_area common_area __attribute__((section(".commonarea")));
 
 void BufferClear(void)
@@ -620,7 +620,8 @@ void ListenReaderField(int limit)
 
 void UsbPacketReceived(uint8_t *packet, int len)
 {
-	UsbCommand *c = (UsbCommand *)packet;
+	   
+    UsbCommand *c = (UsbCommand *)packet;
 
 //  Dbprintf("received %d bytes, with command: 0x%04x and args: %d %d %d",len,c->cmd,c->arg[0],c->arg[1],c->arg[2]);
   
@@ -845,6 +846,26 @@ void UsbPacketReceived(uint8_t *packet, int len)
 		case CMD_MIFARE_SNIFFER:
 			SniffMifare(c->arg[0]);
 			break;
+#endif
+#ifdef WITH_EMV
+        case CMD_EMV_READ_RECORD:
+            EMVReadRecord(c->arg[0], c->arg[1], NULL);
+            break; 
+        case CMD_EMV_TRANSACTION:
+            EMVTransaction(); 
+            break;
+        case CMD_EMV_CLONE:
+            EMVClone(c->arg[0], c->arg[1]);
+            break;
+        case CMD_EMV_SIM:
+            EMVSim();
+            break;
+        case CMD_EMV_TEST:
+            EMVTest();
+            break;
+        case CMD_EMV_FUZZ_RATS:
+            EMVFuzz_RATS(c->arg[0],c->d.asBytes);
+            break;
 #endif
 
 #ifdef WITH_ICLASS

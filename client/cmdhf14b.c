@@ -358,7 +358,7 @@ int CmdHF14BCmdRaw (const char *cmd) {
     SendCommand(&c);
     
     if (reply) {
-        if (WaitForResponseTimeout(CMD_ACK,&resp,1000)) {
+        if (WaitForResponseTimeout(CMD_ACK,&resp,100000)) {
             recv = resp.d.asBytes;
             PrintAndLog("received %i octets",resp.arg[0]);
             if(!resp.arg[0])

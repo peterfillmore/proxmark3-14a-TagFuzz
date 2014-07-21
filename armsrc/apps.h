@@ -15,27 +15,43 @@
 #include <stdint.h>
 #include <stddef.h>
 #include "common.h"
+#include "parity.h"
 #include "hitag2.h"
 #include "mifare.h"
-
+#include "emvutil.h" //emv stuff
+#include "emvcard.h"
 // The large multi-purpose buffer, typically used to hold A/D samples,
 // maybe processed in some way.
 uint32_t BigBuf[10000];
 // BIG CHANGE - UNDERSTAND THIS BEFORE WE COMMIT
+//edited to create more space for modulation PWF
+/*
 #define TRACE_OFFSET          0
 #define TRACE_SIZE         3000
 #define RECV_CMD_OFFSET    3032
-#define RECV_CMD_SIZE        64
+#define RECV_CMD_SIZE        64 
 #define RECV_RES_OFFSET    3096
 #define RECV_RES_SIZE        64
 #define DMA_BUFFER_OFFSET  3160
 #define DMA_BUFFER_SIZE    4096
-#define FREE_BUFFER_OFFSET 7256
-#define FREE_BUFFER_SIZE   2744
+#define FREE_BUFFER_OFFSET 7256 
+#define FREE_BUFFER_SIZE   2744 
+*/
+#define TRACE_OFFSET          0
+#define TRACE_SIZE         1000
+#define RECV_CMD_OFFSET    1032
+#define RECV_CMD_SIZE        256 
+#define RECV_RES_OFFSET   1288 
+#define RECV_RES_SIZE       256 
+#define DMA_BUFFER_OFFSET  1544 
+#define DMA_BUFFER_SIZE    3072 
+#define FREE_BUFFER_OFFSET 4616 
+#define FREE_BUFFER_SIZE   5640 
 
-extern const uint8_t OddByteParity[256];
+#define TO_SEND_SIZE    4192 //hardcoded ToSend buffer size
+//extern const uint8_t OddByteParity[256];
 extern uint8_t *trace; // = (uint8_t *) BigBuf;
-extern int traceLen;   // = 0;
+extern unsigned int traceLen;   // = 0;
 extern int rsamples;   // = 0;
 extern int tracing;    // = TRUE;
 extern uint8_t trigger;
@@ -146,8 +162,9 @@ void RAMFUNC SnoopIso14443a(uint8_t param);
 void SimulateIso14443aTag(int tagType, int uid_1st, int uid_2nd, byte_t* data);
 void ReaderIso14443a(UsbCommand * c);
 // Also used in iclass.c
-bool RAMFUNC LogTrace(const uint8_t * btBytes, uint8_t iLen, uint32_t iSamples, uint32_t dwParity, bool bReader);
-uint32_t GetParity(const uint8_t * pbtCmd, int iLen);
+bool RAMFUNC LogTrace(const uint8_t * btBytes, uint8_t iLen, uint32_t iSamples, parity_t* parity, bool bReader);
+//uint256_t GetParity(const uint8_t * pbtCmd, int iLen);
+//uint8_t GetParityStream(const uint8_t * pbtCmd, int iLen, uint8_t* paritybitstream, uint8_t* paritystreambitlen);
 void iso14a_set_trigger(bool enable);
 void iso14a_clear_trace();
 void iso14a_set_tracing(bool enable);
@@ -177,6 +194,16 @@ void MifareECardLoad(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datai
 void MifareCSetBlock(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datain);  // Work with "magic Chinese" card
 void MifareCGetBlock(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint8_t *datain);
 
+//emvcmd.h
+//void EMVSelect(uint8_t arg0, uint8_t arg1, uint8_t arg2, uint8_t *data);
+void EMVFuzz_RATS(uint8_t len, uint8_t* RATS);
+void EMVReadRecord(uint8_t arg0, uint8_t arg1,emvcard* inputcard);
+void EMVSelectPPSE();
+void EMVSelectAID(uint8_t *AID, uint8_t AIDlen, emvcard* inputcard);
+void EMVTransaction(); //perform an EMV transaction
+void EMVClone(uint8_t maxsfi, uint8_t maxrecord); //clone an EMV card.
+void EMVSim();
+void EMVTest(); //test function for emv stuff.
 /// iso15693.h
 void RecordRawAdcSamplesIso15693(void);
 void AcquireRawAdcSamplesIso15693(void);

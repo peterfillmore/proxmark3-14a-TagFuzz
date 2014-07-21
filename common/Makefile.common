@@ -28,7 +28,7 @@ OBJCOPY = $(CROSS)objcopy
 
 OBJDIR	= obj
 
-INCLUDE = -I../include -I../common
+INCLUDE = -I../include -I../common 
 
 TAR=tar
 TARFLAGS = -C .. -rvf
@@ -67,7 +67,7 @@ INCLUDES = ../include/proxmark3.h ../include/at91sam7s512.h ../include/config_gp
 
 CFLAGS =  -c $(INCLUDE) -Wall -Werror -pedantic -std=c99 $(APP_CFLAGS) -Os
 LDFLAGS = -nostartfiles -nodefaultlibs -Wl,-gc-sections -n
-LIBS = -lgcc
+LIBS = -lgcc  
 
 THUMBOBJ = $(patsubst %.c,$(OBJDIR)/%.o,$(THUMBSRC))
 ARMOBJ   = $(ARMSRC:%.c=$(OBJDIR)/%.o)

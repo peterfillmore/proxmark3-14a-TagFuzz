@@ -46,8 +46,11 @@ int CmdHF14AList(const char *Cmd)
 		
 	uint8_t got[1920];
 	GetFromBigBuf(got,sizeof(got),0);
-	WaitForResponse(CMD_ACK,NULL);
-
+    WaitForResponse(CMD_ACK,NULL);
+    //dump response
+    for(int i=0; i<sizeof(got);i++)	{
+        printf("%02X ", got[i]);
+    }
 	PrintAndLog("Recorded Activity");
 	PrintAndLog("");
 	PrintAndLog("Start = Start of Start Bit, End = End of last modulation. Src = Source of Transfer");
@@ -74,25 +77,29 @@ int CmdHF14AList(const char *Cmd)
 		} else {
 		  isResponse = false;
 		}
-
-		if(i==0) {
+	
+        if(i==0) {
 			first_timestamp = timestamp;
 		}
-		
-		int parityBits = *((uint32_t *)(got+i+4));
-
-		int len = got[i+8];
-
+	    uint8_t parityLen = *((uint8_t *)(got+i+4)); //length of parity bytes(in uint32_ts)	
+		//int parityBits = *((uint32_t *)(got+i+4));
+        uint32_t *parityBits; 
+        if(parityLen>0){ 
+            uint32_t paritybuffer[parityLen/4];
+            parityBits = paritybuffer; 
+            memcpy((uint8_t *)parityBits, (uint8_t *)(got+i+5), parityLen);
+        } 
+        uint8_t len = *((uint8_t *)(got+i+4+1+parityLen));
 		if (len > 100) {
 			break;
 		}
 		if (i + len >= 1900) {
 			break;
 		}
+        
+		uint8_t *frame = (i+got+6+parityLen);
 
-		uint8_t *frame = (got+i+9);
-
-		// Break and stick with current result if buffer was not completely full
+		// Break and stick with current result if buffer wa
 		if (frame[0] == 0x44 && frame[1] == 0x44 && frame[2] == 0x44 && frame[3] == 0x44) break; 
 
 		char line[1000] = "";
@@ -107,7 +114,7 @@ int CmdHF14AList(const char *Cmd)
 				}
 
 				//if((parityBits >> (len - j - 1)) & 0x01) {
-				if (isResponse && (oddparity != ((parityBits >> (len - j - 1)) & 0x01))) {
+				if (isResponse && (oddparity != ((parityBits[j/32] >> ((len - j - 1)%32)) & 0x01))) {
 					sprintf(line+(j*4), "%02x!  ", frame[j]);
 				} else {
 					sprintf(line+(j*4), "%02x   ", frame[j]);
@@ -115,7 +122,7 @@ int CmdHF14AList(const char *Cmd)
 			}
 		} else {
 			if (ShowWaitCycles) {
-				uint32_t next_timestamp = (*((uint32_t *)(got+i+9))) & 0x7fffffff;
+				uint32_t next_timestamp = (*((uint32_t *)(i+got+6+parityLen))) & 0x7fffffff;
 				sprintf(line, "fdt (Frame Delay Time): %d", (next_timestamp - timestamp));
 			}
 		}
@@ -160,11 +167,11 @@ int CmdHF14AList(const char *Cmd)
 			crc = ""; // SHORT
 		}
 
-		i += (len + 9);
+		i += (len + 6 + parityLen);
 
 		EndOfTransmissionTimestamp = (*((uint32_t *)(got+i))) & 0x7fffffff;
 		
-		if (!ShowWaitCycles) i += 9;
+		if (!ShowWaitCycles) i += 6; //skip empty trace
 		
 		PrintAndLog(" %9d | %9d | %s | %s %s",
 			(timestamp - first_timestamp),
@@ -490,6 +497,22 @@ int CmdHF14ASnoop(const char *Cmd) {
   return 0;
 }
 
+int CmdHF14ASetTimeout(const char *cmd){
+    uint32_t timeoutvalue = 0; 
+     
+    if (strlen(cmd)<6) {
+        PrintAndLog("Usage: hf 14a timeout <timeout in milliseconds>");
+        PrintAndLog("timeout must be >1000");
+    return 0;
+    }
+    while (*cmd==' ' || *cmd=='\t') cmd++;
+    timeoutvalue = (uint32_t) bytes_to_num((uint8_t *)cmd, strlen(cmd)); 
+    iso14a_set_timeout(timeoutvalue);
+    return 0; 
+}
+
+
+
 int CmdHF14ACmdRaw(const char *cmd) {
     UsbCommand c = {CMD_READER_ISO_14443a, {0, 0, 0}};
     uint8_t reply=1;
@@ -502,9 +525,11 @@ int CmdHF14ACmdRaw(const char *cmd) {
     int i=0;
     uint8_t data[100];
     unsigned int datalen=0, temp;
-
+    //set timeout value 
+    //iso14a_set_timeout(3000); 
+    
     if (strlen(cmd)<2) {
-        PrintAndLog("Usage: hf 14a raw [-r] [-c] [-p] [-f] [-b] <number of bits> <0A 0B 0C ... hex>");
+        PrintAndLog("Usage: hf 14a raw [-r] [-c] [-p] [-f] [-b] <number of bits> -t <timeout in milliseconds> <0A 0B 0C ... hex>");
         PrintAndLog("       -r    do not read response");
         PrintAndLog("       -c    calculate and append CRC");
         PrintAndLog("       -p    leave the signal field ON after receive");
@@ -543,7 +568,7 @@ int CmdHF14ACmdRaw(const char *cmd) {
                     while(cmd[i]!=' ' && cmd[i]!='\0') { i++; }
                     i-=2;
                     break;
-                default:
+                 default:
                     PrintAndLog("Invalid option");
                     return 0;
             }
@@ -608,7 +633,7 @@ static void waitCmd(uint8_t iSelect)
     UsbCommand resp;
     char *hexout;
 
-    if (WaitForResponseTimeout(CMD_ACK,&resp,1000)) {
+    if (WaitForResponseTimeout(CMD_ACK,&resp,10000)) {
         recv = resp.d.asBytes;
         uint8_t iLen = iSelect ? resp.arg[1] : resp.arg[0];
         PrintAndLog("received %i octets",iLen);
@@ -638,6 +663,7 @@ static command_t CommandTable[] =
   {"sim",    CmdHF14ASim,          0, "<UID> -- Fake ISO 14443a tag"},
   {"snoop",  CmdHF14ASnoop,        0, "Eavesdrop ISO 14443 Type A"},
   {"raw",    CmdHF14ACmdRaw,       0, "Send raw hex data to tag"},
+  {"timeout", CmdHF14ASetTimeout,   0, "Set timeout value"},
   {NULL, NULL, 0, NULL}
 };
 

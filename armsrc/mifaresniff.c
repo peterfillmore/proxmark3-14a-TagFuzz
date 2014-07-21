@@ -37,7 +37,7 @@ bool MfSniffEnd(void){
 	return FALSE;
 }
 
-bool RAMFUNC MfSniffLogic(const uint8_t *data, uint16_t len, uint32_t parity, uint16_t bitCnt, bool reader) {
+bool RAMFUNC MfSniffLogic(const uint8_t *data, uint16_t len, parity_t* parity, uint16_t bitCnt, bool reader) {
 
 	if (reader && (len == 1) && (bitCnt == 7)) { 		// reset on 7-Bit commands from reader
 		sniffState = SNF_INIT;

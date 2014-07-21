@@ -53,15 +53,15 @@ void mf_crypto1_decrypt(struct Crypto1State *pcs, uint8_t *data, int len){
 	return;
 }
 
-void mf_crypto1_encrypt(struct Crypto1State *pcs, uint8_t *data, int len, uint32_t *par) {
+void mf_crypto1_encrypt(struct Crypto1State *pcs, uint8_t *data, int len, parity_t *par) {
 	uint8_t bt = 0;
 	int i;
 	uint32_t mltpl = 1 << (len - 1); // for len=18 it=0x20000
-	*par = 0;
-	for (i = 0; i < len; i++) {
+	par->byte[0] = 0;
+    for (i = 0; i < len; i++) {
 		bt = data[i];
 		data[i] = crypto1_byte(pcs, 0x00, 0) ^ data[i];
-		*par = (*par >> 1) | ( ((filter(pcs->odd) ^ oddparity(bt)) & 0x01) * mltpl );
+		par->byte[len/32] = (par->byte[len/32] >> 1) | ( ((filter(pcs->odd) ^ oddparity(bt)) & 0x01) * mltpl );
 	}	
 	return;
 }
@@ -108,26 +108,29 @@ int mifare_sendcmd_short_special(struct Crypto1State *pcs, uint8_t crypted, uint
 	return len;
 }
 
-int mifare_sendcmd_shortex(struct Crypto1State *pcs, uint8_t crypted, uint8_t cmd, uint8_t data, uint8_t* answer, uint32_t * parptr, uint32_t *timing)
+int mifare_sendcmd_shortex(struct Crypto1State *pcs, uint8_t crypted, uint8_t cmd, uint8_t data, uint8_t* answer, parity_t *parptr, uint32_t *timing)
 {
 	uint8_t dcmd[4], ecmd[4];
-	uint32_t pos, par, res;
-
-	dcmd[0] = cmd;
+	uint32_t pos, res;
+    parity_t par;	
+    //uint32_t paritybuffer[MAX_FRAME_SIZE/32]; 
+    //par.byte = paritybuffer; 
+    memset(par.byte, 0x00, sizeof(par.byte)); 
+    dcmd[0] = cmd;
 	dcmd[1] = data;
 	AppendCrc14443a(dcmd, 2);
 	
 	memcpy(ecmd, dcmd, sizeof(dcmd));
 	
 	if (crypted) {
-		par = 0;
+        memset(&par, 0x00, sizeof(par)); 
 		for (pos = 0; pos < 4; pos++)
 		{
 			ecmd[pos] = crypto1_byte(pcs, 0x00, 0) ^ dcmd[pos];
-			par = (par >> 1) | ( ((filter(pcs->odd) ^ oddparity(dcmd[pos])) & 0x01) * 0x08 );
+			par.byte[0] = (par.byte[0] >> 1) | ( ((filter(pcs->odd) ^ oddparity(dcmd[pos])) & 0x01) * 0x08 );
 		}	
 
-		ReaderTransmitPar(ecmd, sizeof(ecmd), par, timing);
+		ReaderTransmitPar(ecmd, sizeof(ecmd), &par, timing);
 
 	} else {
 		ReaderTransmit(dcmd, sizeof(dcmd), timing);
@@ -135,7 +138,7 @@ int mifare_sendcmd_shortex(struct Crypto1State *pcs, uint8_t crypted, uint8_t cm
 
 	int len = ReaderReceivePar(answer, &par);
 	
-	if (parptr) *parptr = par;
+	if (parptr) parptr = &par;
 
 	if (crypted == CRYPT_ALL) {
 		if (len == 1) {
@@ -168,8 +171,11 @@ int mifare_classic_authex(struct Crypto1State *pcs, uint32_t uid, uint8_t blockN
 	int len;	
 	uint32_t pos;
 	uint8_t tmp4[4];
-	byte_t par = 0;
-	byte_t ar[4];
+    parity_t par;
+    //uint32_t paritybuffer[MAX_FRAME_SIZE/32];
+    //par.byte = paritybuffer;
+ 
+    byte_t ar[4];
 	uint32_t nt, ntpp; // Supplied tag nonce
 	
 	uint8_t mf_nr_ar[] = { 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00 };
@@ -211,12 +217,12 @@ int mifare_classic_authex(struct Crypto1State *pcs, uint32_t uid, uint8_t blockN
 	if (ntptr)
 		*ntptr = nt;
 
-	par = 0;
+    memset(par.byte, 0x00, sizeof(par.byte));	
 	// Generate (encrypted) nr+parity by loading it into the cipher (Nr)
 	for (pos = 0; pos < 4; pos++)
 	{
 		mf_nr_ar[pos] = crypto1_byte(pcs, ar[pos], 0) ^ ar[pos];
-		par = (par >> 1) | ( ((filter(pcs->odd) ^ oddparity(ar[pos])) & 0x01) * 0x80 );
+		par.byte[0] = (par.byte[0] >> 1) | ( ((filter(pcs->odd) ^ oddparity(ar[pos])) & 0x01) * 0x80 );
 	}	
 		
 	// Skip 32 bits in pseudo random generator
@@ -227,11 +233,11 @@ int mifare_classic_authex(struct Crypto1State *pcs, uint32_t uid, uint8_t blockN
 	{
 		nt = prng_successor(nt,8);
 		mf_nr_ar[pos] = crypto1_byte(pcs,0x00,0) ^ (nt & 0xff);
-		par = (par >> 1)| ( ((filter(pcs->odd) ^ oddparity(nt & 0xff)) & 0x01) * 0x80 );
+		par.byte[0] = (par.byte[0] >> 1)| ( ((filter(pcs->odd) ^ oddparity(nt & 0xff)) & 0x01) * 0x80 );
 	}	
 		
 	// Transmit reader nonce and reader answer
-	ReaderTransmitPar(mf_nr_ar, sizeof(mf_nr_ar), par, NULL);
+	ReaderTransmitPar(mf_nr_ar, sizeof(mf_nr_ar), &par, NULL);
 
 	// Receive 4 bit answer
 	len = ReaderReceive(receivedAnswer);
@@ -318,9 +324,10 @@ int mifare_classic_writeblock(struct Crypto1State *pcs, uint32_t uid, uint8_t bl
 	// variables
 	int len, i;	
 	uint32_t pos;
-	uint32_t par = 0;
+    parity_t par;	
 	byte_t res;
-	
+    //uint32_t paritybuffer[MAX_FRAME_SIZE/32];
+    //par.byte = paritybuffer;	
 	uint8_t d_block[18], d_block_enc[18];
 	uint8_t* receivedAnswer = mifare_get_bigbufptr();
 	
@@ -336,14 +343,14 @@ int mifare_classic_writeblock(struct Crypto1State *pcs, uint32_t uid, uint8_t bl
 	AppendCrc14443a(d_block, 16);
 	
 	// crypto
-	par = 0;
-	for (pos = 0; pos < 18; pos++)
+    memset(par.byte, 0x00, sizeof(par.byte));	
+    for (pos = 0; pos < 18; pos++)
 	{
 		d_block_enc[pos] = crypto1_byte(pcs, 0x00, 0) ^ d_block[pos];
-		par = (par >> 1) | ( ((filter(pcs->odd) ^ oddparity(d_block[pos])) & 0x01) * 0x20000 );
+		par.byte[0] = (par.byte[0] >> 1) | ( ((filter(pcs->odd) ^ oddparity(d_block[pos])) & 0x01) * 0x20000 );
 	}	
 
-	ReaderTransmitPar(d_block_enc, sizeof(d_block_enc), par, NULL);
+	ReaderTransmitPar(d_block_enc, sizeof(d_block_enc), &par, NULL);
 
 	// Receive the response
 	len = ReaderReceive(receivedAnswer);	
@@ -364,8 +371,9 @@ int mifare_ultra_writeblock(uint32_t uid, uint8_t blockNo, uint8_t *blockData)
 {
         // variables
         int len;     
-        uint32_t par = 0;
-        
+        parity_t par; 
+        //uint32_t paritybuffer[MAX_FRAME_SIZE/32];
+        //par.byte = paritybuffer; 
         uint8_t d_block[18];
         uint8_t* receivedAnswer = mifare_get_bigbufptr();
         
@@ -379,9 +387,9 @@ int mifare_ultra_writeblock(uint32_t uid, uint8_t blockNo, uint8_t *blockData)
 
 	memset(d_block,'\0',18);
 	memcpy(d_block, blockData, 16);
-        AppendCrc14443a(d_block, 16);
-
-	ReaderTransmitPar(d_block, sizeof(d_block), par, NULL);
+    AppendCrc14443a(d_block, 16);
+    
+	ReaderTransmitPar(d_block, sizeof(d_block), &par, NULL);
 
         // Receive the response
         len = ReaderReceive(receivedAnswer);    
